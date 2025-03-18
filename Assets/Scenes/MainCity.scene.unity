@@ -319,6 +319,63 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1001 &565797950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.15362
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.764477
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9054191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.42451888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
 --- !u!1 &715600672
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +409,63 @@ Transform:
   - {fileID: 1668783224}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &826433408
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.518871
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 48.30389
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.15661542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.98765963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -161.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +1071,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144177254277914255, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
+      propertyPath: followSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1559927455941234307, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.235306
@@ -997,9 +1115,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1926827816644860051, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 650413c13cc0d5745acdb29cb259257a, type: 2}
     - target: {fileID: 3435097101418009198, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
       propertyPath: speed
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8889718413213027048, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
       propertyPath: m_Name
@@ -1010,6 +1132,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5dd733755c51844088882f0fea46bd9, type: 3}
+--- !u!1001 &1644122849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 80.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.81057835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.58563024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -71.695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
 --- !u!1001 &1668783223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3048,6 +3227,234 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1873599386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.789787
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 48.85648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9767758
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.21426405
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 24.745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+--- !u!1001 &1952441556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.4468
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 54.813652
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+--- !u!1001 &2047700997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.47112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.208954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.63134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7288118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6847142
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 86.426
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+--- !u!1001 &2133074576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.779125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2089844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.502914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9295958
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.36858055
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -43.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162703379491157606, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159338566835662082, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
+      propertyPath: m_Name
+      value: Paparazzi (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeac2ee2f092abc44b41c72a50d1e716, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3058,3 +3465,10 @@ SceneRoots:
   - {fileID: 898114307}
   - {fileID: 58634206}
   - {fileID: 1195197393}
+  - {fileID: 2047700997}
+  - {fileID: 1952441556}
+  - {fileID: 1873599386}
+  - {fileID: 826433408}
+  - {fileID: 565797950}
+  - {fileID: 1644122849}
+  - {fileID: 2133074576}
