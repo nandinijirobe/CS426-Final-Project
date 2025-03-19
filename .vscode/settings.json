@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CS426-Final-Project.sln"
+    "dotnet.defaultSolution": "Lights, Camera, Run.sln"
 }
