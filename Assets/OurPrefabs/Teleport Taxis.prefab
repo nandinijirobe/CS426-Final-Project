@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566472712780052500}
   m_Layer: 0
-  m_Name: teleport1
+  m_Name: Teleport Taxis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1454668683279985548, guid: c77883d0533363e45821e8cfdf5e4d42, type: 3}
       propertyPath: m_Name
-      value: Simple Car_6.2
+      value: End Location
       objectReference: {fileID: 0}
     - target: {fileID: 1454668683279985548, guid: c77883d0533363e45821e8cfdf5e4d42, type: 3}
       propertyPath: m_TagString
@@ -109,7 +109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1454668683279985548, guid: c77883d0533363e45821e8cfdf5e4d42, type: 3}
       propertyPath: m_Name
-      value: Simple Car_6.1
+      value: Start Location
       objectReference: {fileID: 0}
     - target: {fileID: 1454668683279985548, guid: c77883d0533363e45821e8cfdf5e4d42, type: 3}
       propertyPath: m_TagString
