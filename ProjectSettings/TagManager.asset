@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - portal1
-  - portal2
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,7 +15,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Controller
   - 
   - 
   - 
