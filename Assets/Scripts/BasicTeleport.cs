@@ -6,6 +6,7 @@ public class BasicTeleport : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Hit taxi");
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player") {
             Debug.Log("Entering Portal #1");
             other.gameObject.transform.position = target.position;
