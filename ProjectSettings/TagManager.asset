@@ -6,7 +6,6 @@ TagManager:
   tags:
   - portal1
   - portal2
-  - Clothing Store
   layers:
   - Default
   - TransparentFX
@@ -14,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Camera
   - 
   - 
   - 
