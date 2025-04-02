@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1151835306121068879}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12425545, y: -0, z: -0, w: 0.9922503}
-  m_LocalPosition: {x: 0, y: 3.2, z: -3.9000015}
+  m_LocalPosition: {x: 0, y: 3.1999998, z: -3.9000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -720,8 +720,7 @@ MonoBehaviour:
   runSpeed: 5
   jumpHeight: 2
   jumpDuration: 1.625
-  cameraObject: {fileID: 9216406020322433153}
-  cameraOffset: {x: 0, y: 5, z: -7}
+  turnDuration: 0.3
 --- !u!143 &8054905623453695401
 CharacterController:
   m_ObjectHideFlags: 0
@@ -887,10 +886,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: woman
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 555e3119b747d4ae39725f1b1501d937, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8749483093241476601, guid: 555e3119b747d4ae39725f1b1501d937, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d8bc562c252db4716b4f6d8995c17e12, type: 2}
+      objectReference: {fileID: 2100000, guid: 093ee6addc16645e5a1d2be63bc8927a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -989,8 +992,7 @@ MonoBehaviour:
   runSpeed: 4
   jumpHeight: 2
   jumpDuration: 1.625
-  cameraObject: {fileID: 9216406020322433153}
-  cameraOffset: {x: 0, y: 5, z: -7}
+  turnDuration: 0.3
 --- !u!143 &6712842668133179337
 CharacterController:
   m_ObjectHideFlags: 0
