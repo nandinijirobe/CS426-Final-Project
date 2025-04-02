@@ -1,66 +1,128 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
 public class ManController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 100f;
+    public float walkSpeed = 2f;
+    public float runSpeed = 5f;
+    public float jumpHeight = 2f;
+    public float jumpDuration = 1.625f;
+    public float turnDuration = 0.3f;
 
-    public GameObject cameraObject; // Assign your Main Camera here in the Inspector
-    public Vector3 cameraOffset = new Vector3(0, 5, -7); // Adjust this as needed
-
-    private Rigidbody rb;
     private Animator animator;
+    private bool isJumping = false;
+    private float jumpStartTime;
+    private Vector3 jumpStartPos;
+    private Vector3 jumpDirection;
+    private float jumpSpeed;
+
+    private bool isTurning = false;
+    private float turnTimer = 0f;
+    private Quaternion turnStartRotation;
+    private Quaternion turnTargetRotation;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+    }
 
-        if (cameraObject == null)
+    void Update()
+    {
+        if (isTurning)
         {
-            Debug.LogWarning("Camera Object not assigned!");
+            HandleTurn();
+        }
+        else if (isJumping)
+        {
+            HandleJumpMotion();
+        }
+        else
+        {
+            HandleMovement();
         }
     }
 
-    void FixedUpdate()
+    void HandleMovement()
     {
-        MovePlayer();
-        UpdateCamera();
-    }
+        float moveZ = Input.GetAxis("Vertical");
+        bool isMoving = Mathf.Abs(moveZ) > 0.01f;
+        bool isRunning = isMoving && Input.GetKey(KeyCode.LeftShift);
+        bool jumpPressed = Input.GetKeyDown(KeyCode.Space);
 
-    void MovePlayer()
-    {
-        float moveZ = Input.GetAxis("Vertical");   // W/S
-        float moveX = Input.GetAxis("Horizontal"); // A/D
+        float currentSpeed = isRunning ? runSpeed : walkSpeed;
 
-        // Movement in local forward direction
-        Vector3 move = transform.forward * moveZ + transform.right * moveX;
-        Vector3 newVelocity = move.normalized * moveSpeed;
-        rb.linearVelocity = new Vector3(newVelocity.x, rb.linearVelocity.y, newVelocity.z); // keep y velocity for gravity
-
-        // Rotation with Q (left) and E (right)
-        if (Input.GetKey(KeyCode.Q))
+        // Smooth 180 turn on 'S' key press
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            transform.Rotate(Vector3.up, -rotationSpeed * Time.fixedDeltaTime);
-        }
-        if (Input.GetKey(KeyCode.E))
-        {
-            transform.Rotate(Vector3.up, rotationSpeed * Time.fixedDeltaTime);
+            isTurning = true;
+            turnTimer = 0f;
+            turnStartRotation = transform.rotation;
+            turnTargetRotation = Quaternion.Euler(0, transform.eulerAngles.y + 180f, 0);
+            return; // Don't process movement this frame
         }
 
-        // Animation
-        bool isMoving = moveZ != 0 || moveX != 0;
-        animator.SetBool("isRunning", isMoving);
+        // Rotate with A and D
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(Vector3.up, -100f * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(Vector3.up, 100f * Time.deltaTime);
+
+        Vector3 move = transform.forward * moveZ;
+        if (isMoving)
+        {
+            transform.position += move.normalized * currentSpeed * Time.deltaTime;
+        }
+
+        // Animator parameters
+        animator.SetBool("isWalking", isMoving && !isRunning);
+        animator.SetBool("isRunning", isRunning);
+        animator.SetBool("isJumping", false);
+
+        if (jumpPressed)
+        {
+            StartJump(move.normalized, currentSpeed);
+        }
     }
 
-    void UpdateCamera()
+    void HandleTurn()
     {
-        if (cameraObject != null)
+        turnTimer += Time.deltaTime;
+        float t = Mathf.Clamp01(turnTimer / turnDuration);
+        transform.rotation = Quaternion.Slerp(turnStartRotation, turnTargetRotation, t);
+
+        if (t >= 1f)
         {
-            cameraObject.transform.position = transform.position + cameraOffset;
-            cameraObject.transform.LookAt(transform.position + Vector3.up * 1.5f); // adjust for head height
+            isTurning = false;
+        }
+    }
+
+    void StartJump(Vector3 direction, float speed)
+    {
+        isJumping = true;
+        jumpStartTime = Time.time;
+        jumpStartPos = transform.position;
+        jumpDirection = direction;
+        jumpSpeed = speed;
+
+        animator.SetBool("isJumping", true);
+    }
+
+    void HandleJumpMotion()
+    {
+        float elapsed = Time.time - jumpStartTime;
+        float progress = Mathf.Clamp01(elapsed / jumpDuration);
+
+        float height = 4 * jumpHeight * progress * (1 - progress);
+        Vector3 verticalOffset = new Vector3(0, height, 0);
+        Vector3 forwardMove = jumpDirection * jumpSpeed * Time.deltaTime;
+
+        transform.position += forwardMove;
+        transform.position = new Vector3(transform.position.x, jumpStartPos.y + verticalOffset.y, transform.position.z);
+
+        if (progress >= 1f)
+        {
+            isJumping = false;
+            animator.SetBool("isJumping", false);
         }
     }
 }

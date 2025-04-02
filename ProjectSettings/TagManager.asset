@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - portal1
+  - portal2
+  - Undefined
+  - Clothing Store
   layers:
   - Default
   - TransparentFX
@@ -11,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Camera
   - 
   - 
   - 
