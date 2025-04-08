@@ -988,8 +988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70adb83dbe24cc88d1f4f2d7a506eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1.5
-  runSpeed: 4
+  walkSpeed: 5
+  runSpeed: 10
   jumpHeight: 2
   jumpDuration: 1.625
   turnDuration: 0.3

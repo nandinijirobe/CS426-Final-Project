@@ -8,6 +8,7 @@ TagManager:
   - portal2
   - Undefined
   - Clothing Store
+  - Road
   layers:
   - Default
   - TransparentFX
