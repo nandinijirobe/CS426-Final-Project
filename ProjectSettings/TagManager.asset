@@ -6,6 +6,8 @@ TagManager:
   tags:
   - portal1
   - portal2
+  - Undefined
+  - Clothing Store
   layers:
   - Default
   - TransparentFX
