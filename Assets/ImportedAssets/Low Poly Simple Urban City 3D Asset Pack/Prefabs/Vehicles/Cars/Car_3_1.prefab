@@ -120,7 +120,7 @@ Rigidbody:
   m_GameObject: {fileID: 4304101046722780987}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 2
   m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacfa65d37c555d4c959257d6d93c00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 10
-  torque: 20
+  power: 5
+  torque: 5
   maxSpeed: 5
   movementVector: {x: 0, y: 0}
 --- !u!114 &4961339959888895463
@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: []
-  arriveDistance: 2
-  lastPointArriveDistance: 2
-  turningAngleOffset: 10
+  arriveDistance: 3
+  lastPointArriveDistance: 3
+  turningAngleOffset: 5
   currentTargetPosition: {x: 0, y: 0, z: 0}
   director: {fileID: 0}
   <OnDrive>k__BackingField:

@@ -128,10 +128,10 @@ MonoBehaviour:
   - {fileID: 3369543908946791699}
   isCorner: 0
   approximateThresholdCorner: 0.3
-  incomming: {fileID: 8276058239877522743}
+  incomming: {fileID: 3369543908946791699}
   outgoing: {fileID: 8276058239877522743}
-  leftLaneMarker90: {fileID: 3369543908946791699}
-  rightLaneMarker90: {fileID: 8276058239877522743}
+  leftLaneMarker90: {fileID: 8276058239877522743}
+  rightLaneMarker90: {fileID: 3369543908946791699}
 --- !u!1 &5732648107045481172
 GameObject:
   m_ObjectHideFlags: 0
