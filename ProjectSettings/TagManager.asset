@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - Clothing Store
   - Road
+  - Boulevard
   layers:
   - Default
   - TransparentFX
