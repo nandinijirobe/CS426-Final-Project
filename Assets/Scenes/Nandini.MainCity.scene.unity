@@ -132556,7 +132556,7 @@ MonoBehaviour:
   goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 1.15
   maxSpeed: 2.55
-  neighbourDistance: 10
+  neighbourDistance: 1.68
   rotationSpeed: 1.36
 --- !u!4 &1442620590
 Transform:
@@ -197328,6 +197328,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cf2e512de6a634546860237136c6ba77, type: 2}
+    - target: {fileID: 4725253512619835842, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725253512619835842, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5054636785943003551, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
       propertyPath: m_IsTrigger
       value: 1
