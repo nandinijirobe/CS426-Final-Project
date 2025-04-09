@@ -6,6 +6,7 @@ public class PaparazziAI : MonoBehaviour
     public Transform[] patrolPoints;     // Set in Inspector
     public Transform player;             // Player reference
     public BayesianDecisionManager bayesManager;
+    public ParticleController PaparazziParticleController;
 
     public float chaseThreshold = 0.6f;
     public float viewDistance = 10f;
@@ -33,6 +34,9 @@ public class PaparazziAI : MonoBehaviour
         {
             case State.Patrol:
                 PatrolLogic();
+                
+                PaparazziParticleController.stopParticleSystem();
+                Debug.Log("Stopping particle System");
 
                 // Probabilistic chase trigger
                 if (shouldChase && distanceToPlayer < viewDistance)
@@ -44,6 +48,9 @@ public class PaparazziAI : MonoBehaviour
 
             case State.Chase:
                 ChasePlayer();
+
+                PaparazziParticleController.playParticleSystem();
+                Debug.Log("Playing particle System");
 
                 // Stop chasing if player escapes
                 if (distanceToPlayer > viewDistance)
