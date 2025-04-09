@@ -150,9 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacfa65d37c555d4c959257d6d93c00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 5
-  torque: 5
-  maxSpeed: 5
+  power: 10
+  torque: 10
+  maxSpeed: 8
   movementVector: {x: 0, y: 0}
 --- !u!114 &4961339959888895463
 MonoBehaviour:

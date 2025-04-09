@@ -132,65 +132,10 @@ MonoBehaviour:
   - {fileID: 2772552731973622881}
   - {fileID: 8414828622665257936}
   - {fileID: 2999729409640016495}
-  - {fileID: 8187789101702063449}
   isCorner: 0
   approximateThresholdCorner: 0.3
   incomming: {fileID: 0}
   outgoing: {fileID: 0}
---- !u!1 &1805738551992680053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6803132290552664906}
-  - component: {fileID: 8187789101702063449}
-  m_Layer: 0
-  m_Name: CarMarker (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6803132290552664906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805738551992680053}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19999698, y: 0.0999999, z: -0.05999753}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1403167014947046444}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8187789101702063449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805738551992680053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 6698772112971395767}
-  - {fileID: 2348204093935716973}
-  - {fileID: 3480785851353887686}
-  - {fileID: 8861802980056855843}
-  - {fileID: 2772552731973622881}
-  - {fileID: 8414828622665257936}
-  - {fileID: 2999729409640016495}
-  - {fileID: 3057219370719400161}
-  openForConnections: 0
 --- !u!1 &2809641876475416884
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +183,7 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2348204093935716973}
   - {fileID: 3057219370719400161}
-  - {fileID: 8187789101702063449}
+  - {fileID: 2999729409640016495}
   openForConnections: 1
 --- !u!1 &3424086838892454582
 GameObject:
@@ -277,7 +222,6 @@ Transform:
   - {fileID: 6838118184040284211}
   - {fileID: 690218469486480829}
   - {fileID: 7524784812803448339}
-  - {fileID: 6803132290552664906}
   m_Father: {fileID: 400000}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &3971433010848189135
@@ -324,10 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 6698772112971395767}
-  - {fileID: 3480785851353887686}
-  - {fileID: 8187789101702063449}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &4468409382933133345
 GameObject:
@@ -422,7 +363,7 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2348204093935716973}
   - {fileID: 2999729409640016495}
-  - {fileID: 8187789101702063449}
+  - {fileID: 8414828622665257936}
   openForConnections: 1
 --- !u!1 &6119821891718906150
 GameObject:
@@ -471,7 +412,7 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 3057219370719400161}
   - {fileID: 8414828622665257936}
-  - {fileID: 8187789101702063449}
+  - {fileID: 2348204093935716973}
   openForConnections: 1
 --- !u!1 &6288589792738381850
 GameObject:
@@ -517,9 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 8861802980056855843}
-  - {fileID: 8187789101702063449}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &8597399061701193523
 GameObject:
@@ -565,10 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 2772552731973622881}
-  - {fileID: 6698772112971395767}
-  - {fileID: 8187789101702063449}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &9164351032448370444
 GameObject:
@@ -617,5 +553,5 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2999729409640016495}
   - {fileID: 8414828622665257936}
-  - {fileID: 8187789101702063449}
+  - {fileID: 3057219370719400161}
   openForConnections: 1

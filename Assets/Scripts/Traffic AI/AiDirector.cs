@@ -34,7 +34,7 @@ public class AiDirector : MonoBehaviour
             Debug.DrawLine(carPath[i-1]+Vector3.up*2, carPath[i]+Vector3.up*2, Color.red);
         }
 
-        if (numCars < 60) {
+        if (numCars < 1) {
             SpawnCars();
         }
     }
