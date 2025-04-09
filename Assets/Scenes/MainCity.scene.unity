@@ -14599,6 +14599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -14642,7 +14646,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406967606}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &109254208 stripped
 Transform:
@@ -37150,6 +37157,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 267873545}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &268013149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 1236809914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268604480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39473,6 +39485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -39516,7 +39532,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2014885714}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &282901593 stripped
 Transform:
@@ -45343,6 +45362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -45382,7 +45405,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636272014}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &325815013 stripped
 Transform:
@@ -68945,6 +68971,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504225318}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &504422505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 1910828223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &505658515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87847,6 +87878,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c07ada992c3586e4dbf557bc4b8718cf, type: 3}
   m_PrefabInstance: {fileID: 635628131}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &636272011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 325815012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &636272014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636272011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126186, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.08278918, y: 5.803238, z: 0.034509663}
 --- !u!1 &636285691
 GameObject:
   m_ObjectHideFlags: 0
@@ -148947,6 +149004,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107735369}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1108043745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 1472602395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1108799699
 GameObject:
   m_ObjectHideFlags: 0
@@ -167632,6 +167694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -167671,13 +167737,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1236809918}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &1236809915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
   m_PrefabInstance: {fileID: 1236809914}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1236809918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268013149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126186, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.08278918, y: 5.803238, z: 0.034509663}
 --- !u!1 &1237936261
 GameObject:
   m_ObjectHideFlags: 0
@@ -178702,7 +178792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf82aefcf91fc43308515a6f293b9264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dressRenderer: {fileID: 0}
+  dressRenderer: {fileID: 7550177389825783335}
   redMat: {fileID: 2100000, guid: 4117227f7cbc3485386bc07f4982ca4f, type: 2}
   lightBlueMat: {fileID: 2100000, guid: cf2e512de6a634546860237136c6ba77, type: 2}
   purpleMat: {fileID: 2100000, guid: cdd5866f312594bcba1f658787ddf24e, type: 2}
@@ -189759,6 +189849,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406729073}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1406967603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 109254207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1406967606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406967603}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126185, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.082789175, y: 5.8032384, z: 0.034513477}
 --- !u!1001 &1407272764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197743,6 +197859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -197782,13 +197902,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472602399}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &1472602396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
   m_PrefabInstance: {fileID: 1472602395}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1472602399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108043745}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126186, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.08278918, y: 5.803237, z: 0.034509663}
 --- !u!1001 &1472642020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203009,12 +203153,12 @@ GameObject:
   - component: {fileID: 1516212367}
   - component: {fileID: 1516212366}
   m_Layer: 0
-  m_Name: Clothing store
+  m_Name: Clothing store - archived (ignore)
   m_TagString: Clothing Store
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1516212366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -254324,6 +254468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Clothing (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_TagString
+      value: Clothing Store
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_RootOrder
       value: 635
@@ -254367,13 +254515,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1910828227}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
 --- !u!4 &1910828224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
   m_PrefabInstance: {fileID: 1910828223}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1910828227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504422505}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126185, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.082789175, y: 5.8032374, z: 0.03452492}
 --- !u!1001 &1911559696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266941,6 +267113,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 2013995477}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2014885711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+  m_PrefabInstance: {fileID: 282901592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2014885714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014885711}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.126185, y: 11.605602, z: 12.155825}
+  m_Center: {x: 0.0827949, y: 5.8032374, z: 0.03452492}
 --- !u!1 &2015094723
 GameObject:
   m_ObjectHideFlags: 0
@@ -283807,6 +284005,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7550177389825783345}
   m_SourcePrefab: {fileID: 100100000, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
+--- !u!137 &7550177389825783335 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4572746751971398608, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
+  m_PrefabInstance: {fileID: 7550177389825783334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7550177389825783336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5393247077225405304, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
