@@ -5,7 +5,8 @@ public class CarMover : MonoBehaviour
     // Adjust this to set the forward speed (units per second)
     public float speed = 10f;
     // Adjust this to control how quickly the car turns (degrees per second)
-    public float rotationSpeed = 30f;
+    // public float rotationSpeed = 30f;
+    public float rotationSpeed = 50f;
 
     void Update()
     {
