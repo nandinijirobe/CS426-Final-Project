@@ -10,6 +10,7 @@ TagManager:
   - Clothing Store
   - Road
   - Car
+  - Boulevard
   layers:
   - Default
   - TransparentFX
