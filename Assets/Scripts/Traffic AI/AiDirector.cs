@@ -12,6 +12,8 @@ public class AiDirector : MonoBehaviour
     public GameObject gridParent;
     public GameObject carPrefab;
 
+    public LayerMask carMask;
+
     public List<GameObject> vehicles;
 
     private Dictionary<Point, Transform> pointToTransformMap = new Dictionary<Point, Transform>();
@@ -33,58 +35,9 @@ public class AiDirector : MonoBehaviour
     void Update() {
         // DrawGraph(carGraph);
 
-        for (int i=1; i<carPath.Count; i++) {
-            Debug.DrawLine(carPath[i-1]+Vector3.up*2, carPath[i]+Vector3.up*2, Color.red);
-        }
-
-        if (numCars < 20) {
+        if (numCars < 100) {
             SpawnCars();
         }
-    }
-
-
-    void BuildGrid()
-    {
-        if (gridParent == null)
-        {
-            Debug.LogError("Grid parent not assigned!");
-            return;
-        }
-
-        int height = gridParent.transform.childCount;
-        int maxWidth = 0;
-
-        // First pass to get max width
-        foreach (Transform row in gridParent.transform)
-        {
-            if (row.childCount > maxWidth)
-                maxWidth = row.childCount;
-        }
-
-        grid = new Grid(maxWidth, height);
-
-        int rowIndex = 0;
-        foreach (Transform row in gridParent.transform)
-        {
-            int colIndex = 0;
-            foreach (Transform sphere in row)
-            {
-                Point point = new Point(colIndex, rowIndex);
-
-                if (sphere.gameObject.name == "Grass") {
-                    grid[point.X, point.Y] = CellType.Structure;
-                    // Debug.Log("Setting object type to Structure...");
-                } else {
-                    grid[point.X, point.Y] = CellType.Road;
-                }
-                
-                pointToTransformMap[point] = sphere;
-                colIndex++;
-            }
-            rowIndex++;
-        }
-
-        Debug.Log($"Grid initialized: {maxWidth} x {height} with {pointToTransformMap.Count} road points.");
     }
 
     void BuildGrid2() {
@@ -127,6 +80,7 @@ public class AiDirector : MonoBehaviour
 
         Debug.Log($"Grid initialized: {maxWidth} x {height} with {pointToTransformMap.Count} road points.");
     }
+    
     public void SpawnCars()
     {
         if (grid == null || carPrefab == null) return;
@@ -168,11 +122,15 @@ public class AiDirector : MonoBehaviour
                 return;
             }
 
+            if (!CheckForSpawnCollisions(startMarkerPosition.Position)) {
+                return;
+            };
+
             Debug.Log("Start position: " + startMarkerPosition.Position);
             Debug.Log("End position: " + endMarkerPosition.Position);
 
             carPath = GetCarPath(path, startMarkerPosition.Position, endMarkerPosition.Position);
-            Debug.Log("Car path: " + carPath[0]);
+            // Debug.Log("Car path: " + carPath[0]);
            
 
             if (carPath.Count > 1) {
@@ -195,6 +153,19 @@ public class AiDirector : MonoBehaviour
         }
     }
 
+
+    private bool CheckForSpawnCollisions(Vector3 spawnPoint) {
+        Vector3 overlapTestBox = new Vector3(10f, 10f, 10f);
+        Collider[] collidersTouchingBox = new Collider[1];
+        int numCollisions = Physics.OverlapBoxNonAlloc(spawnPoint, overlapTestBox, collidersTouchingBox, Quaternion.Euler(0,0,0), carMask);
+
+        if (numCollisions == 0) {
+            Debug.Log("Found a collision at spawn point");   
+            return true;
+        } else {
+            return false;
+        }
+    }
     internal List<Transform> GetPathBetween(Point startPosition, Point endPosition)
     {
         List<Point> resultPath = GridSearch.AStarSearch(grid, startPosition, endPosition);

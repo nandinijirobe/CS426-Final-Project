@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 4587927180739541930}
   - component: {fileID: 3224904967430259867}
+  - component: {fileID: 4354610629615715526}
+  - component: {fileID: 8622686651088656661}
   m_Layer: 0
   m_Name: Road Intersection_01
   m_TagString: Untagged
@@ -125,17 +127,151 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carMarkers:
   - {fileID: 3057219370719400161}
+  - {fileID: 2371165182558778241}
   - {fileID: 6698772112971395767}
   - {fileID: 2348204093935716973}
+  - {fileID: 5455048465893188916}
   - {fileID: 3480785851353887686}
   - {fileID: 8861802980056855843}
   - {fileID: 2772552731973622881}
   - {fileID: 8414828622665257936}
+  - {fileID: 1495117366676449034}
   - {fileID: 2999729409640016495}
+  - {fileID: 6540792926106310688}
   isCorner: 0
   approximateThresholdCorner: 0.3
   incomming: {fileID: 0}
   outgoing: {fileID: 0}
+--- !u!114 &4354610629615715526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057c7a7b39ace4d42b88be76a25353ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCar: {fileID: 0}
+--- !u!65 &8622686651088656661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 23.164284, y: 6.1726174, z: 23.056152}
+  m_Center: {x: -0.08787918, y: 3.0863082, z: -0.0848999}
+--- !u!1 &1752549535499194670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735353058672763514}
+  - component: {fileID: 1495117366676449034}
+  m_Layer: 0
+  m_Name: CarMarker (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1735353058672763514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752549535499194670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.24, y: 0.1, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403167014947046444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495117366676449034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752549535499194670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 8414828622665257936}
+  openForConnections: 1
+--- !u!1 &2631824382111989055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6903099263843386300}
+  - component: {fileID: 6540792926106310688}
+  m_Layer: 0
+  m_Name: CarMarker (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6903099263843386300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2631824382111989055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.3, y: 0.1, z: -4.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403167014947046444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6540792926106310688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2631824382111989055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 1495117366676449034}
+  - {fileID: 2999729409640016495}
+  - {fileID: 3057219370719400161}
+  openForConnections: 1
 --- !u!1 &2809641876475416884
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,9 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 2348204093935716973}
-  - {fileID: 3057219370719400161}
-  - {fileID: 2999729409640016495}
+  - {fileID: 2371165182558778241}
   openForConnections: 1
 --- !u!1 &3424086838892454582
 GameObject:
@@ -215,15 +349,66 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9158179894214494332}
+  - {fileID: 1003998118391742606}
   - {fileID: 4717502050704598412}
   - {fileID: 6219810997858210577}
+  - {fileID: 1505973801057369504}
   - {fileID: 9121764913070008259}
   - {fileID: 1894579718333590641}
   - {fileID: 6838118184040284211}
   - {fileID: 690218469486480829}
+  - {fileID: 1735353058672763514}
   - {fileID: 7524784812803448339}
+  - {fileID: 6903099263843386300}
   m_Father: {fileID: 400000}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &3680182129180471989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505973801057369504}
+  - component: {fileID: 5455048465893188916}
+  m_Layer: 0
+  m_Name: CarMarker (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505973801057369504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3680182129180471989}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.23, y: 0.1, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403167014947046444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5455048465893188916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3680182129180471989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 2348204093935716973}
+  openForConnections: 1
 --- !u!1 &3971433010848189135
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +455,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   openForConnections: 1
+--- !u!1 &4451694985412671296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003998118391742606}
+  - component: {fileID: 2371165182558778241}
+  m_Layer: 0
+  m_Name: CarMarker (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003998118391742606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451694985412671296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.29, y: 0.1, z: 3.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403167014947046444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2371165182558778241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451694985412671296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 5455048465893188916}
+  - {fileID: 3057219370719400161}
+  - {fileID: 2999729409640016495}
+  openForConnections: 0
 --- !u!1 &4468409382933133345
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 2348204093935716973}
+  - {fileID: 5455048465893188916}
   - {fileID: 2999729409640016495}
   - {fileID: 8414828622665257936}
   openForConnections: 1
@@ -411,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 3057219370719400161}
-  - {fileID: 8414828622665257936}
+  - {fileID: 1495117366676449034}
   - {fileID: 2348204093935716973}
   openForConnections: 1
 --- !u!1 &6288589792738381850
@@ -551,7 +785,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 2999729409640016495}
-  - {fileID: 8414828622665257936}
-  - {fileID: 3057219370719400161}
+  - {fileID: 6540792926106310688}
   openForConnections: 1

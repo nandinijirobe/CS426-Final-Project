@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 22892555053649867}
   - component: {fileID: 4034819808694780014}
   - component: {fileID: 1160372297906173092}
-  - component: {fileID: -83683960523285062}
+  - component: {fileID: 5612078441586669145}
   - component: {fileID: 4873372171737243849}
   - component: {fileID: -6041388167591135719}
   - component: {fileID: -9032745471750313554}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Car_1_3
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6787647674278099810}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4034819808694780014
@@ -90,7 +91,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-83683960523285062
+--- !u!65 &5612078441586669145
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,8 +110,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.2197216, y: 1.5243465, z: 5.64284}
-  m_Center: {x: -1.7045532e-16, y: 0.76217324, z: 0.04324472}
+  m_Size: {x: 2.2377975, y: 1.7624345, z: 5.525856}
+  m_Center: {x: 0, y: 0.88121724, z: 0}
 --- !u!54 &4873372171737243849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -171,7 +172,9 @@ MonoBehaviour:
   lastPointArriveDistance: 3
   turningAngleOffset: 5
   currentTargetPosition: {x: 0, y: 0, z: 0}
+  raycastStartingPoint: {fileID: 2086243337172596174}
   director: {fileID: 0}
+  collisionStop: 0
   <OnDrive>k__BackingField:
     m_PersistentCalls:
       m_Calls:
@@ -187,3 +190,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &2086243337172596174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6787647674278099810}
+  m_Layer: 11
+  m_Name: RaycastStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6787647674278099810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086243337172596174}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.46, z: 2.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 22892555053649867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

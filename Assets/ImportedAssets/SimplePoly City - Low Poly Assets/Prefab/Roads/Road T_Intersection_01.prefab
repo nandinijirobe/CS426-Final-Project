@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
+  - component: {fileID: 9060308297440649563}
   - component: {fileID: 2374606082905128064}
   - component: {fileID: 3490637701909052974}
+  - component: {fileID: 6564925815843396467}
   m_Layer: 0
   m_Name: Road T_Intersection_01
   m_TagString: Untagged
@@ -89,6 +91,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9060308297440649563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 23.875702, y: 5.838531, z: 22.120193}
+  m_Center: {x: -0.06626892, y: 2.146876, z: 1.0600967}
 --- !u!64 &2374606082905128064
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -146,6 +169,19 @@ MonoBehaviour:
   - {fileID: 8124268970200915488}
   - {fileID: 6951242310628108375}
   - {fileID: 214431670995257710}
+--- !u!114 &6564925815843396467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057c7a7b39ace4d42b88be76a25353ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCar: {fileID: 0}
 --- !u!1 &838068855455695398
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +276,6 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 214431670995257710}
   - {fileID: 924429798317141646}
-  - {fileID: 8509058180302981511}
   openForConnections: 0
 --- !u!1 &2411861320270634305
 GameObject:
@@ -288,8 +323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 8124268970200915488}
-  - {fileID: 8664073505734188084}
-  - {fileID: 547638209981445642}
   openForConnections: 0
 --- !u!1 &2536809441422829078
 GameObject:
@@ -337,7 +370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 924429798317141646}
-  - {fileID: 7939596462730905030}
   - {fileID: 8509058180302981511}
   openForConnections: 0
 --- !u!1 &3280824950254161114
@@ -384,8 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4a29bb1c5bacd4bad3e17a139d8d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 547638209981445642}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &4162754975288319468
 GameObject:
@@ -480,7 +511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 6951242310628108375}
-  - {fileID: 8664073505734188084}
   - {fileID: 547638209981445642}
   openForConnections: 0
 --- !u!1 &6386918098907130467

@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2374606082905128064, guid: cbc86bb57f673ba45a8426789eb0fac0, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -245571,6 +245575,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridParent: {fileID: 2046993116}
   carPrefab: {fileID: 4304101046722780987, guid: e19078d0cac14bf47a4b41dd8b21442d, type: 3}
+  carMask:
+    serializedVersion: 2
+    m_Bits: 2048
   vehicles:
   - {fileID: 1220109061593607075, guid: e1d32747d09c9db4ebaeb409cbf1a9d1, type: 3}
   - {fileID: 3592177867728365202, guid: fc9e91eb22879f84eac056473c581b5b, type: 3}
@@ -245586,6 +245593,7 @@ MonoBehaviour:
   - {fileID: 2023009331022897683, guid: 3869c69e8dac23a4682c4944ba124748, type: 3}
   - {fileID: 4760081433214567601, guid: d754c2ea8f00ac642b74fa7820389a10, type: 3}
   - {fileID: 4123202338888435575, guid: ac4290ca0d7a0974ca41070b9891b77f, type: 3}
+  - {fileID: 7391970802044667225, guid: c4c0319893dbe6944ac7b267fc16525a, type: 3}
 --- !u!1001 &1929599134
 PrefabInstance:
   m_ObjectHideFlags: 0
