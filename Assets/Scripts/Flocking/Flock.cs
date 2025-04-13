@@ -49,6 +49,18 @@ public class Flock : MonoBehaviour
                 ApplyRules(); // this will turn fish towards the direction it needs to be moving in
             }
         }
+
+
+        if (Vector3.Distance(transform.position, FlockManager.FM.goalPos) < 1f)
+        {
+            GetComponent<Animator>().SetBool("isTalking", true); // start talking animation
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isTalking", false); // stop talking animation
+
+        }
+
         this.transform.Translate(0, 0, speed * Time.deltaTime);
         Vector3 pos = transform.position;
         pos.y = 4.25f;

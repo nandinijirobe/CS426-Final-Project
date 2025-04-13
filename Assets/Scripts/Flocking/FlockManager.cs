@@ -11,6 +11,9 @@ public class FlockManager : MonoBehaviour
     public Vector3 runLimits = new Vector3(5, 0, 5); // Boundry size the NPCs can spawn or move in from the FlockManager 
     public GameObject goalGameObject;
     public Vector3 goalPos = Vector3.zero; // The target location all NPCs will move towards
+    public bool disguiseOn = false;
+    public bool inBounds = true;
+    private BoxCollider npcBounds;
 
     [Header("NPC settings")]
     [Range(0.0f, 5.0f)]
@@ -40,12 +43,22 @@ public class FlockManager : MonoBehaviour
         //goalPos = this.transform.position; // Set to the current location of the FM game object
         goalPos = goalGameObject.transform.position;
 
+        npcBounds = GetComponent<BoxCollider>(); // get the position of the box collider of this object
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        goalPos = goalGameObject.transform.position;
+        if (npcBounds.bounds.Contains(goalGameObject.transform.position)) {
+            goalPos = goalGameObject.transform.position; // chase the player
+            //Debug.Log("girl is inside bounds");
+        } else {
+            goalPos = GetComponent<BoxCollider>().bounds.center; ; // go run at center position
+            //Debug.Log("girl is out of bounds");
+        }
+
+        //goalPos = goalGameObject.transform.position;
         // NOTE: Removed to make goalPos fixed. 
         //if (Random.Range(0, 100) < 10)
         //{ // This randomly changes the postion of the target position somewhere within the bounds of FM
