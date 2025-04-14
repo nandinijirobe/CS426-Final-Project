@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b4a124c142054894fb2134bc7dccc382
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 238433
+  packageName: Weather TV Studio 2. (URP)
+  packageVersion: 2
+  assetPath: Assets/Weather TV Studio 2/Prefabs/CameraTV.prefab
+  uploadId: 727920
