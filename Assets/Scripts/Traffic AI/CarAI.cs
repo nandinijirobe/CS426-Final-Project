@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem.Controls;
 
 public class CarAI : MonoBehaviour
 {
@@ -14,27 +15,39 @@ public class CarAI : MonoBehaviour
     private float turningAngleOffset = 5;
     [SerializeField]
     private Vector3 currentTargetPosition;
-     
+    [SerializeField]
+    private GameObject raycastStartingPoint = null;  
+    // [SerializeField]
+    private float collisionRaycastLength = 5.0f;   
     public AiDirector director;
 
     private int index = 0;
 
+    private float stopTimer = 0f;
+
     private bool stop;
 
+    [SerializeField]
+    private bool collisionStop = false;
+
+    [SerializeField]
     public bool Stop
     {
-        get { return stop;}
+        get { return stop || collisionStop;}
         set { stop = value;}
     }
 
     [field: SerializeField]
     public UnityEvent<Vector2> OnDrive { get; set; }
 
+    public Vector3 TargetPosition { get {return currentTargetPosition;}}
+
     private void Start() 
     {
         // aiDirector = GetComponent<AiDirector>();
         if(path == null || path.Count == 0){
             Stop = true;
+            stopTimer = 0f;
         }
         else
         {
@@ -65,10 +78,39 @@ public class CarAI : MonoBehaviour
         Stop = false; 
     }
 
+    internal bool IsThisLastPathIndex() 
+    {
+        return index >= path.Count - 1;
+    }
+
     public void Update()
     {
         CheckIfArrived();
         Drive();
+        CheckForCollisions();
+    }
+
+    private void CheckForCollisions() 
+    {
+        if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward, collisionRaycastLength, 1 << gameObject.layer))
+        {
+            collisionStop = true;
+        } else {
+            collisionStop = false;
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (raycastStartingPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(raycastStartingPoint.transform.position, transform.forward * collisionRaycastLength);
+        }
+
+        for (int i=1; i<path.Count; i++) {
+            Debug.DrawLine(path[i-1]+Vector3.up*2, path[i]+Vector3.up*2, Color.red);
+        }
     }
 
     private void CheckIfArrived() 
@@ -111,9 +153,17 @@ public class CarAI : MonoBehaviour
         if(Stop)
         {
             OnDrive?.Invoke(Vector2.zero); // stop the car
+            stopTimer += Time.deltaTime;
+
+            if (stopTimer >= 20f) {
+                Destroy(gameObject);
+                director.updateNumCars();
+            }
         }
         else
         {
+            stopTimer = 0f;
+
             Vector3 relativepoint = transform.InverseTransformPoint(currentTargetPosition);
             float angle = Mathf.Atan2(relativepoint.x, relativepoint.z)*Mathf.Rad2Deg;
             var rotateCar = 0;
@@ -126,6 +176,7 @@ public class CarAI : MonoBehaviour
                 rotateCar = -5; // rotate left
             }
             OnDrive?.Invoke(new Vector2(rotateCar,1));
+            
         }
     }
 }

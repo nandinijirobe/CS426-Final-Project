@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - Clothing Store
   - Road
+  - Car
   - Boulevard
   layers:
   - Default
@@ -22,7 +23,7 @@ TagManager:
   - 
   - 
   - Controller
-  - 
+  - Car
   - 
   - 
   - 
