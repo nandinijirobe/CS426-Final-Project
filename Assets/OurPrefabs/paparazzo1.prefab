@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1379a0055f2189b4f82c55006ea27854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraFlash: {fileID: 8300000, guid: 1ee28fb4b9c4eba448fe5371126f5f65, type: 3}
+  cameraFlash: {fileID: 8300000, guid: d032cfa7ac66d924db90aa9add912988, type: 3}
 --- !u!82 &776644156375358415
 AudioSource:
   m_ObjectHideFlags: 0

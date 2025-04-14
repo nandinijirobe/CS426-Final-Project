@@ -2,69 +2,74 @@
 
 using UnityEngine;
 
+
 public class Flock : MonoBehaviour
 {
     float speed; // speed of NPC
     bool turning = false; // determines whether the NPC should turn around to stay within bounds
+    public FlockManager FM;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        speed = Random.Range(FlockManager.FM.minSpeed, FlockManager.FM.maxSpeed); // gives the NPC a random speed
+        speed = Random.Range(FM.minSpeed, FM.maxSpeed); // gives the NPC a random speed
     }
 
     // Update is called once per frame
     void Update()
     {
-        Bounds b = new Bounds(FlockManager.FM.transform.position, FlockManager.FM.runLimits * 2);
-
-        if (!b.Contains(transform.position))
-        { // checks if NPC is within the bounding box around FM
-            turning = true;
-        }
-        else
+        if (FM != null)
         {
-            turning = false;
-        }
+            Bounds b = new Bounds(FM.transform.position, FM.runLimits * 2);
 
-        if (turning) // This changes the NPC to the opposite direction and slowly rotates it 
-        {
-            //Vector3 direction = FlockManager.FM.transform.position - transform.position;
-            Vector3 direction = FlockManager.FM.goalPos - transform.position;
-            direction.y = 0; // prevents NPCs from moving up or down
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                                  Quaternion.LookRotation(direction),
-                                                  FlockManager.FM.rotationSpeed * Time.deltaTime);
-        }
-        else
-        {
-
-            if (Random.Range(0, 100) < 10) // randomly change the speed
+            if (!b.Contains(transform.position))
+            { // checks if NPC is within the bounding box around FM
+                turning = true;
+            }
+            else
             {
-                speed = Random.Range(FlockManager.FM.minSpeed, FlockManager.FM.maxSpeed);
+                turning = false;
             }
 
-            if (Random.Range(0, 100) < 10) // randomly apply the rules too
+            if (turning) // This changes the NPC to the opposite direction and slowly rotates it 
             {
-                ApplyRules(); // this will turn fish towards the direction it needs to be moving in
+                //Vector3 direction = FlockManager.FM.transform.position - transform.position;
+                Vector3 direction = FM.goalPos - transform.position;
+                direction.y = 0; // prevents NPCs from moving up or down
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                                      Quaternion.LookRotation(direction),
+                                                      FM.rotationSpeed * Time.deltaTime);
             }
+            else
+            {
+
+                if (Random.Range(0, 100) < 10) // randomly change the speed
+                {
+                    speed = Random.Range(FM.minSpeed, FM.maxSpeed);
+                }
+
+                if (Random.Range(0, 100) < 10) // randomly apply the rules too
+                {
+                    ApplyRules(); // this will turn fish towards the direction it needs to be moving in
+                }
+            }
+
+
+            if (Vector3.Distance(transform.position, FM.goalPos) < 1f)
+            {
+                GetComponent<Animator>().SetBool("isTalking", true); // start talking animation
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("isTalking", false); // stop talking animation
+
+            }
+
+            this.transform.Translate(0, 0, speed * Time.deltaTime);
+            Vector3 pos = transform.position;
+            pos.y = 4.25f;
+            transform.position = pos;
         }
-
-
-        if (Vector3.Distance(transform.position, FlockManager.FM.goalPos) < 1f)
-        {
-            GetComponent<Animator>().SetBool("isTalking", true); // start talking animation
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("isTalking", false); // stop talking animation
-
-        }
-
-        this.transform.Translate(0, 0, speed * Time.deltaTime);
-        Vector3 pos = transform.position;
-        pos.y = 4.25f;
-        transform.position = pos;
 
     }
 
@@ -80,7 +85,7 @@ public class Flock : MonoBehaviour
     void ApplyRules()
     {
         GameObject[] gos; // gos means game objects. This refers to all the NPCs in the Flock Manager
-        gos = FlockManager.FM.allNPCs;
+        gos = FM.allNPCs;
         Vector3 vcentre = Vector3.zero; // center of nearby group
         Vector3 vavoid = Vector3.zero; // avoidance vector
         float gSpeed = 0.0f; // group average speed
@@ -92,7 +97,7 @@ public class Flock : MonoBehaviour
             if (go != this.gameObject)
             { // Ignore self
                 nDistance = Vector3.Distance(go.transform.position, this.transform.position); // Get distance from this NPC to that other NPC
-                if (nDistance <= FlockManager.FM.neighbourDistance)
+                if (nDistance <= FM.neighbourDistance)
                 { // Check if it is within a neighbourly distance
                     vcentre += go.transform.position;
                     groupSize++;
@@ -110,21 +115,21 @@ public class Flock : MonoBehaviour
 
         if (groupSize > 0)
         {
-            vcentre = vcentre / groupSize + (FlockManager.FM.goalPos - this.transform.position); // get the centre of the group
+            vcentre = vcentre / groupSize + (FM.goalPos - this.transform.position); // get the centre of the group
 
             speed = gSpeed / groupSize; // get the speed of the group
             Vector3 direction = (vcentre + vavoid) - transform.position;
 
-            if (speed > FlockManager.FM.maxSpeed)
+            if (speed > FM.maxSpeed)
             {
-                speed = FlockManager.FM.maxSpeed;
+                speed = FM.maxSpeed;
             }
 
             if (direction != Vector3.zero)
             { // rotate and move towards new position
                 transform.rotation = Quaternion.Slerp(transform.rotation,
                                                       Quaternion.LookRotation(direction),
-                                                      FlockManager.FM.rotationSpeed * Time.deltaTime);
+                                                      FM.rotationSpeed * Time.deltaTime);
 
             }
         }
