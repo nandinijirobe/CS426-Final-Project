@@ -9,7 +9,10 @@ TagManager:
   - Undefined
   - Clothing Store
   - Road
+  - Car
   - Boulevard
+  - Audition
+  - AuditionCenter
   layers:
   - Default
   - TransparentFX
@@ -22,8 +25,8 @@ TagManager:
   - 
   - 
   - Controller
-  - 
-  - 
+  - Car
+  - Player
   - 
   - 
   - 

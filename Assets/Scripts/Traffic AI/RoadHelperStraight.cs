@@ -28,8 +28,8 @@ public class RoadHelperStraight : RoadHelper
     private Marker GetCorrectMarker(int angle, Vector3 directionVector)
     {
         var direction = GetDirection(directionVector);
-        Debug.Log("Direction: " + direction);
-        Debug.Log("Angle: " + angle);
+        // Debug.Log("Direction: " + direction);
+        // Debug.Log("Angle: " + angle);
 
         if (angle == 0)
         {
