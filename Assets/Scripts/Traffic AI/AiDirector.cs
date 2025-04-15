@@ -126,8 +126,8 @@ public class AiDirector : MonoBehaviour
                 return;
             };
 
-            Debug.Log("Start position: " + startMarkerPosition.Position);
-            Debug.Log("End position: " + endMarkerPosition.Position);
+            // Debug.Log("Start position: " + startMarkerPosition.Position);
+            // Debug.Log("End position: " + endMarkerPosition.Position);
 
             carPath = GetCarPath(path, startMarkerPosition.Position, endMarkerPosition.Position);
             // Debug.Log("Car path: " + carPath[0]);
@@ -138,7 +138,7 @@ public class AiDirector : MonoBehaviour
                 GameObject prefab = vehicles[rand.Next(0, vehicles.Count - 1)];
 
 
-                Debug.Log($"Spawned car at grid point {spawnPoint} -> world position {transform.position}");
+                // Debug.Log($"Spawned car at grid point {spawnPoint} -> world position {transform.position}");
 
                 // var car = Instantiate(carPrefab, startMarkerPosition.Position, Quaternion.identity);
                 var car = Instantiate(prefab, startMarkerPosition.Position, Quaternion.identity);
@@ -160,7 +160,7 @@ public class AiDirector : MonoBehaviour
         int numCollisions = Physics.OverlapBoxNonAlloc(spawnPoint, overlapTestBox, collidersTouchingBox, Quaternion.Euler(0,0,0), carMask);
 
         if (numCollisions == 0) {
-            Debug.Log("Found a collision at spawn point");   
+            // Debug.Log("Found a collision at spawn point");   
             return true;
         } else {
             return false;
@@ -194,7 +194,7 @@ public class AiDirector : MonoBehaviour
     {
         carGraph.ClearGraph();
         CreatACarGraph(path);
-        Debug.Log(carGraph);
+        // Debug.Log(carGraph);
         return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
     }
 

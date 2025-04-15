@@ -42,9 +42,13 @@ public class CarAI : MonoBehaviour
 
     public Vector3 TargetPosition { get {return currentTargetPosition;}}
 
+    public AudioSource honk;
+
+    private bool playerCollision = false;
+
     private void Start() 
     {
-        // aiDirector = GetComponent<AiDirector>();
+        // director = GetComponent<AiDirector>();
         if(path == null || path.Count == 0){
             Stop = true;
             stopTimer = 0f;
@@ -97,6 +101,50 @@ public class CarAI : MonoBehaviour
             collisionStop = true;
         } else {
             collisionStop = false;
+        }
+
+        if (Physics.Raycast(raycastStartingPoint.transform.position, transform.forward, collisionRaycastLength, 1 << LayerMask.NameToLayer("Player"))) {
+            if (playerCollision == false) {
+                honk.Play();
+            }
+            playerCollision = true;
+        }
+        else {
+            playerCollision = false;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Rigidbody prb = collision.rigidbody;
+            if (prb != null)
+            {
+                // direction from car to character
+                Vector3 pushDirection = (collision.transform.position - transform.position).normalized;
+
+                float dot = Vector3.Dot(transform.forward, pushDirection);
+
+                // dot ≈ 1 means directly in front, ≈ 0 is side, < 0 is behind
+                if (dot > 0.7f) { 
+                    Rigidbody rb = GetComponent<Rigidbody>();
+                    
+
+                    float forceMagnitude = rb.linearVelocity.magnitude * 2.0f;
+    
+                    // non ragdoll - comment one or the other out
+                    prb.AddForce(pushDirection * forceMagnitude, ForceMode.Impulse);
+
+                    // ragdoll stuff
+                    // var ragdoll = collision.gameObject.GetComponent<RagdollController>();
+                    // ragdoll.SetRagdollState(true);
+                    // foreach (Rigidbody rdrb in ragdoll.ragdollBodies)
+                    // {
+                    //     rdrb.AddForce(transform.forward * 10f, ForceMode.Impulse);
+                    // }
+                }
+            }
         }
     }
 
