@@ -12,12 +12,18 @@ public class Flock : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        speed = Random.Range(FM.minSpeed, FM.maxSpeed); // gives the NPC a random speed
+        
+        //speed = Random.Range(FM.minSpeed, FM.maxSpeed); // gives the NPC a random speed
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (FM != null && speed == 0)
+        {
+            speed = Random.Range(FM.minSpeed, FM.maxSpeed);
+        }
+
         if (FM != null)
         {
             Bounds b = new Bounds(FM.transform.position, FM.runLimits * 2);
