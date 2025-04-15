@@ -5065,7 +5065,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2584cd11b03a45547ad028b39fc8dbe9, type: 3}
   m_Resource: {fileID: 8300000, guid: 2584cd11b03a45547ad028b39fc8dbe9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.503
+  m_Volume: 0.304
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5163,6 +5163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 5225681073623315995}
   stageDoor: {fileID: 3623905307524844332}
+  gameGeneralManager: {fileID: 0}
 --- !u!1 &3481731328991826294
 GameObject:
   m_ObjectHideFlags: 0

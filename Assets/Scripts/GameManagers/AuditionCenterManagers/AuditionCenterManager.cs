@@ -10,8 +10,6 @@ public class AuditionCenterManager : MonoBehaviour
 
     public GameGeneralManager gameGeneralManager;
     bool hasAuditioned = false;
-
-    public TMP_Text auditionCount;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

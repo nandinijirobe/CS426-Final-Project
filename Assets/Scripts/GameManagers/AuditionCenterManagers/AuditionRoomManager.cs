@@ -14,6 +14,7 @@ public class AuditionRoomManager : MonoBehaviour
             if (!hasAuditioned) {
                 applause.Play();
                 manager.PlayerAuditioned();
+                hasAuditioned = true;
             }
         }
     }
