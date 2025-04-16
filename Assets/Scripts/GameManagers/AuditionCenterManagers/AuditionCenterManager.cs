@@ -6,6 +6,7 @@ public class AuditionCenterManager : MonoBehaviour
 
     // inset game manager here
     public AudioSource music;
+    public AudioSource bgMusic;
     public GameObject stageDoor;
 
     public GameGeneralManager gameGeneralManager;
@@ -16,6 +17,7 @@ public class AuditionCenterManager : MonoBehaviour
         {
             if (!hasAuditioned) {
                 music.Play();
+                bgMusic.Stop();
             }
         }
     }
@@ -24,6 +26,7 @@ public class AuditionCenterManager : MonoBehaviour
         if (other.CompareTag("Player") && hasAuditioned)
         {
             stageDoor.SetActive(true); // close the door so player can't reenter
+            bgMusic.Play();
         }
     }
     public void PlayerAuditioned() 
