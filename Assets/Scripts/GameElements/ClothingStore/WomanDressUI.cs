@@ -13,8 +13,11 @@ public class WomanDressUI : MonoBehaviour
 
     public TMP_Text priceText;
 
+    public AudioSource transactionPoint; 
+
     private Material selectedMat;
     private Material originalMat;
+
 
     void Start()
     {
@@ -31,7 +34,9 @@ public class WomanDressUI : MonoBehaviour
 
     public void ApplyChanges()
     {
+        Debug.Log("dress bought");
         dressRenderer.material = selectedMat;
+        transactionPoint.Play();
         gameObject.SetActive(false);
     }
 

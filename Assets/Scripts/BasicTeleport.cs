@@ -10,6 +10,7 @@ public class BasicTeleport : MonoBehaviour
         if (other.gameObject.tag == "Player") {
             Debug.Log("Entering Portal #1");
             other.gameObject.transform.position = target.position;
+            GetComponent<AudioSource>().Play();
             Debug.Log("Going to Portal #2");
         }
     }
