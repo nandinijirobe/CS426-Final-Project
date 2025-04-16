@@ -10,6 +10,17 @@ public class ProtagonistController : MonoBehaviour
     public float jumpDuration = 1.625f;
     public float turnDuration = 0.3f;
 
+    [Header("Audio Clips")]
+    public AudioSource audioSource;
+    public AudioClip walkClip;
+    public AudioClip runClip;
+    public AudioClip jumpClip;
+
+    private bool isMovingPrev = false;
+    private bool isRunningPrev = false;
+    private bool wasJumping = false;
+
+
     private Animator animator;
     private Rigidbody rb;
 
@@ -92,11 +103,56 @@ public class ProtagonistController : MonoBehaviour
         animator.SetBool("isRunning", isRunning);
         animator.SetBool("isJumping", false);
 
+        // Start jump
         if (jumpPressed)
         {
             StartJump(moveIntent.normalized, moveSpeed);
+            PlayOneShot(jumpClip);
+        }
+
+        // Movement sound logic
+        if (isMoving && !isRunning)
+        {
+            if (!audioSource.isPlaying || audioSource.clip != walkClip)
+                PlayLoop(walkClip);
+        }
+        else if (isMoving && isRunning)
+        {
+            if (!audioSource.isPlaying || audioSource.clip != runClip)
+                PlayLoop(runClip);
+        }
+        else
+        {
+            StopLoop();
         }
     }
+
+    void PlayLoop(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.clip = clip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+    }
+
+    void StopLoop()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
+    void PlayOneShot(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
 
     void HandleTurn()
     {

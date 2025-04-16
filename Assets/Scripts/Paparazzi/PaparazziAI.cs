@@ -31,6 +31,10 @@ public class PaparazziAI : MonoBehaviour
     public float postCatchCooldown = 10f;
     private float chaseCooldownTimer = 0f;
 
+    [Header("Chase Audio")]
+    public AudioSource chaseAudioSource;
+    public AudioClip chaseClip;
+
     private int currentPatrolIndex = 0;
     private enum State { Patrol, Chase, Search }
     private State currentState = State.Patrol;
@@ -64,10 +68,13 @@ public class PaparazziAI : MonoBehaviour
                 PaparazziParticleController.stopParticleSystem();
                 SetAnimationState(true, false);
 
+                StopChaseSound(); // ← Stop sound when not chasing
+
                 if (chaseCooldownTimer <= 0 && shouldChase && distanceToPlayer < viewDistance)
                 {
                     currentState = State.Chase;
                     Debug.Log("Switching to Chase!");
+                    PlayChaseSound(); // ← Start sound on chase
                 }
                 break;
 
@@ -80,6 +87,7 @@ public class PaparazziAI : MonoBehaviour
                 {
                     currentState = State.Search;
                     Debug.Log("Lost sight of player. Searching...");
+                    StopChaseSound(); // ← Stop sound when chase ends
                 }
                 break;
 
@@ -165,6 +173,25 @@ public class PaparazziAI : MonoBehaviour
         animator.SetBool("isWalking", isWalking);
         animator.SetBool("isRunning", isRunning);
     }
+
+    void PlayChaseSound()
+    {
+        if (chaseAudioSource != null && chaseClip != null && !chaseAudioSource.isPlaying)
+        {
+            chaseAudioSource.clip = chaseClip;
+            chaseAudioSource.loop = true;
+            chaseAudioSource.Play();
+        }
+    }
+
+    void StopChaseSound()
+    {
+        if (chaseAudioSource != null && chaseAudioSource.isPlaying)
+        {
+            chaseAudioSource.Stop();
+        }
+    }
+
 
     IEnumerator ReturnToPatrolAfterSeconds(float seconds)
     {
