@@ -33083,11 +33083,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
   m_PrefabInstance: {fileID: 271725028}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &271769808 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7529971212958370712, guid: 6f7feca8b504448e2b4b350c57369720, type: 3}
-  m_PrefabInstance: {fileID: 7550177389825783334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &271852981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134877,6 +134872,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1241329853}
   m_SourcePrefab: {fileID: 100100000, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+--- !u!1 &1084131402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1735712239134435785, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+  m_PrefabInstance: {fileID: 1084131401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1084414765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180016,7 +180016,7 @@ MonoBehaviour:
   numNPC: 20
   allNPCs: []
   runLimits: {x: 5, y: 0, z: 5}
-  goalGameObject: {fileID: 271769808}
+  goalGameObject: {fileID: 1084131402}
   goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 1.15
   maxSpeed: 2.55
