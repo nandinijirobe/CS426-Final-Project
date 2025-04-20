@@ -7,7 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainCity.scene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: a72d3e6a59e5a467bbe7d052347aa277
+  - enabled: 0
+    path: Assets/Scenes/SplashScreen.scene.unity
+    guid: ec2f7777d1d554be4b2e739b0b20fe27
+  - enabled: 0
+    path: Assets/Scenes/Vedant.MainCity.scene.unity
+    guid: a4ad29e5199254911a4c29549e08367b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f10b77947b6c94d44b8f8c16a738cab0, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

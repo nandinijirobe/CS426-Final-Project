@@ -13,6 +13,7 @@ TagManager:
   - Boulevard
   - Audition
   - AuditionCenter
+  - Audition Center Marker
   layers:
   - Default
   - TransparentFX
