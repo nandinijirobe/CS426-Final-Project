@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestMarkerGreen
       objectReference: {fileID: 0}
+    - target: {fileID: 6711648217311755966, guid: 82469ee9e737d3748bd2dcb95244c565, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6971931670801480119, guid: 82469ee9e737d3748bd2dcb95244c565, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

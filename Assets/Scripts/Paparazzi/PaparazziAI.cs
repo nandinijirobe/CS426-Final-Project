@@ -45,6 +45,8 @@ public class PaparazziAI : MonoBehaviour
     private Vector3? currentTarget = null;
     private float currentSpeed = 0f;
 
+    public int paparazziPenalty = 50;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -157,7 +159,7 @@ public class PaparazziAI : MonoBehaviour
     {
         if (other.CompareTag("Player") && playerMoneyManager != null)
         {
-            playerMoneyManager.DeductMoney();
+            playerMoneyManager.DeductMoney(paparazziPenalty);
             StartCoroutine(FlashLight());
 
             chaseCooldownTimer = postCatchCooldown;
