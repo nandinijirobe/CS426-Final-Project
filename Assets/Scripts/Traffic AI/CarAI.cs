@@ -23,8 +23,6 @@ public class CarAI : MonoBehaviour
 
     private int index = 0;
 
-    private float stopTimer = 0f;
-
     private bool stop;
 
     [SerializeField]
@@ -46,12 +44,17 @@ public class CarAI : MonoBehaviour
 
     private bool playerCollision = false;
 
+
+    // Destroy conditions
+    private float velocityThreshold = 0.5f; // How slow is "too slow"
+    private float timeThreshold = 2f;       // How long it must be slow
+    private float slowTimer = 0f;
+
     private void Start() 
     {
         // director = GetComponent<AiDirector>();
         if(path == null || path.Count == 0){
             Stop = true;
-            stopTimer = 0f;
         }
         else
         {
@@ -201,17 +204,9 @@ public class CarAI : MonoBehaviour
         if(Stop)
         {
             OnDrive?.Invoke(Vector2.zero); // stop the car
-            stopTimer += Time.deltaTime;
-
-            if (stopTimer >= 20f) {
-                Destroy(gameObject);
-                director.updateNumCars();
-            }
         }
         else
         {
-            stopTimer = 0f;
-
             Vector3 relativepoint = transform.InverseTransformPoint(currentTargetPosition);
             float angle = Mathf.Atan2(relativepoint.x, relativepoint.z)*Mathf.Rad2Deg;
             var rotateCar = 0;
@@ -225,6 +220,23 @@ public class CarAI : MonoBehaviour
             }
             OnDrive?.Invoke(new Vector2(rotateCar,1));
             
+        }
+
+
+        // Check for low speed duration
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb.linearVelocity.magnitude < velocityThreshold)
+        {
+            slowTimer += Time.fixedDeltaTime;
+            if (slowTimer >= timeThreshold)
+            {
+                Destroy(gameObject);
+                director.updateNumCars();
+            }
+        }
+        else
+        {
+            slowTimer = 0f; // reset if car speeds up again
         }
     }
 }

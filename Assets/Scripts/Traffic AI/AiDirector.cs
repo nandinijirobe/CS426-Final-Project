@@ -35,7 +35,7 @@ public class AiDirector : MonoBehaviour
     void Update() {
         // DrawGraph(carGraph);
 
-        if (numCars < 100) {
+        if (numCars < 500) {
             SpawnCars();
         }
     }
