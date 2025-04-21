@@ -4,85 +4,73 @@ using UnityEngine;
 
 public class FlockManager : MonoBehaviour
 {
-    //public static FlockManager FM; // Allows you to access variables of this script in another script
-    public GameObject npcPrefab; // Store the NPC prefab here
-    public int numNPC = 20; // Total number of NPCs that will be part of the flock
-    public GameObject[] allNPCs; // All NPC gameobjects will be part of this list
-    public Vector3 runLimits = new Vector3(5, 0, 5); // Boundry size the NPCs can spawn or move in from the FlockManager 
-    public GameObject goalGameObject;
-    public Vector3 goalPos = Vector3.zero; // The target location all NPCs will move towards
-    public bool disguiseOn = false;
-    public bool inBounds = true;
-    private BoxCollider npcBounds;
+    public GameObject npcPrefab; // our NPC prefab
+    public int numNPC = 20;      // the number of total NPCs
+    public GameObject[] allNPCs; // list to store all NPC game objects
+
+    public Vector3 runLimits; // space the NPCs can actually run within 
+
+
+    public GameObject goalGameObject;      // the target game object all NPCs will run towards (player)
+    public Vector3 goalPos = Vector3.zero; // the target location all NPCs will move towards
+    public bool disguiseOn = false;        // this checks if player is supposed to be hidden from papparazi
+    public bool inBounds = true;           // this checks if player has entered the NPC bounds
+    private BoxCollider flockCollider;      // this actually determines the bounds of the NPCs
+
+    public Bounds flockBounds;       //  this is to store the bounds of the Flock's Box Collider
+    private Vector3 flock_minCorner;  //  the corner with the smallest x, y, z values
+    private Vector3 flock_maxCorner;  //  the corner with the largest x, y, z values
 
     [Header("NPC settings")]
     [Range(0.0f, 5.0f)]
-    public float minSpeed; // min speed of an NPC
+    public float minSpeed;          // min speed of an NPC
     [Range(0.0f, 5.0f)]
-    public float maxSpeed; // max speed of an NPC
+    public float maxSpeed;          // max speed of an NPC
     [Range(1.0f, 10.0f)]
     public float neighbourDistance; // determines how many other NPCs current NPC can consider its neighbour
     [Range(1.0f, 5.0f)]
-    public float rotationSpeed; // how fast the NPC can rotate
+    public float rotationSpeed;     // how fast the NPC can rotate
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //allNPCs = new GameObject[numNPC]; // Initalizes list to store all NPC game objects
-        //for (int i = 0; i < numNPC; i++)
-        //{
-        //    // This sets the position as to where the NPC will be instanitaed 
-        //    // The NPC will be instantiated somewhere within the bounds of runLimits
-        //    Vector3 pos = this.transform.position + new Vector3(Random.Range(-runLimits.x, runLimits.x),
-        //                                                        1.2f,
-        //                                                        Random.Range(-runLimits.z, runLimits.z));
-        //    allNPCs[i] = Instantiate(npcPrefab, pos, Quaternion.identity); // NOTE: Quaternion.identity means that there the NPC is not being instantiated with any specific rotation
-        //    allNPCs[i].GetComponent<Flock>().FM = this; // Refers to the GameObject this script is attached to
-        //}
-
-        //FM = this; 
-        //goalPos = this.transform.position; // Set to the current location of the FM game object
         goalPos = goalGameObject.transform.position;
-
-        npcBounds = GetComponent<BoxCollider>(); // get the position of the box collider of this object
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (npcBounds.bounds.Contains(goalGameObject.transform.position)) {
+        if (flockCollider.bounds.Contains(goalGameObject.transform.position)) {
             goalPos = goalGameObject.transform.position; // chase the player
             //Debug.Log("girl is inside bounds");
         } else {
-            goalPos = GetComponent<BoxCollider>().bounds.center; ; // go run at center position
+            goalPos = flockCollider.bounds.center; // go run at center position
             //Debug.Log("girl is out of bounds");
         }
-
-        //goalPos = goalGameObject.transform.position;
-        // NOTE: Removed to make goalPos fixed. 
-        //if (Random.Range(0, 100) < 10)
-        //{ // This randomly changes the postion of the target position somewhere within the bounds of FM
-        //    goalPos = this.transform.position + new Vector3(Random.Range(-runLimits.x, runLimits.x),
-        //                                                        1.2f,
-        //                                                        Random.Range(-runLimits.z, runLimits.z));
-        //}
     }
 
     // This ensures FM is set before any Start() methods are called because Unity runs Awake() before Start()
     // This ensures FM is ready for Flock.cs start function
     void Awake()
     {
-        // instanitated here instead of start to avoid race conditions
-        allNPCs = new GameObject[numNPC]; // Initalizes list to store all NPC game objects
+        // Added instantiation code here instead of Start() to avoid race conditions
+        
+        flockCollider = GetComponent<BoxCollider>(); // get the position of the box collider of this object
+        flockBounds = flockCollider.bounds;          // this gets the bounding box of the collider
+        flock_minCorner = flockBounds.min;           
+        flock_maxCorner = flockBounds.max;
+
+        allNPCs = new GameObject[numNPC];             // initalizes list to store all NPC game objects
+        runLimits = flockCollider.bounds.size * 0.5f; // this means that the run limits is about half the size of the box collider for this game object
+
         for (int i = 0; i < numNPC; i++)
         {
             // This sets the position as to where the NPC will be instanitaed 
-            // The NPC will be instantiated somewhere within the bounds of runLimits
-            Vector3 pos = this.transform.position + new Vector3(Random.Range(-runLimits.x, runLimits.x),
-                                                                1.2f,
-                                                                Random.Range(-runLimits.z, runLimits.z));
-            allNPCs[i] = Instantiate(npcPrefab, pos, Quaternion.identity); // NOTE: Quaternion.identity means that there the NPC is not being instantiated with any specific rotation
+            // The NPC will be instantiated somewhere within the bounds of the box collider
+            Vector3 pos = new Vector3(Random.Range(flock_minCorner.x, flock_maxCorner.x),
+                                      1.2f,
+                                      Random.Range(flock_minCorner.z, flock_maxCorner.z));
+            allNPCs[i] = Instantiate(npcPrefab, pos, Quaternion.Euler(0, Random.Range(0f, 360f), 0)); // NOTE: Quaternion.identity means that there the NPC is not being instantiated with any specific rotation
             allNPCs[i].GetComponent<Flock>().FM = this; // Refers to the GameObject this script is attached to
         }
     }
