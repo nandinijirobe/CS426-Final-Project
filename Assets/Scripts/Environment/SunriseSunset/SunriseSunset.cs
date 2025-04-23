@@ -27,6 +27,10 @@ public class SunriseSunset : MonoBehaviour
     public Gradient moonColor;
     public AnimationCurve moonIntensity;
 
+    [Range(0f, 24f)]
+    public float startHour = 1f; // Starts at 1AM by default
+
+
     [SerializeField] private float timeOfDay;
     public float TimeOfDay => timeOfDay; // public read-only access // 0 - 1 representing progress through the day
 

@@ -7,7 +7,6 @@ public class ProtagonistController : MonoBehaviour
     public float walkSpeed = 2f;
     public float runSpeed = 5f;
     public float jumpHeight = 2f;
-    public float jumpDuration = 1.625f;
     public float turnDuration = 0.3f;
 
     [Header("Audio Clips")]
@@ -16,19 +15,8 @@ public class ProtagonistController : MonoBehaviour
     public AudioClip runClip;
     public AudioClip jumpClip;
 
-    private bool isMovingPrev = false;
-    private bool isRunningPrev = false;
-    private bool wasJumping = false;
-
-
     private Animator animator;
     private Rigidbody rb;
-
-    private bool isJumping = false;
-    private float jumpStartTime;
-    private Vector3 jumpStartPos;
-    private Vector3 jumpDirection;
-    private float jumpSpeed;
 
     private bool isTurning = false;
     private float turnTimer = 0f;
@@ -37,7 +25,6 @@ public class ProtagonistController : MonoBehaviour
 
     private Vector3 moveIntent = Vector3.zero;
     private float moveSpeed = 0f;
-    private bool jumpTriggered = false;
 
     void Start()
     {
@@ -51,11 +38,6 @@ public class ProtagonistController : MonoBehaviour
         {
             HandleTurn();
         }
-        else if (isJumping)
-        {
-            // Do jump motion in Update to keep Time.time-based curve smooth
-            HandleJumpMotion();
-        }
         else
         {
             HandleMovementInput();
@@ -64,7 +46,7 @@ public class ProtagonistController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isJumping && !isTurning && moveIntent != Vector3.zero)
+        if (!isTurning && moveIntent != Vector3.zero)
         {
             Vector3 newPos = rb.position + moveIntent * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(newPos);
@@ -101,12 +83,12 @@ public class ProtagonistController : MonoBehaviour
         // Animator states
         animator.SetBool("isWalking", isMoving && !isRunning);
         animator.SetBool("isRunning", isRunning);
-        animator.SetBool("isJumping", false);
+        animator.SetBool("isJumping", !IsGrounded());
 
-        // Start jump
-        if (jumpPressed)
+        // Start jump only if grounded
+        if (jumpPressed && IsGrounded())
         {
-            StartJump(moveIntent.normalized, moveSpeed);
+            StartJump();
             PlayOneShot(jumpClip);
         }
 
@@ -153,7 +135,6 @@ public class ProtagonistController : MonoBehaviour
         }
     }
 
-
     void HandleTurn()
     {
         turnTimer += Time.deltaTime;
@@ -166,36 +147,25 @@ public class ProtagonistController : MonoBehaviour
         }
     }
 
-    void StartJump(Vector3 direction, float speed)
+    void StartJump()
     {
-        isJumping = true;
-        jumpStartTime = Time.time;
-        jumpStartPos = transform.position;
-        jumpDirection = direction;
-        jumpSpeed = speed;
-
         animator.SetBool("isJumping", true);
+
+        // Calculate the initial velocity needed to reach desired height
+        float jumpVelocity = Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeight);
+
+        // Reset vertical velocity before applying jump
+        Vector3 velocity = rb.linearVelocity;
+        velocity.y = 0;
+        rb.linearVelocity = velocity;
+
+        // Apply upward force
+        rb.AddForce(Vector3.up * jumpVelocity, ForceMode.VelocityChange);
     }
 
-    void HandleJumpMotion()
+    bool IsGrounded()
     {
-        float elapsed = Time.time - jumpStartTime;
-        float progress = Mathf.Clamp01(elapsed / jumpDuration);
-
-        // Parabolic height
-        float height = 4 * jumpHeight * progress * (1 - progress);
-        Vector3 verticalOffset = new Vector3(0, height, 0);
-
-        // ✅ Accumulate forward movement over time (use elapsed)
-        Vector3 forwardMove = jumpDirection * jumpSpeed * elapsed;
-        Vector3 jumpTarget = jumpStartPos + forwardMove + verticalOffset;
-
-        rb.MovePosition(jumpTarget);
-
-        if (progress >= 1f)
-        {
-            isJumping = false;
-            animator.SetBool("isJumping", false);
-        }
+        // Cast a ray just below the player's feet
+        return Physics.Raycast(transform.position, Vector3.down, 1.1f);
     }
 }
