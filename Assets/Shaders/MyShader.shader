@@ -1,3 +1,5 @@
+// Tutorial source: https://learn.unity.com/tutorial/creating-a-surface-shader#6051a081edbc2a78c22ed8af
+
 Shader "Custom/MyShader"
 {
     Properties
