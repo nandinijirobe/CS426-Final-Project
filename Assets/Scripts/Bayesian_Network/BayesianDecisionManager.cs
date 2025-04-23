@@ -150,7 +150,7 @@ public class BayesianDecisionManager : MonoBehaviour
     {
         float p = GetChasingProbability();
         float rand =  UnityEngine.Random.value;
-        Debug.Log("rand: " + rand + ", p: " + p);
+        // Debug.Log("rand: " + rand + ", p: " + p);
         return rand < p; // Randomize behavior
     }
 }
