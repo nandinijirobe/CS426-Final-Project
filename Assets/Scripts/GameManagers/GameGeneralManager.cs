@@ -9,6 +9,8 @@ public class GameGeneralManager : MonoBehaviour
     public TMP_Text auditionCount;
     public PlayerMoneyManager moneyManager;
 
+    public GlowToggle glowToggle;
+
     public void updateAuditionCount()
     {
         if (numAuditions < 5) {
@@ -17,6 +19,7 @@ public class GameGeneralManager : MonoBehaviour
 
             auditionCount.text = "Auditions: " + numAuditions + "/5";
             moneyManager.AddMoney(100);
+            glowToggle.TriggerGlow();
         }
     }
 }

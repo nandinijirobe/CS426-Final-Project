@@ -134,7 +134,8 @@ public class CarAI : MonoBehaviour
                     Rigidbody rb = GetComponent<Rigidbody>();
                     
 
-                    float forceMagnitude = rb.linearVelocity.magnitude * 2.0f;
+                    // float forceMagnitude = rb.linearVelocity.magnitude * 2.0f;
+                    float forceMagnitude = rb.linearVelocity.magnitude;
     
                     // non ragdoll - comment one or the other out
                     prb.AddForce(pushDirection * forceMagnitude, ForceMode.Impulse);
