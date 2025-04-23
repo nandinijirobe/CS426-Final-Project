@@ -13481,6 +13481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   auditionCount: {fileID: 957772002}
+  moneyManager: {fileID: 417238604}
+  glowToggle: {fileID: 1084131403}
   winScreenUI: {fileID: 1568022896}
   auditionsToWin: 5
   restartDelay: 5
@@ -38634,6 +38636,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &295762865
 GameObject:
   m_ObjectHideFlags: 0
@@ -54346,7 +54349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingMoney: 500
-  paparazziPenalty: 100
   moneyText: {fileID: 1530097472}
 --- !u!1001 &417314428
 PrefabInstance:
@@ -74224,6 +74226,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &564391001 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -75096,6 +75099,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &573649304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91785,6 +91789,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &688234708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92672,6 +92677,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &693110831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98676,6 +98682,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &733176208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111127,6 +111134,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &833653089 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -111853,6 +111861,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &844572013 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -115941,6 +115950,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &870589804
 GameObject:
   m_ObjectHideFlags: 0
@@ -125566,6 +125576,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &944599947 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -126520,6 +126531,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &950899504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132957,6 +132969,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &997088392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140369,6 +140382,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &1040828250
 GameObject:
   m_ObjectHideFlags: 0
@@ -141611,6 +141625,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &1053020708 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -146069,6 +146084,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5379563974586183790, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379563974586183790, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dc3ca0c268a869c4d89f8d7063d5a5a9, type: 2}
     - target: {fileID: 5629818335126942905, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -146229,10 +146252,34 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3853915178085569059, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1797279137}
+    - targetCorrespondingSourceObject: {fileID: 6096028563453282919, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084131403}
     - targetCorrespondingSourceObject: {fileID: 2743977252186725487, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1646298170}
   m_SourcePrefab: {fileID: 100100000, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+--- !u!1 &1084131402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096028563453282919, guid: 8cff83da468653f4fbb99a01d9c89de2, type: 3}
+  m_PrefabInstance: {fileID: 1084131401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084131403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084131402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3eafa4b8a25fc342b691d5ed23bfe78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: dc3ca0c268a869c4d89f8d7063d5a5a9, type: 2}
+  glowOnIntensity: 2
+  glowOffIntensity: 0
+  duration: 5
 --- !u!1001 &1084414765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149714,6 +149761,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &1110361890 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -178257,6 +178305,7 @@ MonoBehaviour:
   limeMat: {fileID: 2100000, guid: 1e5cb47be8b1047f59f4f3417c508b5c, type: 2}
   priceText: {fileID: 993712135}
   transactionPoint: {fileID: 560950682}
+  moneyManager: {fileID: 417238604}
 --- !u!1001 &1327375877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190101,6 +190150,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &1417724419
 GameObject:
   m_ObjectHideFlags: 0
@@ -198679,6 +198729,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!114 &1472033985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5906488488339286470, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
@@ -205203,6 +205254,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &1517763859
 GameObject:
   m_ObjectHideFlags: 0
@@ -219737,6 +219789,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &1625455726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223837,6 +223890,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &1657231680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224497,6 +224551,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1 &1662331641
 GameObject:
   m_ObjectHideFlags: 0
@@ -261715,6 +261770,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &1962251807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283322,6 +283378,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &2136223509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283525,6 +283582,7 @@ MonoBehaviour:
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
   maxDangerDistance: 10
+  paparazziPenalty: 50
 --- !u!1001 &2136458082
 PrefabInstance:
   m_ObjectHideFlags: 0

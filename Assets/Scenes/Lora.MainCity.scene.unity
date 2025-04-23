@@ -13241,6 +13241,9 @@ MonoBehaviour:
   auditionCount: {fileID: 957772002}
   moneyManager: {fileID: 417238604}
   glowToggle: {fileID: 2121620386}
+  winScreenUI: {fileID: 0}
+  auditionsToWin: 5
+  restartDelay: 5
 --- !u!4 &97344077
 Transform:
   m_ObjectHideFlags: 0
@@ -53280,6 +53283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splashMenu: {fileID: 1248345750}
   instructionsPanel: {fileID: 567221301}
+  creditsPanel: {fileID: 0}
   gameplayElements: {fileID: 983641157}
   gameTimeManager: {fileID: 510405619}
 --- !u!4 &422278550
@@ -63789,6 +63793,9 @@ MonoBehaviour:
   warningSound: {fileID: 8300000, guid: 0e7e61b1d8bba4dc5aa9a96f1a1e1ffb, type: 3}
   audioSource: {fileID: 2046843465}
   isActive: 0
+  gameLoseEndScreenUI: {fileID: 0}
+  gameHasEnded: 0
+  restartDelay: 5
 --- !u!1 &510599726
 GameObject:
   m_ObjectHideFlags: 0
@@ -71881,6 +71888,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &564391001 stripped
 MonoBehaviour:
@@ -106677,6 +106685,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &833653089 stripped
 MonoBehaviour:
@@ -107403,6 +107412,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &844572013 stripped
 MonoBehaviour:
@@ -120743,6 +120753,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &944599947 stripped
 MonoBehaviour:
@@ -136037,6 +136048,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1053020708 stripped
 MonoBehaviour:
@@ -144075,6 +144087,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1110361890 stripped
 MonoBehaviour:
@@ -150195,6 +150208,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
   m_PrefabInstance: {fileID: 1153503850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1153928183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153928187}
+  - component: {fileID: 1153928186}
+  - component: {fileID: 1153928185}
+  m_Layer: 0
+  m_Name: Capsule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1153928185
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153928183}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 25e6a7d5f19a4a84f8417c4b41d96c77, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1153928186
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153928183}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1153928187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153928183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.9094, y: 38.5638, z: 34.5675}
+  m_LocalScale: {x: 0.2554, y: 2.147443, z: 3.0057}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1155535414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191373,6 +191472,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1472033985 stripped
 MonoBehaviour:
@@ -216005,6 +216105,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1662331641
 GameObject:
@@ -231782,7 +231883,6 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 5
   jumpHeight: 2
-  jumpDuration: 1.625
   turnDuration: 0.3
   audioSource: {fileID: 1741297034}
   walkClip: {fileID: 8300000, guid: 9100c4b9cef32403ebd67f16889402a1, type: 3}
@@ -246635,6 +246735,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  startHour: 1
   timeOfDay: 0
 --- !u!1 &1908596198
 GameObject:
@@ -274767,3 +274868,4 @@ SceneRoots:
   - {fileID: 1248345751}
   - {fileID: 1004321826}
   - {fileID: 2123329605}
+  - {fileID: 1153928187}

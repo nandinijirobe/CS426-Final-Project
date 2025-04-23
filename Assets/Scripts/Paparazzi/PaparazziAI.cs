@@ -214,7 +214,7 @@ public class PaparazziAI : MonoBehaviour
         //     chaseCooldownTimer = postCatchCooldown;
         //     currentState = State.Patrol;
         //     Debug.Log("Caught player. Returning to patrol with cooldown.");
-        // }
+        }
     }
 
     void SetAnimationState(bool isWalking, bool isRunning)
@@ -246,7 +246,7 @@ public class PaparazziAI : MonoBehaviour
     public void TriggerFlashAndPenalty()
     {
         if (playerMoneyManager != null)
-            playerMoneyManager.DeductMoney();
+            playerMoneyManager.DeductMoney(paparazziPenalty);
 
         if (flashLight != null)
             StartCoroutine(FlashLight());

@@ -13,12 +13,12 @@ public class GameGeneralManager : MonoBehaviour
 
     [Header("Win UI")]
     public GameObject winScreenUI; // Assign this in the Inspector
-    public int auditionsToWin = 5;
+    private int auditionsToWin = 5;
 
     [Header("Game Restart")]
     public float restartDelay = 5f; // Time in seconds before the game restarts after win
 
-    private bool hasWon = false;
+    public bool hasWon = false;
 
         void Start()
     {
