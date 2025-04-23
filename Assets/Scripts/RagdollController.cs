@@ -45,11 +45,15 @@ public class RagdollController : MonoBehaviour
         }
     }
 
-     private void ResetToAnimation()
+    private void ResetToAnimation()
     {
-        // Transform hips = animator.GetBoneTransform(HumanBodyBones.Hips);
-        // transform.position = hips.position; // move root to hips
-        // transform.rotation = Quaternion.identity;
+        // Snap root to ragdoll's current hip bone position
+        if (ragdollRootBone != null)
+        {
+            Vector3 ragdollPos = ragdollRootBone.position;
+            transform.position = ragdollPos;
+            transform.rotation = Quaternion.Euler(0, ragdollRootBone.rotation.eulerAngles.y, 0); // preserve forward
+        }
 
         SetRagdollState(false);
         RDTimer = 0;
