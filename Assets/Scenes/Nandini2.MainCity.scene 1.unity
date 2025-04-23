@@ -25628,14 +25628,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -281.8
       objectReference: {fileID: 0}
-    - target: {fileID: 3688565229603253669, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 469d544f062329d41a59c8aecac6322e, type: 2}
-    - target: {fileID: 3893549784745968594, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 864f89bdc04bfd149ac95fda93b0dbd0, type: 2}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
@@ -67140,14 +67132,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -31.1
       objectReference: {fileID: 0}
-    - target: {fileID: 3688565229603253669, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 469d544f062329d41a59c8aecac6322e, type: 2}
-    - target: {fileID: 3893549784745968594, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 864f89bdc04bfd149ac95fda93b0dbd0, type: 2}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
@@ -101355,14 +101339,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -501.6
       objectReference: {fileID: 0}
-    - target: {fileID: 3688565229603253669, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 469d544f062329d41a59c8aecac6322e, type: 2}
-    - target: {fileID: 3893549784745968594, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 864f89bdc04bfd149ac95fda93b0dbd0, type: 2}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
@@ -223182,14 +223158,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -113
       objectReference: {fileID: 0}
-    - target: {fileID: 3688565229603253669, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 469d544f062329d41a59c8aecac6322e, type: 2}
-    - target: {fileID: 3893549784745968594, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 864f89bdc04bfd149ac95fda93b0dbd0, type: 2}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
@@ -274356,14 +274324,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 4.7
       objectReference: {fileID: 0}
-    - target: {fileID: 3688565229603253669, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 469d544f062329d41a59c8aecac6322e, type: 2}
-    - target: {fileID: 3893549784745968594, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 864f89bdc04bfd149ac95fda93b0dbd0, type: 2}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
