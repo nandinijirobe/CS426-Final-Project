@@ -206,15 +206,15 @@ public class PaparazziAI : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && playerMoneyManager != null)
-        {
-            playerMoneyManager.DeductMoney(paparazziPenalty);
-            StartCoroutine(FlashLight());
+        // if (other.CompareTag("Player") && playerMoneyManager != null)
+        // {
+        //     playerMoneyManager.DeductMoney(paparazziPenalty);
+        //     // StartCoroutine(FlashLight());
 
         //     chaseCooldownTimer = postCatchCooldown;
         //     currentState = State.Patrol;
         //     Debug.Log("Caught player. Returning to patrol with cooldown.");
-        }
+        // }
     }
 
     void SetAnimationState(bool isWalking, bool isRunning)
