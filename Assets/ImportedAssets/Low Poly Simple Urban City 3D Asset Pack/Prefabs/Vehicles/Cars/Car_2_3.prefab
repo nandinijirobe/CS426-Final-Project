@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 1580983711383902222}
   - component: {fileID: -813364843044199584}
   - component: {fileID: 6351731284189876065}
-  - component: {fileID: -7614822463337283412}
   - component: {fileID: -2761873311454222255}
   - component: {fileID: -4926469605429325207}
   m_Layer: 11
@@ -188,22 +187,6 @@ MonoBehaviour:
   torque: 180
   maxSpeed: 8
   movementVector: {x: 0, y: 0}
---- !u!114 &-7614822463337283412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035264757950506384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bacfa65d37c555d4c959257d6d93c00e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  power: 150
-  torque: 180
-  maxSpeed: 8
-  movementVector: {x: 0, y: 0}
 --- !u!114 &-2761873311454222255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +210,7 @@ MonoBehaviour:
   <OnDrive>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -7614822463337283412}
+      - m_Target: {fileID: 6351731284189876065}
         m_TargetAssemblyTypeName: CarControlller, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0

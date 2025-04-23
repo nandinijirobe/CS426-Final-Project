@@ -6,16 +6,14 @@ public class CarControlller : MonoBehaviour
     Rigidbody rb;
 
 
-    [SerializeField]
-    private float power = 5; // speed of car
-    [SerializeField]
-    private float torque = 0.5f; // agility of car?
-    [SerializeField]
-    private float maxSpeed = 5;
+    private float power = 300; // speed of car
+    private float torque = 300f; // agility of car?
+    
+    private float maxSpeed = 200;
 
-    [SerializeField]
     private Vector2 movementVector;
 
+    private float brakingPower = 70f;
     private void Awake() 
     {
         rb = GetComponent<Rigidbody>();
@@ -28,9 +26,31 @@ public class CarControlller : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        if(rb.linearVelocity.magnitude < maxSpeed) {
-            rb.AddForce(movementVector.y * transform.forward*power);
+
+        if (movementVector == Vector2.zero)
+        {
+            // Apply a strong drag to stop the car quickly
+            rb.linearVelocity = Vector3.MoveTowards(rb.linearVelocity, Vector3.zero, brakingPower * Time.fixedDeltaTime);
+            rb.angularVelocity = Vector3.MoveTowards(rb.angularVelocity, Vector3.zero, brakingPower * Time.fixedDeltaTime);
         }
-        rb.AddTorque(movementVector.x*Vector3.up*torque*movementVector.y); // for turning
+        else
+        {
+            // Accelerate forward
+            if (rb.linearVelocity.magnitude < maxSpeed)
+            {
+                rb.AddForce(movementVector.y * transform.forward * power);
+            }
+
+            // Turning
+            rb.AddTorque(movementVector.x * Vector3.up * torque * movementVector.y);
+        }
+
+        ApplyLateralFriction();
+    }
+
+    void ApplyLateralFriction()
+    {
+        Vector3 lateralVelocity = Vector3.Dot(rb.linearVelocity, transform.right) * transform.right;
+        rb.AddForce(-lateralVelocity * 5f, ForceMode.Acceleration); // adjust 5f as needed
     }
 }

@@ -18,6 +18,7 @@ public class WomanDressUI : MonoBehaviour
     private Material selectedMat;
     private Material originalMat;
 
+    public PlayerMoneyManager moneyManager;
 
     void Start()
     {
@@ -38,6 +39,8 @@ public class WomanDressUI : MonoBehaviour
         dressRenderer.material = selectedMat;
         transactionPoint.Play();
         gameObject.SetActive(false);
+
+        moneyManager.DeductMoney(100);
     }
 
     public void CancelChanges()

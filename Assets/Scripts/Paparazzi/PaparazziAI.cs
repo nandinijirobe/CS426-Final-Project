@@ -34,6 +34,8 @@ public class PaparazziAI : MonoBehaviour
     [Header("Chase Audio")]
     public AudioSource chaseAudioSource;
     public AudioClip chaseClip;
+    
+    public float maxDangerDistance = 10f;
 
     private int currentPatrolIndex = 0;
     private enum State { Patrol, Chase, Search }
@@ -44,6 +46,55 @@ public class PaparazziAI : MonoBehaviour
 
     private Vector3? currentTarget = null;
     private float currentSpeed = 0f;
+
+    private DangerBarManager dangerBarManager;
+    private bool isInDangerZone = false;
+
+    private PaparazzoSounds paparazzoSounds;
+
+    public int paparazziPenalty = 50;
+
+    public float GetProximityLevel()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+        return Mathf.Clamp01(1f - (distance / maxDangerDistance)); // Closer = 1, farther = 0
+    }
+
+
+    private void Awake()
+    {
+        dangerBarManager = FindObjectOfType<DangerBarManager>();
+        paparazzoSounds = GetComponent<PaparazzoSounds>();
+    }
+
+    private void LateUpdate()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+
+        if (distance < viewDistance)
+        {
+            if (!isInDangerZone)
+            {
+                isInDangerZone = true;
+                dangerBarManager?.OnPaparazziEnter(this);
+            }
+
+            if (distance < 2f)
+            {
+                currentTarget = null;
+                currentSpeed = 0f;
+                SetAnimationState(false, false);
+            }
+        }
+        else
+        {
+            if (isInDangerZone)
+            {
+                isInDangerZone = false;
+                dangerBarManager?.OnPaparazziExit(this);
+            }
+        }
+    }
 
     private void Start()
     {
@@ -155,15 +206,15 @@ public class PaparazziAI : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && playerMoneyManager != null)
-        {
-            playerMoneyManager.DeductMoney();
-            StartCoroutine(FlashLight());
+        // if (other.CompareTag("Player") && playerMoneyManager != null)
+        // {
+        //     playerMoneyManager.DeductMoney(paparazziPenalty);
+        //     // StartCoroutine(FlashLight());
 
-            chaseCooldownTimer = postCatchCooldown;
-            currentState = State.Patrol;
-            Debug.Log("Caught player. Returning to patrol with cooldown.");
-        }
+        //     chaseCooldownTimer = postCatchCooldown;
+        //     currentState = State.Patrol;
+        //     Debug.Log("Caught player. Returning to patrol with cooldown.");
+        // }
     }
 
     void SetAnimationState(bool isWalking, bool isRunning)
@@ -192,6 +243,21 @@ public class PaparazziAI : MonoBehaviour
         }
     }
 
+    public void TriggerFlashAndPenalty()
+    {
+        if (playerMoneyManager != null)
+            playerMoneyManager.DeductMoney(paparazziPenalty);
+
+        if (flashLight != null)
+            StartCoroutine(FlashLight());
+
+        if (paparazzoSounds != null)
+            paparazzoSounds.PlayFlashSound();
+
+        chaseCooldownTimer = postCatchCooldown;
+        currentState = State.Patrol;
+        Debug.Log($"[{name}] Danger bar triggered. Applying penalty & cooldown.");
+    }
 
     IEnumerator ReturnToPatrolAfterSeconds(float seconds)
     {

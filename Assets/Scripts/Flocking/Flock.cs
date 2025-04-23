@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class Flock : MonoBehaviour
 {
-    float speed; // speed of NPC
-    bool turning = false; // determines whether the NPC should turn around to stay within bounds
+    float speed;            // speed of NPC
+    bool turning = false;   // determines whether the NPC should turn around to stay within bounds
     public FlockManager FM;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-        //speed = Random.Range(FM.minSpeed, FM.maxSpeed); // gives the NPC a random speed
+ 
     }
 
     // Update is called once per frame
@@ -21,12 +20,12 @@ public class Flock : MonoBehaviour
     {
         if (FM != null && speed == 0)
         {
-            speed = Random.Range(FM.minSpeed, FM.maxSpeed);
+            speed = Random.Range(FM.minSpeed, FM.maxSpeed); // set the speed of this NPC
         }
 
-        if (FM != null)
+        if (FM != null) // This section turn or moves the NPC
         {
-            Bounds b = new Bounds(FM.transform.position, FM.runLimits * 2);
+            Bounds b = FM.flockBounds;
 
             if (!b.Contains(transform.position))
             { // checks if NPC is within the bounding box around FM
@@ -39,7 +38,6 @@ public class Flock : MonoBehaviour
 
             if (turning) // This changes the NPC to the opposite direction and slowly rotates it 
             {
-                //Vector3 direction = FlockManager.FM.transform.position - transform.position;
                 Vector3 direction = FM.goalPos - transform.position;
                 direction.y = 0; // prevents NPCs from moving up or down
                 transform.rotation = Quaternion.Slerp(transform.rotation,
@@ -56,7 +54,7 @@ public class Flock : MonoBehaviour
 
                 if (Random.Range(0, 100) < 10) // randomly apply the rules too
                 {
-                    ApplyRules(); // this will turn fish towards the direction it needs to be moving in
+                    ApplyRules(); // this will turn NPC towards the direction it needs to be moving in
                 }
             }
 
@@ -90,25 +88,25 @@ public class Flock : MonoBehaviour
      */
     void ApplyRules()
     {
-        GameObject[] gos; // gos means game objects. This refers to all the NPCs in the Flock Manager
+        GameObject[] gos;               // gos means game objects. This refers to all the NPCs in the Flock Manager
         gos = FM.allNPCs;
         Vector3 vcentre = Vector3.zero; // center of nearby group
-        Vector3 vavoid = Vector3.zero; // avoidance vector
-        float gSpeed = 0.0f; // group average speed
-        float nDistance; // neighbour distance
-        int groupSize = 0; // all NPCs within in that distance
+        Vector3 vavoid = Vector3.zero;  // avoidance vector
+        float gSpeed = 0.0f;            // group average speed
+        float nDistance;                // neighbour distance
+        int groupSize = 0;              // all NPCs within in that distance
 
         foreach (GameObject go in gos)
         { // Iterate through all NPCs in the group 
-            if (go != this.gameObject)
-            { // Ignore self
-                nDistance = Vector3.Distance(go.transform.position, this.transform.position); // Get distance from this NPC to that other NPC
+            if (go != this.gameObject) // Ignore self
+            { 
+                nDistance = Vector3.Distance(go.transform.position, this.transform.position); // Get distance from this NPC to that other NPCs
                 if (nDistance <= FM.neighbourDistance)
                 { // Check if it is within a neighbourly distance
                     vcentre += go.transform.position;
                     groupSize++;
 
-                    if (nDistance < 1.0f)
+                    if (nDistance < 1.5f)
                     {
                         vavoid = vavoid + (this.transform.position - go.transform.position); // Move away from the nearby NPC
                     }

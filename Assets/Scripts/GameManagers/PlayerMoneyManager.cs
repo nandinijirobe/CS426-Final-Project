@@ -5,13 +5,12 @@ using TMPro;
 public class PlayerMoneyManager : MonoBehaviour
 {
     [Header("Money Settings")]
-    public float startingMoney = 500f;
-    public float paparazziPenalty = 50f;
+    public int startingMoney = 500;
 
     [Header("UI")]
     public TMP_Text moneyText; // Assign this in the Inspector
 
-    private float currentMoney;
+    private int currentMoney;
 
     void Start()
     {
@@ -20,9 +19,9 @@ public class PlayerMoneyManager : MonoBehaviour
     }
 
     // Call this when the player hits a paparazzi
-    public void DeductMoney()
+    public void DeductMoney(int amount)
     {
-        currentMoney -= paparazziPenalty;
+        currentMoney -= amount;
         currentMoney = Mathf.Max(currentMoney, 0);
         UpdateMoneyUI();
 
@@ -42,5 +41,11 @@ public class PlayerMoneyManager : MonoBehaviour
     public float GetCurrentMoney()
     {
         return currentMoney;
+    }
+
+    public void AddMoney(int amount) 
+    {
+        currentMoney += amount;
+        UpdateMoneyUI();
     }
 }
