@@ -13213,9 +13213,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 567221304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 592.1, y: -167.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95855131
@@ -13238,15 +13238,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Instructions-
-
-
-    To move - WASD
-
-    To run - Hold Shift down
-
-    To
-    jump - Hit Space'
+  m_text: "Welcome to Lights, Camera, Run! You're a rising celebrity on a secret
+    mission \u2014 audition for five top-secret movie roles before sunset. But fame
+    comes at a price. Fans and paparazzi are hot on your trail, ready to steal your
+    time with autograph demands or force you to pay them off to keep quiet. Avoid
+    them at all costs. You\u2019ve got $500 in your pocket for quick taxi escapes
+    and disguises from clothing stores. Use your cash wisely \u2014 if you run out
+    and get caught again, your cover is blown and your shot at stardom is over. Can
+    you outsmart the crowd and make it to every audition in time? We'll see. Here
+    are the details on game controls:\n\nTo move - WASD\nTo run - Hold Shift down\nTo
+    jump - Hit Space"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -56127,10 +56128,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1971445574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442186398
 MonoBehaviour:
@@ -130013,7 +130014,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.02
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -255637,10 +255638,10 @@ RectTransform:
   - {fileID: 442186397}
   m_Father: {fileID: 567221304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -381, y: -162}
-  m_SizeDelta: {x: 243.8803, y: 48.7582}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -220, y: 117}
+  m_SizeDelta: {x: 243.88031, y: 48.75821}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971445575
 MonoBehaviour:
