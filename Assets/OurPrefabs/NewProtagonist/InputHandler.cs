@@ -7,19 +7,28 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
+
+    [Header("Player Movement Input")]
+    [SerializeField] Vector2 movementInput;
     public float horizontal;
     public float vertical;
     public float moveAmount;
-    public float mouseX;
-    public float mouseY;
+
+
+    [Header("Camera Movement Input")]
+    [SerializeField] Vector2 cameraInput;
+    public float cameraHorizontal;
+    public float cameraVertical;
+
+    [Header("Player Action Input")]
+    [SerializeField] bool jumpInput = false;
+    [SerializeField] bool rollInput = false;
 
 
     // class from input controls package
     InputSystem_Actions inputActions;
-    // CameraHandler cameraHandler;
-
-    Vector2 movementInput;
-    Vector2 cameraInput;
+    CameraHandler cameraHandler;
+    public PlayerMovement playerMovement;
 
     public void OnEnable() {
 
@@ -27,6 +36,8 @@ public class InputHandler : MonoBehaviour
             inputActions = new InputSystem_Actions();
             inputActions.Player.Move.performed += inputActions => movementInput = inputActions.ReadValue<Vector2>();
             inputActions.Player.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
+            inputActions.Player.Jump.performed += i => jumpInput = true;
+            inputActions.Player.Roll.performed += i => rollInput = true;
 
             // Note: => is a lambda expression: (parameters) => expression_or_block_of_code
             // Note: performed is an event; += is the listener? 
@@ -40,10 +51,12 @@ public class InputHandler : MonoBehaviour
     }
 
     public void TickInput(float delta) {
-        MoveInput(delta);
+        MoveInput();
+        JumpInput();
+        RollInput();
     }
 
-    public void MoveInput(float delta) {
+    public void MoveInput() {
 
         // get player direcctional input
         horizontal = movementInput.x;
@@ -52,9 +65,36 @@ public class InputHandler : MonoBehaviour
         // calculate total movement 
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
         
-        // get camera input?
-        mouseX = cameraInput.x;
-        mouseY = cameraInput.y;
+        if (moveAmount <= 0.5 && moveAmount > 0.5)
+        {
+            moveAmount = 0.5f;
+        }
+        else if (moveAmount > 0.5f && moveAmount <= 1)
+        {
+            moveAmount = 1;
+        }
+
+        // get camera input
+        cameraHorizontal = cameraInput.x;
+        cameraVertical = cameraInput.y;
+    }
+
+    private void JumpInput()
+    {
+        // if (jumpInput)
+        // {
+        //     jumpInput = false;
+        //     playerMovement.PerformRoll();
+        // }
+    }
+
+    private void RollInput()
+    {
+        if (rollInput)
+        {
+            rollInput = false;
+            playerMovement.PerformRoll();
+        }
     }
 }
 

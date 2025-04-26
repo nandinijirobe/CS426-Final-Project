@@ -17,19 +17,23 @@ public class PlayerMovement : MonoBehaviour
     PlayerManager playerManager;
     Transform cameraObject;
     InputHandler inputHandler;
-    Vector3 moveDirection;
+    public Vector3 moveDirection;
 
     [HideInInspector]
     public Transform t;
     public Rigidbody rb;
     public GameObject normalCamera; // for later development
 
-
 // SerializedField allows you to see it in Inspector
     [Header("Movement Stats")] // what does this do?
     [SerializeField] public float speed = 5;
+    [SerializeField] float walkingSpeed = 5;
+    [SerializeField] float runningSpeed = 10;
     [SerializeField] public float rotationSpeed = 10;
     public float force = 700f;
+
+    [Header("Roll")]
+    Vector3 rollDirection;
 
 
     // Start is called before the first frame update
@@ -41,14 +45,21 @@ public class PlayerMovement : MonoBehaviour
 
         inputHandler = GetComponent<InputHandler>();
         cameraObject = Camera.main.transform;
-
     }
 
     #region Movement
     Vector3 normalVector;
     Vector3 targetPosition;
 
-    private void HandleRotaion(float delta) {
+    public void HandleAllMovement()
+    {
+        HandleMovement();
+        HandleRotation();
+    }
+
+    public void HandleRotation() {
+        if (!playerManager.canRotate) {return;}
+
         Vector3 targetDir = Vector3.zero;
         float moveOverride = inputHandler.moveAmount;
 
@@ -65,25 +76,44 @@ public class PlayerMovement : MonoBehaviour
         float rs = rotationSpeed;
         // // Quaternion returns a rotation that rotates x degrees around the x axis and so on
         Quaternion tr = Quaternion.LookRotation(targetDir);
-        Quaternion targetRotation = Quaternion.Slerp(t.rotation, tr, rs * delta);
+        Quaternion targetRotation = Quaternion.Slerp(t.rotation, tr, rs * Time.deltaTime);
 
         t.rotation = targetRotation;
     }
 
-    public void HandleMovement(float delta) {
+    public void HandleMovement() {
+        if (!playerManager.canMove) {return;}
 
-        HandleRotaion(delta);
+        // move direction based on camera perspective and inputs
         moveDirection = cameraObject.forward * inputHandler.vertical;
         moveDirection += cameraObject.right * inputHandler.horizontal;
         moveDirection.Normalize();
         moveDirection.y = 0;
 
-        float movementSpeed = speed; 
-        moveDirection *= speed;
+        playerManager.characterController.Move(moveDirection * walkingSpeed * Time.deltaTime);        
+    }
 
-        Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
-        rb.linearVelocity = projectedVelocity;
+    public void PerformRoll()
+    {
+        if (playerManager.isPerformingAction) {return;}
+        // if (inputHandler.moveAmount > 0) {}
 
+        Debug.Log("attempting a roll...");
+
+        rollDirection = cameraObject.forward * inputHandler.vertical;
+        rollDirection += cameraObject.right * inputHandler.horizontal;
+
+        rollDirection.y = 0;
+        rollDirection.Normalize();
+        Quaternion playerRotation = Quaternion.LookRotation(rollDirection);
+        // playerManager.transform.rotation = playerRotation;
+        t.rotation = playerRotation;
+
+        // perform a roll animation
+        playerManager.animatorHandler.PlayerTargetActionAnimation("Roll", true);
+
+        // add custom movement to animation
+        // playerManager.characterController.Move(rollDirection * 10 * Time.deltaTime);
     }
     #endregion
 }
