@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour
     [Header("Flags")]
     public bool isJumping = false;
     public bool isRolling = false;
+    public bool isSprinting = false;
     public bool isPerformingAction = false;
 
     public bool canMove = true;

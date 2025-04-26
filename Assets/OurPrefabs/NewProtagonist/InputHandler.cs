@@ -23,12 +23,13 @@ public class InputHandler : MonoBehaviour
     [Header("Player Action Input")]
     [SerializeField] bool jumpInput = false;
     [SerializeField] bool rollInput = false;
+    [SerializeField] bool sprintInput = false;
 
 
     // class from input controls package
     InputSystem_Actions inputActions;
-    CameraHandler cameraHandler;
     public PlayerMovement playerMovement;
+    public PlayerManager playerManager;
 
     public void OnEnable() {
 
@@ -38,6 +39,9 @@ public class InputHandler : MonoBehaviour
             inputActions.Player.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
             inputActions.Player.Jump.performed += i => jumpInput = true;
             inputActions.Player.Roll.performed += i => rollInput = true;
+            inputActions.Player.Sprint.performed += i => sprintInput = true;
+            inputActions.Player.Sprint.canceled += i => sprintInput = false;
+
 
             // Note: => is a lambda expression: (parameters) => expression_or_block_of_code
             // Note: performed is an event; += is the listener? 
@@ -54,6 +58,7 @@ public class InputHandler : MonoBehaviour
         MoveInput();
         JumpInput();
         RollInput();
+        SprintInput();
     }
 
     public void MoveInput() {
@@ -94,6 +99,18 @@ public class InputHandler : MonoBehaviour
         {
             rollInput = false;
             playerMovement.PerformRoll();
+        }
+    }
+
+    private void SprintInput()
+    {
+        if (sprintInput)
+        {
+            playerMovement.HandleSprinting();
+        }
+        else
+        {
+            playerManager.isSprinting = false;
         }
     }
 }

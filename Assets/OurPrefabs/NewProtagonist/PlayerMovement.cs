@@ -24,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public GameObject normalCamera; // for later development
 
+    PlayerSoundFXHandler soundFXHandler;
+
 // SerializedField allows you to see it in Inspector
     [Header("Movement Stats")] // what does this do?
-    [SerializeField] public float speed = 5;
-    [SerializeField] float walkingSpeed = 5;
-    [SerializeField] float runningSpeed = 10;
+    [SerializeField] public float walkingSpeed = 5;
+    [SerializeField] public float sprintingSpeed = 20;
     [SerializeField] public float rotationSpeed = 10;
     public float force = 700f;
 
@@ -44,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
         t = GetComponent<Transform>();
 
         inputHandler = GetComponent<InputHandler>();
+
+        soundFXHandler = GetComponent<PlayerSoundFXHandler>();
         cameraObject = Camera.main.transform;
     }
 
@@ -55,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
+        HandleSoundFX();
     }
 
     public void HandleRotation() {
@@ -90,15 +94,21 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.Normalize();
         moveDirection.y = 0;
 
-        playerManager.characterController.Move(moveDirection * walkingSpeed * Time.deltaTime);        
+
+        if (playerManager.isSprinting)
+        {
+            playerManager.characterController.Move(moveDirection * sprintingSpeed * Time.deltaTime);
+        }
+        else 
+        {
+            playerManager.characterController.Move(moveDirection * walkingSpeed * Time.deltaTime);
+        }     
     }
 
     public void PerformRoll()
     {
         if (playerManager.isPerformingAction) {return;}
         // if (inputHandler.moveAmount > 0) {}
-
-        Debug.Log("attempting a roll...");
 
         rollDirection = cameraObject.forward * inputHandler.vertical;
         rollDirection += cameraObject.right * inputHandler.horizontal;
@@ -115,6 +125,53 @@ public class PlayerMovement : MonoBehaviour
         // add custom movement to animation
         // playerManager.characterController.Move(rollDirection * 10 * Time.deltaTime);
     }
+    
+    public void HandleSprinting()
+    {
+        // don't sprint while rolling or jumping
+        if (playerManager.isPerformingAction) {
+            playerManager.isSprinting = false;
+        }
+        
+        if (inputHandler.moveAmount > 0)
+        {
+            playerManager.isSprinting = true;
+        }
+        else // if player is stationary, don't sprint
+        {
+            playerManager.isSprinting = false;
+        }
+
+    }
+    
+
+    private void HandleSoundFX()
+    {
+        if (playerManager.isPerformingAction) {
+            soundFXHandler.StopLoop();
+            return;
+        }
+
+        if (moveDirection.magnitude > 0.1f) // moving
+        {
+            if (playerManager.isSprinting)
+            {
+                soundFXHandler.PlayLoop(soundFXHandler.sprintSFX);
+                Debug.Log("Playing sprinting sound");
+            }
+            else
+            {
+                soundFXHandler.PlayLoop(soundFXHandler.walkSFX);
+                Debug.Log("Playing walking sound");
+            }
+        }
+        else // standing still
+        {
+            soundFXHandler.StopLoop();
+            Debug.Log("Stopping sound");
+        }
+    }
+
     #endregion
 }
 

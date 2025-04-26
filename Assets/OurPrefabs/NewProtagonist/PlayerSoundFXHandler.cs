@@ -2,20 +2,38 @@ using UnityEngine;
 
 public class PlayerSoundFXHandler : MonoBehaviour
 {
-    AudioSource audioSource;
+    public AudioSource audioSourceMovement;
+    public AudioSource audioSourceActions;
 
     public AudioClip gruntSFX;
     public AudioClip walkSFX;
-    public AudioClip runSFX;
+    public AudioClip sprintSFX;
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        // audioSource = GetComponent<AudioSource>();
 
     }
 
     public void PlayerRollSound()
     {
-        audioSource.PlayOneShot(gruntSFX);
+        audioSourceActions.PlayOneShot(gruntSFX);
+    }
+    public void PlayLoop(AudioClip clip)
+    {
+        if (audioSourceMovement != null && (clip != audioSourceMovement.clip || !audioSourceMovement.isPlaying))
+        {
+            audioSourceMovement.clip = clip;
+            audioSourceMovement.loop = true; 
+            audioSourceMovement.Play();
+        }
+    }
+
+    public void StopLoop()
+    {
+        if (audioSourceMovement.isPlaying)
+        {
+            audioSourceMovement.Stop();
+        }
     }
 }
