@@ -52,7 +52,7 @@ public class CameraHandler : MonoBehaviour {
 
     public void Start() {
         myT = transform;
-        defaultCameraPosition = cameraT.position.z; // forward/ backwards/ distance from player
+        defaultCameraPosition = cameraT.localPosition.z; // forward/ backwards/ distance from player
         // ignoreLayers = ~(1 << 8 | 1 << 9 | 1 << 10);
     }
 

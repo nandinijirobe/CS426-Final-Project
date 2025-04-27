@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float walkingSpeed = 5;
     [SerializeField] public float sprintingSpeed = 20;
     [SerializeField] public float rotationSpeed = 10;
+    [SerializeField] public float pushDecayRate = 1.0f;
+    Vector3 externalPushVelocity;
+    
 
     [Header("Jump")]
     [SerializeField] float jumpHeight = 4;
@@ -75,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         HandleSoundFX();
         HandleYVelocity();
         HandleJumpingMovement();
+        ApplyPushVelocity();
     }
 
     public void HandleRotation() {
@@ -126,20 +130,24 @@ public class PlayerMovement : MonoBehaviour
         if (playerManager.isPerformingAction) {return;}
         // if (inputHandler.moveAmount > 0) {}
 
-        rollDirection = cameraObject.forward * inputHandler.vertical;
-        rollDirection += cameraObject.right * inputHandler.horizontal;
+        // rollDirection = cameraObject.forward * inputHandler.vertical;
+        // rollDirection += cameraObject.right * inputHandler.horizontal;
 
-        rollDirection.y = 0;
-        rollDirection.Normalize();
-        Quaternion playerRotation = Quaternion.LookRotation(rollDirection);
-        // playerManager.transform.rotation = playerRotation;
+        // rollDirection = t.forward;
+
+        // rollDirection.y = 0;
+        // rollDirection.Normalize();
+        // Quaternion playerRotation = Quaternion.LookRotation(rollDirection);
+
+        moveDirection = t.forward;
+        moveDirection.y = 0;
+        moveDirection.Normalize();
+        Quaternion playerRotation = Quaternion.LookRotation(moveDirection);
+
         t.rotation = playerRotation;
 
         // perform a roll animation
         playerManager.animatorHandler.PlayerTargetActionAnimation("Roll", true);
-
-        // add custom movement to animation
-        // playerManager.characterController.Move(rollDirection * 10 * Time.deltaTime);
     }
 
     public void HandleSprinting()
@@ -178,7 +186,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else 
             {
-                Debug.Log("grounded and trying to jump. Velocy: " + yVelocity.y);
+                // Debug.Log("grounded and trying to jump. Velocy: " + yVelocity.y);
             }
         }
         else 
@@ -203,7 +211,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void GroundCheck()
     {
-        playerManager.isGrounded = Physics.CheckSphere(playerManager.transform.position, groundCheckSpehereRadius, groundLayer);
+        playerManager.isGrounded = Physics.CheckSphere(playerManager.transform.position, groundCheckSpehereRadius, groundLayer, QueryTriggerInteraction.Ignore);
     }
 
     private void HandleJumpingMovement()
@@ -222,10 +230,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (!playerManager.isGrounded) {return;}
 
-        // apply upward velocity
-
-
-        // perform a roll animation
         playerManager.animatorHandler.PlayerTargetActionAnimation("Jump", true, true, true, true);
         playerManager.isJumping = true;
 
@@ -251,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
     public void ApplyJumpingVelocity()
     {
         yVelocity.y = Mathf.Sqrt(jumpHeight * -2 * gravityForce);
-        Debug.Log("Applying jump velocity");
+        // Debug.Log("Applying jump velocity");
     }
 
     private void HandleSoundFX()
@@ -281,6 +285,30 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void ExternalPush(Vector3 push)
+    {
+        // Debug.Log("Apply push velocity: " + push);
+        externalPushVelocity = push;
+    }
+
+    public void ApplyPushVelocity()
+    {
+        if (externalPushVelocity.magnitude > 0.1f)
+        {
+            Debug.Log("pushing the player");
+            // playerManager.canMove = false;
+            playerManager.characterController.Move(externalPushVelocity * Time.deltaTime);
+            externalPushVelocity = Vector3.Lerp(externalPushVelocity, Vector3.zero, pushDecayRate * Time.deltaTime);
+
+            // play falling and rolling animation only if already rolling (or do ragdoll?)
+        }
+        else 
+        {
+            // playerManager.canMove = true; // maybe set this at end of animation (or beginning of empty, which is already there)
+
+            // player get up animation
+        }
+    }
     #endregion
 }
 
