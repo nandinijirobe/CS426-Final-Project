@@ -49,7 +49,8 @@ public class AnimatorHandler : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        if(playerManager.isPerformingAction)
+        // apply custom movement 
+        if(!playerManager.canMove)
         {
             if (playerManager.isSprinting)
             {

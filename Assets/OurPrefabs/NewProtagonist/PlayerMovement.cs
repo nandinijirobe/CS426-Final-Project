@@ -31,11 +31,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float walkingSpeed = 5;
     [SerializeField] public float sprintingSpeed = 20;
     [SerializeField] public float rotationSpeed = 10;
-    public float force = 700f;
 
     [Header("Roll")]
     Vector3 rollDirection;
 
+    [Header("Ground check and jumping")]
+    [SerializeField] float gravityForce = -40f;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] float groundCheckSpehereRadius = 0.3f;
+    [SerializeField] Vector3 yVelocity;
+    [SerializeField] public float groundedVelocity = -20;
+    [SerializeField] public float fallStartVelocity = -5;
+    bool fallVeloctyHasBeenSet = false;
+    float inAirTimer = 0; // not needed, but could be used to add falling animation
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
         HandleRotation();
         HandleSoundFX();
+        HandleYVelocity();
     }
 
     public void HandleRotation() {
@@ -125,6 +134,17 @@ public class PlayerMovement : MonoBehaviour
         // add custom movement to animation
         // playerManager.characterController.Move(rollDirection * 10 * Time.deltaTime);
     }
+
+    public void PerformJump()
+    {
+        if (playerManager.isPerformingAction) {return;}
+
+        // apply upward velocity
+
+
+        // perform a roll animation
+        playerManager.animatorHandler.PlayerTargetActionAnimation("Jump", true, true, true, true);
+    }
     
     public void HandleSprinting()
     {
@@ -144,6 +164,47 @@ public class PlayerMovement : MonoBehaviour
 
     }
     
+
+    // handles gravity and falling speed
+    private void HandleYVelocity()
+    {
+        GroundCheck();
+
+        if (playerManager.isGrounded)
+        {
+            // if we're not trying to jump
+            if (yVelocity.y < 0)
+            {
+                inAirTimer = 0;
+                fallVeloctyHasBeenSet = false;
+                yVelocity.y = groundedVelocity;
+            }
+        }
+        else 
+        {
+            // makes starting fall velocity a little smoother
+            if (!playerManager.isJumping && !fallVeloctyHasBeenSet)
+            {
+                fallVeloctyHasBeenSet = true;
+                yVelocity.y = fallStartVelocity;
+            }
+
+            inAirTimer += Time.deltaTime;
+            yVelocity.y = gravityForce + Time.deltaTime;
+        }
+
+        
+        playerManager.characterController.Move(yVelocity * Time.deltaTime);
+
+        // yVelocity.y = groundedVelocity;
+        // characterController.Move(yVelocity * Time.deltaTime);
+    }
+
+    private void GroundCheck()
+    {
+        playerManager.isGrounded = Physics.CheckSphere(playerManager.transform.position, groundCheckSpehereRadius, groundLayer);
+    }
+
 
     private void HandleSoundFX()
     {

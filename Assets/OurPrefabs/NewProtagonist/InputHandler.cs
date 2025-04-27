@@ -86,11 +86,11 @@ public class InputHandler : MonoBehaviour
 
     private void JumpInput()
     {
-        // if (jumpInput)
-        // {
-        //     jumpInput = false;
-        //     playerMovement.PerformRoll();
-        // }
+        if (jumpInput)
+        {
+            jumpInput = false;
+            playerMovement.PerformJump();
+        }
     }
 
     private void RollInput()
