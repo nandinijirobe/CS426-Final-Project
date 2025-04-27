@@ -17,8 +17,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerManager playerManager;
     Transform cameraObject;
     InputHandler inputHandler;
-    public Vector3 moveDirection;
-
+    
     [HideInInspector]
     public Transform t;
     public Rigidbody rb;
@@ -27,10 +26,17 @@ public class PlayerMovement : MonoBehaviour
     PlayerSoundFXHandler soundFXHandler;
 
 // SerializedField allows you to see it in Inspector
-    [Header("Movement Stats")] // what does this do?
+    [Header("Movement Settings")] // what does this do?
+    [SerializeField] public Vector3 moveDirection;
     [SerializeField] public float walkingSpeed = 5;
     [SerializeField] public float sprintingSpeed = 20;
     [SerializeField] public float rotationSpeed = 10;
+
+    [Header("Jump")]
+    [SerializeField] float jumpHeight = 4;
+    [SerializeField] float jumpForwardSpeed = 4;
+    Vector3 jumpDirection;
+
 
     [Header("Roll")]
     Vector3 rollDirection;
@@ -59,8 +65,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #region Movement
-    Vector3 normalVector;
-    Vector3 targetPosition;
+    // Vector3 normalVector;
+    // Vector3 targetPosition;
 
     public void HandleAllMovement()
     {
@@ -68,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
         HandleRotation();
         HandleSoundFX();
         HandleYVelocity();
+        HandleJumpingMovement();
     }
 
     public void HandleRotation() {
@@ -135,17 +142,6 @@ public class PlayerMovement : MonoBehaviour
         // playerManager.characterController.Move(rollDirection * 10 * Time.deltaTime);
     }
 
-    public void PerformJump()
-    {
-        if (playerManager.isPerformingAction) {return;}
-
-        // apply upward velocity
-
-
-        // perform a roll animation
-        playerManager.animatorHandler.PlayerTargetActionAnimation("Jump", true, true, true, true);
-    }
-    
     public void HandleSprinting()
     {
         // don't sprint while rolling or jumping
@@ -178,6 +174,11 @@ public class PlayerMovement : MonoBehaviour
                 inAirTimer = 0;
                 fallVeloctyHasBeenSet = false;
                 yVelocity.y = groundedVelocity;
+                // Debug.Log("ground and not trying to jump");
+            }
+            else 
+            {
+                Debug.Log("grounded and trying to jump. Velocy: " + yVelocity.y);
             }
         }
         else 
@@ -190,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             inAirTimer += Time.deltaTime;
-            yVelocity.y = gravityForce + Time.deltaTime;
+            yVelocity.y += gravityForce * Time.deltaTime;
         }
 
         
@@ -205,6 +206,53 @@ public class PlayerMovement : MonoBehaviour
         playerManager.isGrounded = Physics.CheckSphere(playerManager.transform.position, groundCheckSpehereRadius, groundLayer);
     }
 
+    private void HandleJumpingMovement()
+    {
+        if (playerManager.isJumping)
+        {
+            playerManager.characterController.Move(jumpDirection * jumpForwardSpeed * Time.deltaTime);
+        }
+    }
+
+    public void PerformJump()
+    {
+        if (playerManager.isPerformingAction) {return;}
+
+        if (playerManager.isJumping) {return;}
+
+        if (!playerManager.isGrounded) {return;}
+
+        // apply upward velocity
+
+
+        // perform a roll animation
+        playerManager.animatorHandler.PlayerTargetActionAnimation("Jump", true, true, true, true);
+        playerManager.isJumping = true;
+
+        jumpDirection = cameraObject.forward * inputHandler.vertical;
+        jumpDirection += cameraObject.right * inputHandler.horizontal;
+        jumpDirection.Normalize();
+        moveDirection.y = 0;
+
+        if (jumpDirection != Vector3.zero)
+        {
+            // sprint => jump direction at full distance
+            if (playerManager.isSprinting)
+            {
+                jumpDirection *= 1;
+            }
+            else // walking => jump distance at quater distance
+            {
+                jumpDirection *= 0.25f;
+            }
+        }
+    }
+
+    public void ApplyJumpingVelocity()
+    {
+        yVelocity.y = Mathf.Sqrt(jumpHeight * -2 * gravityForce);
+        Debug.Log("Applying jump velocity");
+    }
 
     private void HandleSoundFX()
     {
@@ -218,18 +266,18 @@ public class PlayerMovement : MonoBehaviour
             if (playerManager.isSprinting)
             {
                 soundFXHandler.PlayLoop(soundFXHandler.sprintSFX);
-                Debug.Log("Playing sprinting sound");
+                // Debug.Log("Playing sprinting sound");
             }
             else
             {
                 soundFXHandler.PlayLoop(soundFXHandler.walkSFX);
-                Debug.Log("Playing walking sound");
+                // Debug.Log("Playing walking sound");
             }
         }
         else // standing still
         {
             soundFXHandler.StopLoop();
-            Debug.Log("Stopping sound");
+            // Debug.Log("Stopping sound");
         }
     }
 

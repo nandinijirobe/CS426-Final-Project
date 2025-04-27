@@ -49,7 +49,7 @@ public class AnimatorHandler : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        // apply custom movement 
+        // apply custom movement for rolling
         if(!playerManager.canMove)
         {
             if (playerManager.isSprinting)
