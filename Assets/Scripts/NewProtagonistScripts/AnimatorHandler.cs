@@ -54,7 +54,7 @@ public class AnimatorHandler : MonoBehaviour
         {
             if (playerManager.isSprinting)
             {
-                playerManager.characterController.Move(playerMovement.moveDirection * (playerMovement.sprintingSpeed + 10) * Time.deltaTime);
+                playerManager.characterController.Move(playerMovement.moveDirection * (playerMovement.sprintingSpeed + 5) * Time.deltaTime);
             }
             else 
             {

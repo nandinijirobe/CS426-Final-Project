@@ -73,12 +73,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleAllMovement()
     {
+        ApplyPushVelocity();
         HandleMovement();
         HandleRotation();
         HandleSoundFX();
         HandleYVelocity();
         HandleJumpingMovement();
-        ApplyPushVelocity();
     }
 
     public void HandleRotation() {
@@ -289,24 +289,36 @@ public class PlayerMovement : MonoBehaviour
     {
         // Debug.Log("Apply push velocity: " + push);
         externalPushVelocity = push;
+        moveDirection = Vector3.zero;
+        playerManager.canMove = false;
     }
 
     public void ApplyPushVelocity()
     {
         if (externalPushVelocity.magnitude > 0.1f)
         {
-            Debug.Log("pushing the player");
-            // playerManager.canMove = false;
+            // Vector3 pushDirection = externalPushVelocity.normalized;
+            // float pushSpeed = externalPushVelocity.magnitude;
+
+            // Debug.Log("pushing the player");
             playerManager.characterController.Move(externalPushVelocity * Time.deltaTime);
             externalPushVelocity = Vector3.Lerp(externalPushVelocity, Vector3.zero, pushDecayRate * Time.deltaTime);
 
-            // play falling and rolling animation only if already rolling (or do ragdoll?)
+            // pushSpeed = Mathf.Lerp(pushSpeed, 0f, pushDecayRate * Time.deltaTime);
+            // externalPushVelocity = pushDirection * pushSpeed;
+
+
+            // play falling and rolling animation only if already rolling
+            if (playerManager.animatorHandler.anim.GetBool("GetUp"))
+            {
+                playerManager.animatorHandler.PlayerTargetActionAnimation("Stumble", true, false);
+                playerManager.animatorHandler.anim.SetBool("GetUp", false);
+            }
         }
         else 
         {
-            // playerManager.canMove = true; // maybe set this at end of animation (or beginning of empty, which is already there)
-
-            // player get up animation
+            // play get up animation
+            playerManager.animatorHandler.anim.SetBool("GetUp", true);
         }
     }
     #endregion

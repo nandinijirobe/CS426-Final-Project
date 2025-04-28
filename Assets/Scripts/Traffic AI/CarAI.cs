@@ -136,14 +136,6 @@ public class CarAI : MonoBehaviour
     
                     PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
                     playerMovement.ExternalPush(pushDirection * forceMagnitude * 10);
-
-                    // ragdoll stuff
-                    // var ragdoll = collision.gameObject.GetComponent<RagdollController>();
-                    // ragdoll.SetRagdollState(true);
-                    // foreach (Rigidbody rdrb in ragdoll.ragdollBodies)
-                    // {
-                    //     rdrb.AddForce(transform.forward * 10f, ForceMode.Impulse);
-                    // }
                 }
             }
         }
