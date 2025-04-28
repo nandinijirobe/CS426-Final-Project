@@ -7,6 +7,9 @@ public class AuditionRoomManager : MonoBehaviour
 
     private bool hasAuditioned = false;
 
+    // particle system for this audition center
+    public ParticleSystem starsParticleSystem;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -15,6 +18,11 @@ public class AuditionRoomManager : MonoBehaviour
                 applause.Play();
                 manager.PlayerAuditioned();
                 hasAuditioned = true;
+                Debug.Log("stopping particle system");
+                starsParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                bool isParticlePlaying = starsParticleSystem.isPlaying;
+                Debug.Log("Particle System Playing: " + isParticlePlaying);
+
             }
         }
     }
