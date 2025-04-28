@@ -14,7 +14,7 @@ public class FlockManager : MonoBehaviour
     public GameObject goalGameObject;      // the target game object all NPCs will run towards (player)
     public Vector3 goalPos = Vector3.zero; // the target location all NPCs will move towards
     public bool disguiseOn = false;        // this checks if player is supposed to be hidden from papparazi
-    public bool inBounds = true;           // this checks if player has entered the NPC bounds
+    public bool inBounds = false;           // this checks if player has entered the NPC bounds
     private BoxCollider flockCollider;      // this actually determines the bounds of the NPCs
 
     public Bounds flockBounds;       //  this is to store the bounds of the Flock's Box Collider
@@ -40,11 +40,16 @@ public class FlockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (flockCollider.bounds.Contains(goalGameObject.transform.position)) {
+        if (flockCollider.bounds.Contains(goalGameObject.transform.position))
+        {
             goalPos = goalGameObject.transform.position; // chase the player
+            inBounds = true;
             //Debug.Log("girl is inside bounds");
-        } else {
+        }
+        else
+        {
             goalPos = flockCollider.bounds.center; // go run at center position
+            inBounds = false;
             //Debug.Log("girl is out of bounds");
         }
     }
@@ -54,10 +59,10 @@ public class FlockManager : MonoBehaviour
     void Awake()
     {
         // Added instantiation code here instead of Start() to avoid race conditions
-        
+
         flockCollider = GetComponent<BoxCollider>(); // get the position of the box collider of this object
         flockBounds = flockCollider.bounds;          // this gets the bounding box of the collider
-        flock_minCorner = flockBounds.min;           
+        flock_minCorner = flockBounds.min;
         flock_maxCorner = flockBounds.max;
 
         allNPCs = new GameObject[numNPC];             // initalizes list to store all NPC game objects

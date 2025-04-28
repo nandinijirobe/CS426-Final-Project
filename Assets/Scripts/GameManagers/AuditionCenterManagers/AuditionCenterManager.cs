@@ -27,13 +27,14 @@ public class AuditionCenterManager : MonoBehaviour
         {
             stageDoor.SetActive(true); // close the door so player can't reenter
             //bgMusic.Play();
+
         }
     }
     public void PlayerAuditioned() 
     {
         if (!hasAuditioned) {
             hasAuditioned = true;
-            gameGeneralManager.updateAuditionCount(); 
+            gameGeneralManager.updateAuditionCount();
         }
     }
 }
