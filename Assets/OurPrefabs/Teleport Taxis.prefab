@@ -197,6 +197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2757194984154921149}
+  moneyManager: {fileID: 0}
+  player: {fileID: 0}
+  taxiCanvas: {fileID: 0}
+  proximityDistance: 3
 --- !u!82 &1900720815958866043
 AudioSource:
   m_ObjectHideFlags: 0

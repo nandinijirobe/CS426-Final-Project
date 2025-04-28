@@ -12,7 +12,7 @@ public class Flock : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
- 
+
     }
 
     // Update is called once per frame
@@ -46,16 +46,29 @@ public class Flock : MonoBehaviour
             }
             else
             {
-
-                if (Random.Range(0, 100) < 10) // randomly change the speed
+                if (FM.inBounds)
                 {
-                    speed = Random.Range(FM.minSpeed, FM.maxSpeed);
+                    // chase the player directly
+                    Vector3 playerDirection = (FM.goalGameObject.transform.position - transform.position);
+                    transform.rotation = Quaternion.Slerp(transform.rotation,
+                                                          Quaternion.LookRotation(playerDirection),
+                                                          FM.rotationSpeed * Time.deltaTime);
+
+                }
+                else {
+                    if (Random.Range(0, 100) < 10) // randomly change the speed
+                    {
+                        speed = Random.Range(FM.minSpeed, FM.maxSpeed);
+                    }
+
+                    if (Random.Range(0, 100) < 10) // randomly apply the rules too
+                    {
+                        ApplyRules(); // this will turn NPC towards the direction it needs to be moving in
+                    }
+
                 }
 
-                if (Random.Range(0, 100) < 10) // randomly apply the rules too
-                {
-                    ApplyRules(); // this will turn NPC towards the direction it needs to be moving in
-                }
+                
             }
 
 
@@ -99,7 +112,7 @@ public class Flock : MonoBehaviour
         foreach (GameObject go in gos)
         { // Iterate through all NPCs in the group 
             if (go != this.gameObject) // Ignore self
-            { 
+            {
                 nDistance = Vector3.Distance(go.transform.position, this.transform.position); // Get distance from this NPC to that other NPCs
                 if (nDistance <= FM.neighbourDistance)
                 { // Check if it is within a neighbourly distance

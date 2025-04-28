@@ -19563,7 +19563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -521, y: 193}
+  m_AnchoredPosition: {x: -697, y: 195}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &144185582
@@ -38628,8 +38628,8 @@ MonoBehaviour:
   animator: {fileID: 1842980191}
   flashLight: {fileID: 2091035099}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -46348,10 +46348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -65715,7 +65715,8 @@ MonoBehaviour:
   tmpText: {fileID: 513648373}
   totalMinutesInDay: 1440
   prefix: 'Clock: '
-  warningMinutesLeft: 60
+  yellowThresholdMinutes: 600
+  redThresholdMinutes: 360
   warningSound: {fileID: 8300000, guid: 0e7e61b1d8bba4dc5aa9a96f1a1e1ffb, type: 3}
   audioSource: {fileID: 2046843465}
   isActive: 0
@@ -73619,10 +73620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -74218,8 +74219,8 @@ MonoBehaviour:
   animator: {fileID: 428452716}
   flashLight: {fileID: 701183800}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -75090,8 +75091,8 @@ MonoBehaviour:
   animator: {fileID: 1632528962}
   flashLight: {fileID: 584546101}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -91779,8 +91780,8 @@ MonoBehaviour:
   animator: {fileID: 1228943328}
   flashLight: {fileID: 85822583}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -92666,8 +92667,8 @@ MonoBehaviour:
   animator: {fileID: 1602287058}
   flashLight: {fileID: 512582718}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -98670,8 +98671,8 @@ MonoBehaviour:
   animator: {fileID: 99846993}
   flashLight: {fileID: 765389360}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -103769,10 +103770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -111121,8 +111122,8 @@ MonoBehaviour:
   animator: {fileID: 1311890159}
   flashLight: {fileID: 1779399557}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -111847,8 +111848,8 @@ MonoBehaviour:
   animator: {fileID: 1492261627}
   flashLight: {fileID: 1086378842}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -115935,8 +115936,8 @@ MonoBehaviour:
   animator: {fileID: 1617953669}
   flashLight: {fileID: 1340835494}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -125560,8 +125561,8 @@ MonoBehaviour:
   animator: {fileID: 2146807150}
   flashLight: {fileID: 81400906}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -125668,8 +125669,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 291.6101}
-  m_SizeDelta: {x: 1423.417, y: -45.2202}
+  m_AnchoredPosition: {x: -5.0605, y: 291.6101}
+  m_SizeDelta: {x: 1840.918, y: -45.2202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945495736
 MonoBehaviour:
@@ -126514,8 +126515,8 @@ MonoBehaviour:
   animator: {fileID: 518592706}
   flashLight: {fileID: 757021544}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -132951,8 +132952,8 @@ MonoBehaviour:
   animator: {fileID: 1879529836}
   flashLight: {fileID: 891758536}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -137207,7 +137208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1021936697
@@ -140363,8 +140364,8 @@ MonoBehaviour:
   animator: {fileID: 391309477}
   flashLight: {fileID: 1947255002}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -141605,8 +141606,8 @@ MonoBehaviour:
   animator: {fileID: 1318792547}
   flashLight: {fileID: 1477527750}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -147995,9 +147996,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095775123}
-  m_LocalRotation: {x: -0, y: -0, z: 0.6978849, w: 0.7162099}
+  m_LocalRotation: {x: -0, y: -0, z: -0.008056736, w: 0.9999676}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1396608224}
@@ -148006,10 +148007,10 @@ RectTransform:
   - {fileID: 713268962}
   - {fileID: 369553101}
   m_Father: {fileID: 1494538530}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 88.515}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -678, y: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.923}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 15, y: 223}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095775125
@@ -149708,8 +149709,8 @@ MonoBehaviour:
   animator: {fileID: 1272716723}
   flashLight: {fileID: 98275790}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -168059,10 +168060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -190095,8 +190096,8 @@ MonoBehaviour:
   animator: {fileID: 1939715024}
   flashLight: {fileID: 1283757537}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -198673,8 +198674,8 @@ MonoBehaviour:
   animator: {fileID: 1356625010}
   flashLight: {fileID: 583672965}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -202011,9 +202012,9 @@ RectTransform:
   - {fileID: 1095775124}
   m_Father: {fileID: 1021711468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1494539148
@@ -205197,8 +205198,8 @@ MonoBehaviour:
   animator: {fileID: 555404737}
   flashLight: {fileID: 2009783347}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -212511,10 +212512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -219731,8 +219732,8 @@ MonoBehaviour:
   animator: {fileID: 202681627}
   flashLight: {fileID: 70608801}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -223831,8 +223832,8 @@ MonoBehaviour:
   animator: {fileID: 391149723}
   flashLight: {fileID: 641333708}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -224491,8 +224492,8 @@ MonoBehaviour:
   animator: {fileID: 818836206}
   flashLight: {fileID: 1525878708}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -247816,6 +247817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Compass
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b96afa69ba33f4d4587085ca262f23b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -255615,7 +255620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 410087040}
-  dayDuration: 600
+  dayDuration: 10
   sunColor:
     serializedVersion: 2
     key0: {r: 0.9716981, g: 0.8225892, b: 0.66460484, a: 1}
@@ -261709,8 +261714,8 @@ MonoBehaviour:
   animator: {fileID: 1649532157}
   flashLight: {fileID: 1420757008}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -283316,8 +283321,8 @@ MonoBehaviour:
   animator: {fileID: 510928230}
   flashLight: {fileID: 1898202795}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
@@ -283519,8 +283524,8 @@ MonoBehaviour:
   animator: {fileID: 491498638}
   flashLight: {fileID: 112053955}
   flashDuration: 0.5
-  walkSpeed: 0.5
-  runSpeed: 1
+  walkSpeed: 2.5
+  runSpeed: 4
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 1009697376}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
