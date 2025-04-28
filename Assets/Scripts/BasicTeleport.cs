@@ -8,8 +8,11 @@ public class BasicTeleport : MonoBehaviour
     public GameObject player;
     public Canvas taxiCanvas;
     public float proximityDistance = 5f;
-    
 
+    private void Start()
+    {
+        taxiCanvas.enabled = false;
+    }
     private void Update()
     {
         float distance = Vector3.Distance(player.transform.position, transform.position);

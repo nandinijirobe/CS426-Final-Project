@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FlockManager : MonoBehaviour
 {
+
+    public Vector3 safeSpot;
+
     public GameObject npcPrefab; // our NPC prefab
     public int numNPC = 20;      // the number of total NPCs
     public GameObject[] allNPCs; // list to store all NPC game objects
