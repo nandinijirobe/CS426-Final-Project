@@ -8,6 +8,7 @@ public class AuditionCenterManager : MonoBehaviour
     public AudioSource music;
     //public AudioSource bgMusic;
     public GameObject stageDoor;
+    public ParticleSystem particles;
 
     public GameGeneralManager gameGeneralManager;
     bool hasAuditioned = false;
@@ -27,6 +28,7 @@ public class AuditionCenterManager : MonoBehaviour
         {
             stageDoor.SetActive(true); // close the door so player can't reenter
             //bgMusic.Play();
+            particles.Stop();
 
         }
     }

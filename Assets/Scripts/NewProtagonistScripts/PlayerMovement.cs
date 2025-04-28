@@ -32,7 +32,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float sprintingSpeed = 20;
     [SerializeField] public float rotationSpeed = 10;
     [SerializeField] public float pushDecayRate = 1.0f;
+    [SerializeField] public float pushForce = 10;
     Vector3 externalPushVelocity;
+    Vector3 pushDirection;
     
 
     [Header("Jump")]
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleAllMovement()
     {
+        ApplyNPCPushVelocity();
         ApplyPushVelocity();
         HandleMovement();
         HandleRotation();
@@ -289,6 +292,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Debug.Log("Apply push velocity: " + push);
         externalPushVelocity = push;
+        externalPushVelocity.y = 0;
         moveDirection = Vector3.zero;
         playerManager.canMove = false;
     }
@@ -320,6 +324,24 @@ public class PlayerMovement : MonoBehaviour
             // play get up animation
             playerManager.animatorHandler.anim.SetBool("GetUp", true);
         }
+    }
+
+    // for when fans push the player
+    public void ApplyPush(Vector3 sourcePosition)
+    {
+        pushDirection = (transform.position - sourcePosition).normalized;
+        pushDirection.y = 0; // Don't push up or down
+    }
+
+    private void ApplyNPCPushVelocity()
+    {
+        if (pushDirection.magnitude > 0.1f)
+        {
+            Debug.Log("NPC pushing the player");
+            playerManager.characterController.Move(pushDirection * pushForce * Time.deltaTime);
+            pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushDecayRate * Time.deltaTime);
+        }
+        
     }
     #endregion
 }

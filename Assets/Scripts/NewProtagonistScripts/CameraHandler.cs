@@ -11,7 +11,7 @@ public class CameraHandler : MonoBehaviour {
     [SerializeField] float minPivot = -10; // lowest point you can look down
     [SerializeField] float maxPivot = 20; // highest point you can look up
     
-    public float cameraSphereRadius = 0.2f;
+    public float cameraSphereRadius = 0.1f;
     public float cameraCollisionOffset = 0.2f;
     public float minCollisionOffset = 0.2f;
     

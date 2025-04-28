@@ -16,7 +16,7 @@ public class BasicTeleport : MonoBehaviour
     private void Update()
     {
         float distance = Vector3.Distance(player.transform.position, transform.position);
-        Debug.Log("This is the current distance away from taxi: " + distance);
+        // Debug.Log("This is the current distance away from taxi: " + distance);
         if (distance < proximityDistance)
         {
             taxiCanvas.enabled = true;

@@ -4758,6 +4758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 5225681073623315995}
   stageDoor: {fileID: 3623905307524844332}
+  particles: {fileID: 0}
   gameGeneralManager: {fileID: 0}
 --- !u!1 &3481731328991826294
 GameObject:
@@ -9072,6 +9073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 7544380604967342424}
   applause: {fileID: 7458782759832879036}
+  starsParticleSystem: {fileID: 0}
 --- !u!82 &7458782759832879036
 AudioSource:
   m_ObjectHideFlags: 0
