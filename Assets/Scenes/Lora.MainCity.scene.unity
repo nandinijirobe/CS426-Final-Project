@@ -26910,19 +26910,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.69901013
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7151118
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26930,7 +26930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 91.305
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -26955,6 +26955,46 @@ PrefabInstance:
     - target: {fileID: 6955587589035002818, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_Name
       value: NewProtagonist
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985195684883488722, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985195684883488722, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985195684883488722, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985195684883488722, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985195684883488722, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -78614,6 +78654,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
       propertyPath: m_Name
       value: Natures_House Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
       propertyPath: m_LocalScale.x
@@ -270159,7 +270203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2043745715
 Transform:
   m_ObjectHideFlags: 0

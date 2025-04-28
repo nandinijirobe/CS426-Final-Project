@@ -23,6 +23,7 @@ public class CameraHandler : MonoBehaviour {
     [SerializeField] float upDownLookAngle; 
     public float targetCameraPosition;
     private float defaultCameraPosition;
+    private Quaternion targetRotation;
 
 
 
@@ -53,6 +54,7 @@ public class CameraHandler : MonoBehaviour {
     public void Start() {
         myT = transform;
         defaultCameraPosition = cameraT.localPosition.z; // forward/ backwards/ distance from player
+        targetRotation = Quaternion.Euler(cameraPivotT.forward);
         // ignoreLayers = ~(1 << 8 | 1 << 9 | 1 << 10);
     }
 
@@ -75,7 +77,7 @@ public class CameraHandler : MonoBehaviour {
 
 
         Vector3 rotation = Vector3.zero;
-        Quaternion targetRotation;
+        // Quaternion targetRotation;
 
         // rotate this gameobject on left and right
         rotation.y = leftRightLookAngle;
