@@ -9,25 +9,30 @@ public class GameTimeUiManager : MonoBehaviour
     public TMP_Text tmpText;
 
     [Header("Time Settings")]
-    public int totalMinutesInDay = 1440; // 1440 = 24h
-    public string prefix = "Clock: ";
+    public int totalMinutesInDay = 1440; // 1440 = 24h countdown
+    public string prefix = "Time Left: ";
 
     [Header("End Game Warning Settings")]
-    public int warningMinutesLeft = 10;
+    public int yellowThresholdMinutes = 60;
+    public int redThresholdMinutes = 10;
     public AudioClip warningSound;
     public AudioSource audioSource;
 
     [Header("Activation")]
-    public bool isActive = false;  //  Toggle this to start game time
+    public bool isActive = false;
 
     [Header("Game End Settings")]
-    public GameObject gameLoseEndScreenUI; // assign your UI panel in the Inspector
+    public GameObject gameLoseEndScreenUI;
     public bool gameHasEnded = false;
 
     [Header("Game Restart")]
-    public float restartDelay = 5f; // Seconds before game restarts
+    public float restartDelay = 5f;
 
     private bool warningPlayed = false;
+    private Vector3 originalScale;
+    private Color greenColor = Color.green;
+    private Color yellowColor = Color.yellow;
+    private Color redColor = Color.red;
 
     public enum TimeBlock { Morning, Noon, Evening, Night }
     public TimeBlock CurrentTimeBlock { get; private set; }
@@ -39,6 +44,9 @@ public class GameTimeUiManager : MonoBehaviour
 
         warningPlayed = false;
         gameHasEnded = false;
+
+        if (tmpText != null)
+            originalScale = tmpText.transform.localScale;
     }
 
     void Update()
@@ -46,29 +54,37 @@ public class GameTimeUiManager : MonoBehaviour
         if (!isActive || SunriseSunsetManager == null) return;
 
         float normalized = Mathf.Clamp01(SunriseSunsetManager.TimeOfDay);
-        int currentMinutes = Mathf.FloorToInt(normalized * totalMinutesInDay);
+        int elapsedMinutes = Mathf.FloorToInt(normalized * totalMinutesInDay);
 
-        // Adjust with optional startHour offset
-        float startHour = SunriseSunsetManager.startHour;  // Add a public getter if needed
-        int adjustedMinutes = currentMinutes + Mathf.FloorToInt(startHour * 60) % totalMinutesInDay;
+        int minutesLeft = Mathf.Max(totalMinutesInDay - elapsedMinutes, 0);
 
-        int hours = (adjustedMinutes / 60) % 24;
-        int minutes = adjustedMinutes % 60;
+        int hours = minutesLeft / 60;
+        int minutes = minutesLeft % 60;
 
-        // Time block logic
-        if (hours >= 6 && hours < 12) CurrentTimeBlock = TimeBlock.Morning;
-        else if (hours >= 12 && hours < 17) CurrentTimeBlock = TimeBlock.Noon;
-        else if (hours >= 17 && hours < 21) CurrentTimeBlock = TimeBlock.Evening;
-        else CurrentTimeBlock = TimeBlock.Night;
-
-        // Time display
-        string timeString = $"{prefix} {hours % 12:D2}:{minutes:D2} {(hours < 12 ? "AM" : "PM")}";
+        // Display countdown
+        string timeString = $"{prefix} {hours:D2}:{minutes:D2}";
         if (tmpText != null)
             tmpText.text = timeString;
 
-        // Warning sound logic
-        int minutesRemaining = totalMinutesInDay - currentMinutes;
-        if (!warningPlayed && minutesRemaining <= warningMinutesLeft)
+        // Color change based on time remaining
+        if (minutesLeft <= redThresholdMinutes)
+        {
+            tmpText.color = redColor;
+            PulseText();
+        }
+        else if (minutesLeft <= yellowThresholdMinutes)
+        {
+            tmpText.color = yellowColor;
+            ResetPulse();
+        }
+        else
+        {
+            tmpText.color = greenColor;
+            ResetPulse();
+        }
+
+        // Warning sound
+        if (!warningPlayed && minutesLeft <= redThresholdMinutes)
         {
             if (audioSource != null && warningSound != null)
             {
@@ -77,17 +93,32 @@ public class GameTimeUiManager : MonoBehaviour
             }
         }
 
-        // End of game logic — trigger at 11:59 PM
-        if (!gameHasEnded && adjustedMinutes >= totalMinutesInDay - 1) // Last minute of the day
+        // End of game
+        if (!gameHasEnded && minutesLeft <= 0)
         {
             gameHasEnded = true;
             TriggerGameEnd();
         }
     }
 
+    void PulseText()
+    {
+        if (tmpText != null)
+        {
+            float scale = 1f + 0.1f * Mathf.Sin(Time.time * 5f); // 5Hz wave
+            tmpText.transform.localScale = originalScale * scale;
+        }
+    }
+
+    void ResetPulse()
+    {
+        if (tmpText != null)
+            tmpText.transform.localScale = originalScale;
+    }
+
     void TriggerGameEnd()
     {
-        Debug.Log("Game day has ended at 11:59 PM!");
+        Debug.Log("Time is up!");
 
         if (gameLoseEndScreenUI != null)
             gameLoseEndScreenUI.SetActive(true);
@@ -99,7 +130,7 @@ public class GameTimeUiManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(restartDelay);
 
-        Time.timeScale = 1f; // Reset in case it was paused
+        Time.timeScale = 1f;
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
     }
