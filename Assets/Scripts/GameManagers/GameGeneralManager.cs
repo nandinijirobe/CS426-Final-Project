@@ -44,14 +44,12 @@ public class GameGeneralManager : MonoBehaviour
             moneyManager.AddMoney(100);
             glowToggle.TriggerGlow();
             auditionCount.text = "Auditions: " + numAuditions + "/" + auditionsToWin;
-        } else {
-            TriggerWin();
         }
 
-        // if (numAuditions >= auditionsToWin)
-        // {
-        //     TriggerWin();
-        // }
+        if (numAuditions >= auditionsToWin)
+        {
+            TriggerWin();
+        }
     }
 
     void TriggerWin()

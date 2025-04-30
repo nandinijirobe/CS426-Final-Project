@@ -121,8 +121,8 @@ public class CarAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Rigidbody prb = collision.rigidbody;
-            if (prb != null)
+            CharacterController controller = collision.gameObject.GetComponent<CharacterController>();
+            if (controller != null)
             {
                 // direction from car to character
                 Vector3 pushDirection = (collision.transform.position - transform.position).normalized;
@@ -132,21 +132,10 @@ public class CarAI : MonoBehaviour
                 // dot ≈ 1 means directly in front, ≈ 0 is side, < 0 is behind
                 if (dot > 0.7f) { 
                     Rigidbody rb = GetComponent<Rigidbody>();
-                    
-
-                    // float forceMagnitude = rb.linearVelocity.magnitude * 2.0f;
                     float forceMagnitude = rb.linearVelocity.magnitude;
     
-                    // non ragdoll - comment one or the other out
-                    prb.AddForce(pushDirection * forceMagnitude, ForceMode.Impulse);
-
-                    // ragdoll stuff
-                    // var ragdoll = collision.gameObject.GetComponent<RagdollController>();
-                    // ragdoll.SetRagdollState(true);
-                    // foreach (Rigidbody rdrb in ragdoll.ragdollBodies)
-                    // {
-                    //     rdrb.AddForce(transform.forward * 10f, ForceMode.Impulse);
-                    // }
+                    PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
+                    playerMovement.ExternalPush(pushDirection * forceMagnitude * 10);
                 }
             }
         }

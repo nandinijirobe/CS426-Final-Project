@@ -32,6 +32,7 @@ public class WomanDressUI : MonoBehaviour
     public void SelectPurple() => selectedMat = purpleMat;
     public void SelectDarkGreen() => selectedMat = darkGreenMat;
     public void SelectLime() => selectedMat = limeMat;
+    public void SelectRed() => selectedMat = redMat;
 
     public void ApplyChanges()
     {
