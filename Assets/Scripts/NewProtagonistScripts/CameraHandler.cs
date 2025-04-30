@@ -109,6 +109,8 @@ public class CameraHandler : MonoBehaviour {
         if (Physics.SphereCast(cameraPivotT.position, cameraSphereRadius, direction, out hit, Mathf.Abs(targetCameraPosition), collisionLayers)) {
             float disanceFromHitObject = Vector3.Distance(cameraPivotT.position, hit.point);
             targetCameraPosition = -(disanceFromHitObject - cameraSphereRadius);
+
+            Debug.Log("Colliding with an object:" + hit.transform.name);
         }
 
         if (Mathf.Abs(targetCameraPosition) < cameraSphereRadius) {
