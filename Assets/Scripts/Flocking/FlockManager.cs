@@ -37,7 +37,7 @@ public class FlockManager : MonoBehaviour
 
     public GameTimeUiManager gameTimeUiManager;
 
-    public WomanDressUI womanDressUI;
+    public OutfitChanger outfit_changer;
 
     [Header("Penalty Flash UI")]
     public CanvasGroup penaltyCanvasGroup;  // CanvasGroup on the flash image
@@ -52,7 +52,7 @@ public class FlockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        disguiseOn = womanDressUI.disguiseOn;
+        disguiseOn = outfit_changer.disguiseOn;
         if (flockCollider.bounds.Contains(goalGameObject.transform.position))
         {
             goalPos = goalGameObject.transform.position; // chase the player
@@ -92,6 +92,7 @@ public class FlockManager : MonoBehaviour
             DeductTime deductTime = allNPCs[i].GetComponent<DeductTime>();
             deductTime.gameTimeUiManager = gameTimeUiManager;
             deductTime.penaltyCanvasGroup = penaltyCanvasGroup;
+            deductTime.outfit_changer = outfit_changer;
             allNPCs[i].GetComponent<Flock>().FM = this; // Refers to the GameObject this script is attached to
         }
     }

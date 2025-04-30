@@ -13,28 +13,28 @@ public class DeductTime : MonoBehaviour
     public CanvasGroup penaltyCanvasGroup;  // CanvasGroup on the flash image
     public float penaltyDisplayTime = 2f;
 
-    public WomanDressUI womanDressUI;
+    public OutfitChanger outfit_changer;
 
     private bool disguiseOn;
 
     private void Start()
     {
-        disguiseOn = womanDressUI != null ? womanDressUI.disguiseOn : false;
+        disguiseOn = outfit_changer != null ? outfit_changer.disguiseOn : false;
         audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (womanDressUI != null)
+        if (outfit_changer != null)
         {
-            disguiseOn = womanDressUI.disguiseOn;
+            disguiseOn = outfit_changer.disguiseOn;
         }
     }
 
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player") && (womanDressUI == null || !womanDressUI.disguiseOn))
+        if (other.gameObject.CompareTag("Player") && (outfit_changer == null || !outfit_changer.disguiseOn))
         {
             if (errorSound != null)
             {

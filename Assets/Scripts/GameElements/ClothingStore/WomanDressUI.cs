@@ -19,7 +19,8 @@ public class WomanDressUI : MonoBehaviour
     private Material selectedMat;
     private Material originalMat;
 
-    public bool disguiseOn = false;
+
+    public OutfitChanger changer;
 
     public PlayerMoneyManager moneyManager;
 
@@ -53,7 +54,7 @@ public class WomanDressUI : MonoBehaviour
         Debug.Log("dress bought");
         dressRenderer.material = selectedMat;
         transactionPoint.Play();
-        StartCoroutine(StartDisguiseCountDown());
+        changer.disguiseOn = true;
         gameObject.SetActive(false);
         moneyManager.DeductMoney(100);
         
@@ -65,12 +66,5 @@ public class WomanDressUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    IEnumerator StartDisguiseCountDown()
-    {
-        Debug.Log("disguise on");
-        disguiseOn = true;
-        yield return new WaitForSeconds(10f);
-        disguiseOn = false;
-        Debug.Log("disguise off");
-    }
+
 }
