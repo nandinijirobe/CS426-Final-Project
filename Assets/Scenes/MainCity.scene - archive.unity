@@ -5218,107 +5218,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
   m_PrefabInstance: {fileID: 29284734}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &30506578
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 52.100002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 30.948723
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 10.538776
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &31781722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5387,10 +5286,6 @@ PrefabInstance:
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 417238604}
-    - target: {fileID: 2624921645477826104, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1597783664}
     - target: {fileID: 2757194984154921149, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.1
@@ -6473,29 +6368,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -10749,29 +10624,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -15022,29 +14877,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -27738,7 +27573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.45
+      value: -26.6
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27746,7 +27581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.43
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 1749025453918244557, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27853,17 +27688,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7640270945041343848, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
   m_PrefabInstance: {fileID: 197873488}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &197873495 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 292067746398501631, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
-  m_PrefabInstance: {fileID: 197873488}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197873494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3591ef28c190f4d589fd005529222ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &199763819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29509,10 +29333,6 @@ PrefabInstance:
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 417238604}
-    - target: {fileID: 2624921645477826104, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1597783664}
     - target: {fileID: 5174796411722847730, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_Name
       value: Teleport Taxis
@@ -31042,29 +30862,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -32046,29 +31846,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1 (2)
@@ -39108,78 +38888,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
   m_PrefabInstance: {fileID: 249599555}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &250168354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 250168355}
-  - component: {fileID: 250168357}
-  - component: {fileID: 250168356}
-  m_Layer: 5
-  m_Name: BackgroundImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &250168355
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.015007, y: 0}
-  m_SizeDelta: {x: 1519.5, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &250168356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e10b650818e5f4345b7901dbcbbfd637, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &250168357
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_CullTransparentMesh: 1
 --- !u!1001 &250460936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39234,107 +38942,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 800befcc62026a34693972077c91698d, type: 3}
   m_PrefabInstance: {fileID: 250460936}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &250858627
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager3 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 31.92554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 17.5567
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1 &251478801
 GameObject:
   m_ObjectHideFlags: 0
@@ -40542,107 +40149,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259094331}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &259932955
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 33.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 30.948723
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 10.538776
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &260092528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44835,7 +44341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 191.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44843,7 +44349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -219.7
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45004,7 +44510,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 295339390}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1842980191}
@@ -45015,8 +44521,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &295762865
 GameObject:
@@ -47358,97 +46863,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316335937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &316957005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 316957006}
-  - component: {fileID: 316957009}
-  - component: {fileID: 316957008}
-  - component: {fileID: 316957007}
-  m_Layer: 5
-  m_Name: Lose_EndSplashScreenPanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &316957006
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 250168355}
-  - {fileID: 1584162987}
-  - {fileID: 1442896552}
-  m_Father: {fileID: 1124023938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &316957007
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &316957008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 42b785306f269437cab8249e0e1159a8, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &316957009
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_CullTransparentMesh: 1
 --- !u!1001 &317271835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52800,8 +52214,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1011227574}
-  - {fileID: 1854914190}
-  - {fileID: 1597783663}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -53710,107 +53122,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
   m_PrefabInstance: {fileID: 367720484}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &368014817
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -61.000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.500004
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager2 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 35.93014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 12.414442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &368580337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60850,8 +60161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingMoney: 500
   moneyText: {fileID: 1530097472}
-  gameOverScreen: {fileID: 1124023934}
-  restartDelay: 5
 --- !u!1001 &417314428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71509,11 +70818,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 503537093}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &503547959 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1570646829}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504554368
 GameObject:
   m_ObjectHideFlags: 0
@@ -76013,10 +75317,6 @@ PrefabInstance:
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 417238604}
-    - target: {fileID: 2624921645477826104, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1597783664}
     - target: {fileID: 2757194984154921149, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -76999,107 +76299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 31bbda51eeab02f44a8e92a7da2f5ff8, type: 3}
   m_PrefabInstance: {fileID: 535035919}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &536413107
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 30.948723
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 10.538776
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &536917802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81073,7 +80272,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 564391001}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 428452716}
@@ -81084,8 +80283,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &564391001 stripped
 MonoBehaviour:
@@ -81778,7 +80976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -189
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -81786,7 +80984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -156
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -81947,7 +81145,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 573293212}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1632528962}
@@ -81958,8 +81156,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &573649304
 PrefabInstance:
@@ -82688,11 +81885,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
   m_PrefabInstance: {fileID: 581153266}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &581513280 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1641054056}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &581651937
 GameObject:
@@ -92584,29 +91776,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1 (1)
@@ -94522,29 +93694,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -103754,7 +102906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 141
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -103762,7 +102914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 154
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -103923,7 +103075,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 686946113}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1228943328}
@@ -103934,8 +103086,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &688234708
 PrefabInstance:
@@ -104643,7 +103794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -129
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -104651,7 +103802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 121
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -104812,7 +103963,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 692870531}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1602287058}
@@ -104823,8 +103974,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &693110831
 PrefabInstance:
@@ -110718,7 +109868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -110726,7 +109876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -110887,7 +110037,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 732562602}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 99846993}
@@ -110898,8 +110048,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &733176208
 PrefabInstance:
@@ -121521,11 +120670,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817258590}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &817457709 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 368014817}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &818836204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123648,7 +122792,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 833653089}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1311890159}
@@ -123659,8 +122803,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &833653089 stripped
 MonoBehaviour:
@@ -124376,7 +123519,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 844572013}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1492261627}
@@ -124387,8 +123530,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &844572013 stripped
 MonoBehaviour:
@@ -128297,7 +127439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -166
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -128305,7 +127447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -222
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -128466,7 +127608,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 869945692}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1617953669}
@@ -128477,8 +127619,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &870589804
 GameObject:
@@ -138187,7 +137328,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 944599947}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 2146807150}
@@ -138198,8 +137339,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &944599947 stripped
 MonoBehaviour:
@@ -138974,7 +138114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -138982,7 +138122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 171
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -139143,7 +138283,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 950697994}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 518592706}
@@ -139154,8 +138294,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &950899504
 PrefabInstance:
@@ -142337,10 +141476,6 @@ PrefabInstance:
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 417238604}
-    - target: {fileID: 2624921645477826104, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1597783664}
     - target: {fileID: 2757194984154921149, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -60.8
@@ -145505,7 +144640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -145513,7 +144648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -145674,7 +144809,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 996885942}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1879529836}
@@ -145685,8 +144820,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &997088392
 PrefabInstance:
@@ -147987,11 +147121,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
   m_PrefabInstance: {fileID: 1010048420}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1010230047 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 250858627}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1010625907
 PrefabInstance:
@@ -152454,11 +151583,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
   m_PrefabInstance: {fileID: 1037884482}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1037903226 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 2125018505}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1038142024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152965,7 +152089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -109
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -152973,7 +152097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 115
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -153134,7 +152258,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1040516697}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 391309477}
@@ -153145,8 +152269,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1040828250
 GameObject:
@@ -154378,7 +153501,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1053020708}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1318792547}
@@ -154389,8 +153512,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1053020708 stripped
 MonoBehaviour:
@@ -159653,10 +158775,6 @@ PrefabInstance:
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 417238604}
-    - target: {fileID: 2624921645477826104, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1597783664}
     - target: {fileID: 2757194984154921149, guid: 33f5749342402f14a84015c255bbf2d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.4
@@ -161247,29 +160365,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -162233,7 +161331,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1110361890}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1272716723}
@@ -162244,8 +161342,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1110361890 stripped
 MonoBehaviour:
@@ -164528,108 +163625,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123672189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1124023934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1124023938}
-  - component: {fileID: 1124023937}
-  - component: {fileID: 1124023936}
-  - component: {fileID: 1124023935}
-  m_Layer: 5
-  m_Name: End SplashScreen Canvas - Lose Bankrupt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1124023935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1124023936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1124023937
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1124023938
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 316957006}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1124027648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171496,29 +170491,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -171656,29 +170631,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -181327,29 +180282,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -187563,29 +186498,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -189919,29 +188834,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -190415,107 +189310,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 1322541686}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1322561322
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -60.600002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -28.700005
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager2 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 35.93014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 12.414442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1 &1323118464
 GameObject:
   m_ObjectHideFlags: 0
@@ -191233,7 +190027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1327367068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -191282,7 +190076,6 @@ MonoBehaviour:
   limeMat: {fileID: 2100000, guid: 1e5cb47be8b1047f59f4f3417c508b5c, type: 2}
   priceText: {fileID: 993712135}
   transactionPoint: {fileID: 560950682}
-  changer: {fileID: 197873495}
   moneyManager: {fileID: 417238604}
 --- !u!1001 &1327375877
 PrefabInstance:
@@ -200580,107 +199373,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1001 &1354117351
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -28.600004
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager1 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 30.948723
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 10.538776
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1 &1354478538
 GameObject:
   m_ObjectHideFlags: 0
@@ -200897,142 +199589,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 1355312322}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1355505458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355505459}
-  - component: {fileID: 1355505461}
-  - component: {fileID: 1355505460}
-  m_Layer: 5
-  m_Name: Lose Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1355505459
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2143735800}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: -291}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1355505460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Game Over!!! You ran out of time :(((((
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1012.794, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1355505461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1355559998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203641,11 +202197,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8fa324388c16b5c4eac9846338b35b17, type: 3}
   m_PrefabInstance: {fileID: 1377701161}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1377828449 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 536413107}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1378009294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203827,11 +202378,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
   m_PrefabInstance: {fileID: 1379833787}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1381190105 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1647805839}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1382147737
 PrefabInstance:
@@ -207716,52 +206262,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0ee37198b24b2164fbbccfbe92fe5d35, type: 3}
   m_PrefabInstance: {fileID: 1412595352}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1412887135
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1412887136}
-  m_Layer: 0
-  m_Name: Park6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1412887136
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412887135}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.8, y: 0, z: -98.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1539978146}
-  - {fileID: 1980448767}
-  - {fileID: 581513280}
-  - {fileID: 1505417519}
-  - {fileID: 1377828449}
-  - {fileID: 1037903226}
-  - {fileID: 817457709}
-  - {fileID: 1010230047}
-  - {fileID: 1952676292}
-  - {fileID: 2020520163}
-  - {fileID: 2058274234}
-  - {fileID: 1381190105}
-  - {fileID: 1492815740}
-  - {fileID: 503547959}
-  - {fileID: 2085258217}
-  m_Father: {fileID: 2114712247}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1413425317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208141,7 +206641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 193
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -208149,7 +206649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -149
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -208310,7 +206810,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1416821409}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1939715024}
@@ -208321,8 +206821,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1417724419
 GameObject:
@@ -212643,142 +211142,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8991091930390453267, guid: 407cec0499750964c87373d454cba99e, type: 3}
   m_PrefabInstance: {fileID: 1442821804}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1442896551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1442896552}
-  - component: {fileID: 1442896554}
-  - component: {fileID: 1442896553}
-  m_Layer: 5
-  m_Name: Lose Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1442896552
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: -291}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1442896553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Game Over!!! You ran out of money :(((((
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1075.6282, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1442896554
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_CullTransparentMesh: 1
 --- !u!1 &1443116651
 GameObject:
   m_ObjectHideFlags: 0
@@ -215311,107 +213674,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
   m_PrefabInstance: {fileID: 1457341320}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1457658790
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -60.600002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 52
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 35.93014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 12.414442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &1459333093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217360,7 +215622,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1472033985}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1356625010}
@@ -217371,8 +215633,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1472033985 stripped
 MonoBehaviour:
@@ -219900,29 +218161,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -220512,11 +218753,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &1492815740 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1659863677}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1493108827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -222057,11 +220293,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 1505386762}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1505417519 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 259932955}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1505758902
 PrefabInstance:
@@ -228596,7 +226827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -175
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -228604,7 +226835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -146
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -228765,7 +226996,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1517187600}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 555404737}
@@ -228776,8 +227007,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1517763859
 GameObject:
@@ -232033,11 +230263,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
   m_PrefabInstance: {fileID: 1539418954}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1539978146 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 30506578}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1540604277
 PrefabInstance:
@@ -236348,107 +234573,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 1569661453}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1570646829
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -60.600002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 33.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 35.93014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 12.414442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &1571712063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -238248,42 +236372,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
   m_PrefabInstance: {fileID: 1583595934}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1584162986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1584162987}
-  m_Layer: 5
-  m_Name: Buttons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1584162987
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584162986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1708893858}
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 652, y: -22}
-  m_SizeDelta: {x: 160, y: 74}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1586105101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -239867,94 +237955,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0064eb002f3790247969e12119bbf9d2, type: 3}
   m_PrefabInstance: {fileID: 1597642881}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1597783662
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1597783663}
-  - component: {fileID: 1597783666}
-  - component: {fileID: 1597783665}
-  - component: {fileID: 1597783664}
-  m_Layer: 5
-  m_Name: Paying taxi driver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1597783663
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597783662}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.0304, y: 5.0304, z: 5.0304}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 358852481}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 10}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &1597783664
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597783662}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &1597783665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597783662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 33df781e4ee7646178d097d2a892bb18, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 040d440c99f0c4140b265fd8d9522821, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1597783666
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597783662}
-  m_CullTransparentMesh: 1
 --- !u!1 &1598999119
 GameObject:
   m_ObjectHideFlags: 0
@@ -243340,7 +241340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -243348,7 +241348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -187
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -243509,7 +241509,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1624417831}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 202681627}
@@ -243520,8 +241520,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1625455726
 PrefabInstance:
@@ -245621,107 +243620,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 1640816158}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1641054056
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 52
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 31.92554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 17.5567
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &1641111576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -246458,107 +244356,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
   m_PrefabInstance: {fileID: 1647644938}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1647805839
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -60.600002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.299999
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager2 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 35.93014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 12.414442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &1648164593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247591,107 +245388,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8991091930390453267, guid: 407cec0499750964c87373d454cba99e, type: 3}
   m_PrefabInstance: {fileID: 1655440655}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1656698643
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -28.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager3 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 31.92554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 17.5567
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &1657157600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247714,7 +245410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 182
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -247722,7 +245418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 160
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -247883,7 +245579,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1657157604}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 391149723}
@@ -247894,8 +245590,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1657231680
 PrefabInstance:
@@ -248282,29 +245977,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -248393,107 +246068,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
   m_PrefabInstance: {fileID: 1659766466}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1659863677
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.299999
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager3 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 31.92554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 17.5567
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1 &1660926630
 GameObject:
   m_ObjectHideFlags: 0
@@ -248678,7 +246252,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 5906488487102248778}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 818836206}
@@ -248689,8 +246263,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1662331641
 GameObject:
@@ -254420,139 +251993,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708613451}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1708893857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708893858}
-  - component: {fileID: 1708893861}
-  - component: {fileID: 1708893860}
-  - component: {fileID: 1708893859}
-  m_Layer: 5
-  m_Name: Play Again Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1708893858
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1895669144}
-  m_Father: {fileID: 1584162987}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: 30.9349}
-  m_SizeDelta: {x: 160, y: 47.8697}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1708893859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1708893860}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameRestartManager, Assembly-CSharp
-        m_MethodName: RestartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1708893860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1708893861
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1709704797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255469,29 +252909,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -277922,94 +275342,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
   m_PrefabInstance: {fileID: 1854310555}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1854914189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1854914190}
-  - component: {fileID: 1854914193}
-  - component: {fileID: 1854914192}
-  - component: {fileID: 1854914191}
-  m_Layer: 5
-  m_Name: Signing Autograph
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1854914190
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854914189}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.0304, y: 5.0304, z: 5.0304}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 358852481}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 10}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &1854914191
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854914189}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &1854914192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854914189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 33df781e4ee7646178d097d2a892bb18, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7a63232fc34f464980525912a564c70, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1854914193
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854914189}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1855191717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280456,29 +277788,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -281238,29 +278550,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -282989,142 +280281,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 260808cfd9b21994d8c3007a7bc9934c, type: 3}
   m_PrefabInstance: {fileID: 1895140998}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1895669143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1895669144}
-  - component: {fileID: 1895669146}
-  - component: {fileID: 1895669145}
-  m_Layer: 5
-  m_Name: Play Again?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1895669144
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1708893858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1895669145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Play Again?
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1895669146
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1897620871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286630,29 +283786,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -287484,29 +284620,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -290090,11 +287206,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 1952273378}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1952676292 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1354117351}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1954497180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291140,7 +288251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -291148,7 +288259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -291309,7 +288420,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1961904460}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1649532157}
@@ -291320,8 +288431,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1962251807
 PrefabInstance:
@@ -292866,11 +289976,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 1980384581}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1980448767 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1457658790}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1980683482
 PrefabInstance:
@@ -294726,29 +291831,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -296416,29 +293501,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager3
@@ -296770,29 +293835,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -297055,29 +294100,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager2
@@ -298607,11 +295632,6 @@ Transform:
   - {fileID: 1090422912}
   m_Father: {fileID: 1267149054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2020520163 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1322561322}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2020816349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298940,29 +295960,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -303660,11 +300660,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8991091930390453267, guid: 407cec0499750964c87373d454cba99e, type: 3}
   m_PrefabInstance: {fileID: 2057862645}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2058274234 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 1656698643}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2058482901
 GameObject:
   m_ObjectHideFlags: 0
@@ -305358,7 +302353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2076240251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306580,11 +303575,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 921b4e33443ab5943afa3c4841e74cae, type: 3}
   m_PrefabInstance: {fileID: 2085251942}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2085258217 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-  m_PrefabInstance: {fileID: 2126497532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2085594816
 PrefabInstance:
@@ -311737,7 +308727,6 @@ Transform:
   - {fileID: 2105374411}
   - {fileID: 1034412052}
   - {fileID: 1824133673}
-  - {fileID: 1412887136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2115129392
@@ -312296,29 +309285,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
     - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: m_Name
       value: FlockManager1
@@ -312783,107 +309752,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
   m_PrefabInstance: {fileID: 2124038861}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2125018505
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25.400002
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.4000034
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager1 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 30.948723
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 10.538776
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &2125027806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313112,107 +309980,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 2126462040}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2126497532
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1412887136}
-    m_Modifications:
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.397406
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 33.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 144472038200108442, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: numNPC
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: womanDressUI
-      value: 
-      objectReference: {fileID: 1327367069}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: goalGameObject
-      value: 
-      objectReference: {fileID: 197873494}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: outfit_changer
-      value: 
-      objectReference: {fileID: 197873495}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: gameTimeUiManager
-      value: 
-      objectReference: {fileID: 510405619}
-    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: penaltyCanvasGroup
-      value: 
-      objectReference: {fileID: 1854914191}
-    - target: {fileID: 5969119395146078344, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Name
-      value: FlockManager3 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.x
-      value: 31.92554
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Size.z
-      value: 17.602264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.x
-      value: 17.5567
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_Center.z
-      value: 39.863724
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896082238604703770, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
 --- !u!1001 &2127592212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313989,7 +310756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -144
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -313997,7 +310764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -314158,7 +310925,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 2136188367}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 510928230}
@@ -314169,8 +310936,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &2136223509
 PrefabInstance:
@@ -314194,7 +310960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -314202,7 +310968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.3
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -314363,7 +311129,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 2136223513}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 491498638}
@@ -314374,8 +311140,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &2136458082
 PrefabInstance:
@@ -315518,7 +312283,6 @@ RectTransform:
   m_Children:
   - {fileID: 2087182699}
   - {fileID: 1723536146}
-  - {fileID: 1355505459}
   m_Father: {fileID: 772179976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -316249,7 +313013,6 @@ SceneRoots:
   - {fileID: 358852481}
   - {fileID: 1248345751}
   - {fileID: 772179976}
-  - {fileID: 1124023938}
   - {fileID: 1568022900}
   - {fileID: 2076240254}
   - {fileID: 223146341}
