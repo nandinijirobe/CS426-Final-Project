@@ -61892,7 +61892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421a7f6898fd44c8a8ed4de62ca03956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoney: 200
+  startingMoney: 500
   moneyText: {fileID: 1530097472}
   clothingCanvasGroup: {fileID: 1548538973}
   auditionCanvasGroup: {fileID: 1116732732}
@@ -139737,7 +139737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.060425, y: 27}
+  m_AnchoredPosition: {x: -5.060547, y: 27}
   m_SizeDelta: {x: 1840.918, y: -45.2202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945495736
@@ -168736,7 +168736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thank you for playing Lights, Camera, Action!\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDEVELOPED
+  m_text: "Thank you for playing Lights, Camera, RUN!!\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDEVELOPED
     BY\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nLora
     Williams\nNandini Jirobe\nVedant Nandoskar  \n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nA
     PROJECT FOR  \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nUniversity
