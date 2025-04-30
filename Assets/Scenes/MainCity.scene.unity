@@ -61554,6 +61554,7 @@ MonoBehaviour:
   prevButton: {fileID: 264292439}
   mainMenuButton: {fileID: 1471679116}
   gameTimeManager: {fileID: 510405619}
+  sunriseSunset: {fileID: 1908339393}
 --- !u!4 &422278550
 Transform:
   m_ObjectHideFlags: 0
@@ -285034,6 +285035,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   startHour: 1
+  isTimeActive: 0
   timeOfDay: 0
 --- !u!1 &1908596198
 GameObject:

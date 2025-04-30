@@ -30,6 +30,8 @@ public class SunriseSunset : MonoBehaviour
     [Range(0f, 24f)]
     public float startHour = 1f; // Starts at 1AM by default
 
+    [Header("Control Settings")]
+    public bool isTimeActive = false;
 
     [SerializeField] private float timeOfDay;
     public float TimeOfDay => timeOfDay; // public read-only access // 0 - 1 representing progress through the day
@@ -43,6 +45,8 @@ public class SunriseSunset : MonoBehaviour
 
     void Update()
     {
+        if (!isTimeActive) return;
+
         timeOfDay += Time.deltaTime / dayDuration;
         if (timeOfDay > 1f) timeOfDay = 0f;
 

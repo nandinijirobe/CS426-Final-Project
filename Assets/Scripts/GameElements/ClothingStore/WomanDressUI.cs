@@ -57,7 +57,7 @@ public class WomanDressUI : MonoBehaviour
         changer.disguiseOn = true;
         gameObject.SetActive(false);
         moneyManager.DeductMoney(100);
-        
+        PaparazziAI.TriggerClothingCooldownAll();
     }
 
     public void CancelChanges()

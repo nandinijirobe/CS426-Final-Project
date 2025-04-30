@@ -19,6 +19,9 @@ public class SplashScreenUI : MonoBehaviour
     [Header("Managers")]
     public GameTimeUiManager gameTimeManager;
 
+    [Header("Environment Manager")]
+    public SunriseSunset sunriseSunset;
+
     private int currentPage = 0;
 
     void Start()
@@ -34,6 +37,9 @@ public class SplashScreenUI : MonoBehaviour
         splashMenu.SetActive(false);
         gameplayElements.SetActive(true);
         gameTimeManager.isActive = true;
+
+        if (sunriseSunset != null)
+            sunriseSunset.isTimeActive = true; // 🌞 Start time
     }
 
     public void ShowInstructions() => instructionsPanel.SetActive(true);
