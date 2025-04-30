@@ -54,8 +54,15 @@ public class CameraHandler : MonoBehaviour {
     public void Start() {
         myT = transform;
         defaultCameraPosition = cameraT.localPosition.z; // forward/ backwards/ distance from player
-        targetRotation = Quaternion.Euler(cameraPivotT.forward);
-        // ignoreLayers = ~(1 << 8 | 1 << 9 | 1 << 10);
+
+        // Set initial horizontal angle based on player facing direction
+        leftRightLookAngle = targetT.eulerAngles.y;
+
+        // Apply initial rotation to match player
+        Vector3 initialRotation = Vector3.zero;
+        initialRotation.y = leftRightLookAngle;
+        targetRotation = Quaternion.Euler(initialRotation);
+        myT.rotation = targetRotation;
     }
 
     // updates camera position so that it follows the player
@@ -102,6 +109,8 @@ public class CameraHandler : MonoBehaviour {
         if (Physics.SphereCast(cameraPivotT.position, cameraSphereRadius, direction, out hit, Mathf.Abs(targetCameraPosition), collisionLayers)) {
             float disanceFromHitObject = Vector3.Distance(cameraPivotT.position, hit.point);
             targetCameraPosition = -(disanceFromHitObject - cameraSphereRadius);
+
+            Debug.Log("Colliding with an object:" + hit.transform.name);
         }
 
         if (Mathf.Abs(targetCameraPosition) < cameraSphereRadius) {
