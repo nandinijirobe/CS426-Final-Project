@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoneyManager : MonoBehaviour
 {
@@ -10,11 +11,18 @@ public class PlayerMoneyManager : MonoBehaviour
     [Header("UI")]
     public TMP_Text moneyText; // Assign this in the Inspector
 
+    [Header("Game Over UI")]
+    public GameObject gameOverScreen; // Assign this in the Inspector
+
+    [Header("Game Restart")]
+    public float restartDelay = 5f;
+
     private int currentMoney;
 
     void Start()
     {
         currentMoney = startingMoney;
+        gameOverScreen.SetActive(false);
         UpdateMoneyUI();
     }
 
@@ -25,10 +33,10 @@ public class PlayerMoneyManager : MonoBehaviour
         currentMoney = Mathf.Max(currentMoney, 0);
         UpdateMoneyUI();
 
-        if (currentMoney == 0)
+        if (currentMoney <= 0)
         {
-            Debug.Log("You're broke! Consider ending the game or limiting actions.");
-            // Add logic here if needed (e.g., Game Over screen)
+            Debug.Log("You're broke! Showing Game Over screen.");
+            TriggerGameEnd();
         }
     }
 
@@ -47,5 +55,24 @@ public class PlayerMoneyManager : MonoBehaviour
     {
         currentMoney += amount;
         UpdateMoneyUI();
+    }
+
+    private void TriggerGameEnd()
+    {
+        Debug.Log("Player has no money left! Game Over.");
+
+        if (gameOverScreen != null)
+            gameOverScreen.SetActive(true);
+
+        StartCoroutine(RestartGameAfterDelay());
+    }
+
+    System.Collections.IEnumerator RestartGameAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(restartDelay);
+
+        Time.timeScale = 1f;
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }

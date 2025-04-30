@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PaparazziAI : MonoBehaviour
@@ -34,6 +35,11 @@ public class PaparazziAI : MonoBehaviour
     [Header("Chase Audio")]
     public AudioSource chaseAudioSource;
     public AudioClip chaseClip;
+
+    [Header("Clothing Cooldown")]
+    public float clothingCooldownDuration = 60f;
+    private bool isClothingCooldownActive = false;
+    private float clothingCooldownTimer = 0f;
     
     public float maxDangerDistance = 10f;
 
@@ -54,6 +60,8 @@ public class PaparazziAI : MonoBehaviour
 
     public int paparazziPenalty = 50;
 
+    public static List<PaparazziAI> AllPaparazzi = new List<PaparazziAI>();
+
     public float GetProximityLevel()
     {
         float distance = Vector3.Distance(transform.position, player.position);
@@ -63,6 +71,7 @@ public class PaparazziAI : MonoBehaviour
 
     private void Awake()
     {
+        AllPaparazzi.Add(this);
         dangerBarManager = FindObjectOfType<DangerBarManager>();
         paparazzoSounds = GetComponent<PaparazzoSounds>();
     }
@@ -148,6 +157,17 @@ public class PaparazziAI : MonoBehaviour
                     StartCoroutine(ReturnToPatrolAfterSeconds(3f));
                 }
                 break;
+        }
+
+        // 🔄 Clothing cooldown timer
+        if (isClothingCooldownActive)
+        {
+            clothingCooldownTimer -= Time.deltaTime;
+            if (clothingCooldownTimer <= 0f)
+            {
+                isClothingCooldownActive = false;
+                Debug.Log($"[{name}] Clothing cooldown ended.");
+            }
         }
     }
 
@@ -259,6 +279,31 @@ public class PaparazziAI : MonoBehaviour
         Debug.Log($"[{name}] Danger bar triggered. Applying penalty & cooldown.");
     }
 
+    public void TriggerClothingCooldown()
+    {
+        if (!isClothingCooldownActive)
+        {
+            isClothingCooldownActive = true;
+            clothingCooldownTimer = clothingCooldownDuration;
+            Debug.Log($"[{name}] Clothing cooldown triggered for {clothingCooldownDuration} seconds.");
+        }
+    }
+
+    public bool IsClothingOnCooldown()
+    {
+        return isClothingCooldownActive;
+    }
+
+    public static void TriggerClothingCooldownAll()
+    {
+        foreach (var paparazzi in AllPaparazzi)
+        {
+            paparazzi.TriggerClothingCooldown();
+        }
+    }
+
+
+
     IEnumerator ReturnToPatrolAfterSeconds(float seconds)
     {
         isReturningToPatrol = true;
@@ -276,5 +321,10 @@ public class PaparazziAI : MonoBehaviour
             yield return new WaitForSeconds(flashDuration);
             flashLight.enabled = false;
         }
+    }
+
+    private void OnDestroy()
+    {
+        AllPaparazzi.Remove(this);
     }
 }

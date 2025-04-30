@@ -8,6 +8,7 @@ public class GameGeneralManager : MonoBehaviour
     int numAuditions = 0;
     public TMP_Text auditionCount;
     public PlayerMoneyManager moneyManager;
+    public BayesianDecisionManager decisionManager; // Assign this in Inspector
 
     public GlowToggle glowToggle;
 
@@ -44,6 +45,12 @@ public class GameGeneralManager : MonoBehaviour
             moneyManager.AddMoney(100);
             glowToggle.TriggerGlow();
             auditionCount.text = "Auditions: " + numAuditions + "/" + auditionsToWin;
+
+            // 🟢 Update fame level proportionally (0.2 per audition)
+            if (decisionManager != null)
+            {
+                decisionManager.fameLevel = Mathf.Clamp01(numAuditions / (float)auditionsToWin);
+            }
         }
 
         if (numAuditions >= auditionsToWin)
