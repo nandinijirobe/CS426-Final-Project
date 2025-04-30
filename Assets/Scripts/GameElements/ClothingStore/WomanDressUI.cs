@@ -24,7 +24,7 @@ public class WomanDressUI : MonoBehaviour
     {
         originalMat = redMat;
         selectedMat = redMat;
-        priceText.text = "Choose an outfit ($50)";
+        // priceText.text = "Choose an outfit ($75)";
         gameObject.SetActive(false);
     }
 
@@ -41,7 +41,7 @@ public class WomanDressUI : MonoBehaviour
         transactionPoint.Play();
         gameObject.SetActive(false);
 
-        moneyManager.DeductMoney(100);
+        moneyManager.DeductMoney(75);
     }
 
     public void CancelChanges()

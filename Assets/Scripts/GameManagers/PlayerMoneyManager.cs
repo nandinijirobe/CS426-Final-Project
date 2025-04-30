@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerMoneyManager : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class PlayerMoneyManager : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text moneyText; // Assign this in the Inspector
+    public CanvasGroup clothingCanvasGroup; // to show -$75 when buying clothes
+    public CanvasGroup auditionCanvasGroup; // to show +$100 when getting audition
+    public float moneyDeductionDisplayTime = 1f;
 
     private int currentMoney;
 
@@ -25,10 +30,9 @@ public class PlayerMoneyManager : MonoBehaviour
         currentMoney = Mathf.Max(currentMoney, 0);
         UpdateMoneyUI();
 
-        if (currentMoney == 0)
+        if (amount == 75)
         {
-            Debug.Log("You're broke! Consider ending the game or limiting actions.");
-            // Add logic here if needed (e.g., Game Over screen)
+            ShowMoneyImage(clothingCanvasGroup);
         }
     }
 
@@ -47,5 +51,38 @@ public class PlayerMoneyManager : MonoBehaviour
     {
         currentMoney += amount;
         UpdateMoneyUI();
+
+        if (amount == 100)
+        {
+            ShowMoneyImage(auditionCanvasGroup);
+        }
+    }
+
+    void ShowMoneyImage(CanvasGroup canvasGroup)
+    {
+        
+        if (canvasGroup != null)
+        {
+            canvasGroup.alpha = 0.8f;
+            canvasGroup.gameObject.SetActive(true);
+            StartCoroutine(FadeOutMoneyImage(canvasGroup));
+        }
+    }
+
+    IEnumerator FadeOutMoneyImage(CanvasGroup canvasGroup)
+    {
+        float timer = 0f;
+        float startAlpha = canvasGroup.alpha;
+
+        while (timer < moneyDeductionDisplayTime)
+        {
+            timer += Time.deltaTime;
+            float t = timer / moneyDeductionDisplayTime;
+            canvasGroup.alpha = Mathf.Lerp(startAlpha, 0f, t);
+            yield return null;
+        }
+
+        canvasGroup.alpha = 0f;
+        canvasGroup.gameObject.SetActive(false);
     }
 }
