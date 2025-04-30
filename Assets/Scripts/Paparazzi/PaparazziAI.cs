@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PaparazziAI : MonoBehaviour
@@ -59,6 +60,8 @@ public class PaparazziAI : MonoBehaviour
 
     public int paparazziPenalty = 50;
 
+    public static List<PaparazziAI> AllPaparazzi = new List<PaparazziAI>();
+
     public float GetProximityLevel()
     {
         float distance = Vector3.Distance(transform.position, player.position);
@@ -68,6 +71,7 @@ public class PaparazziAI : MonoBehaviour
 
     private void Awake()
     {
+        AllPaparazzi.Add(this);
         dangerBarManager = FindObjectOfType<DangerBarManager>();
         paparazzoSounds = GetComponent<PaparazzoSounds>();
     }
@@ -290,6 +294,15 @@ public class PaparazziAI : MonoBehaviour
         return isClothingCooldownActive;
     }
 
+    public static void TriggerClothingCooldownAll()
+    {
+        foreach (var paparazzi in AllPaparazzi)
+        {
+            paparazzi.TriggerClothingCooldown();
+        }
+    }
+
+
 
     IEnumerator ReturnToPatrolAfterSeconds(float seconds)
     {
@@ -308,5 +321,10 @@ public class PaparazziAI : MonoBehaviour
             yield return new WaitForSeconds(flashDuration);
             flashLight.enabled = false;
         }
+    }
+
+    private void OnDestroy()
+    {
+        AllPaparazzi.Remove(this);
     }
 }

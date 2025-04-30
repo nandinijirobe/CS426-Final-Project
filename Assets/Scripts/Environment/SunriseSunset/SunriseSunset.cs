@@ -50,6 +50,12 @@ public class SunriseSunset : MonoBehaviour
         if (adjustSkybox) UpdateSkybox();
         if (adjustFogAndAmbient) UpdateEnvironment();
         if (useMoon) UpdateMoon();
+
+        if (timeOfDay < 1f)
+        {
+            timeOfDay += Time.deltaTime / dayDuration;
+            if (timeOfDay > 1f) timeOfDay = 1f;
+        }
     }
 
     void UpdateSun()
