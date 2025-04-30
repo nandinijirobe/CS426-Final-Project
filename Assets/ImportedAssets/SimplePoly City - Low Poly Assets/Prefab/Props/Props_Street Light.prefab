@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 5366751099034928793}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Props_Street Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 956300522814205894}
   - component: {fileID: 1129946269435154846}
   - component: {fileID: 1487937078052759163}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
