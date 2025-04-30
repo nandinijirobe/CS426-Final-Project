@@ -16,7 +16,7 @@ public class FlockManager : MonoBehaviour
 
     public GameObject goalGameObject;      // the target game object all NPCs will run towards (player)
     public Vector3 goalPos = Vector3.zero; // the target location all NPCs will move towards
-    public bool disguiseOn = false;        // this checks if player is supposed to be hidden from papparazi
+    public bool disguiseOn;        // this checks if player is supposed to be hidden from papparazi
     public bool inBounds = false;           // this checks if player has entered the NPC bounds
     private BoxCollider flockCollider;      // this actually determines the bounds of the NPCs
 
@@ -34,6 +34,15 @@ public class FlockManager : MonoBehaviour
     [Range(1.0f, 5.0f)]
     public float rotationSpeed;     // how fast the NPC can rotate
 
+
+    public GameTimeUiManager gameTimeUiManager;
+
+    public OutfitChanger outfit_changer;
+
+    [Header("Penalty Flash UI")]
+    public CanvasGroup penaltyCanvasGroup;  // CanvasGroup on the flash image
+    public float penaltyDisplayTime = 2f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +52,7 @@ public class FlockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        disguiseOn = outfit_changer.disguiseOn;
         if (flockCollider.bounds.Contains(goalGameObject.transform.position))
         {
             goalPos = goalGameObject.transform.position; // chase the player
@@ -79,6 +89,10 @@ public class FlockManager : MonoBehaviour
                                       1.2f,
                                       Random.Range(flock_minCorner.z, flock_maxCorner.z));
             allNPCs[i] = Instantiate(npcPrefab, pos, Quaternion.Euler(0, Random.Range(0f, 360f), 0)); // NOTE: Quaternion.identity means that there the NPC is not being instantiated with any specific rotation
+            DeductTime deductTime = allNPCs[i].GetComponent<DeductTime>();
+            deductTime.gameTimeUiManager = gameTimeUiManager;
+            deductTime.penaltyCanvasGroup = penaltyCanvasGroup;
+            deductTime.outfit_changer = outfit_changer;
             allNPCs[i].GetComponent<Flock>().FM = this; // Refers to the GameObject this script is attached to
         }
     }
