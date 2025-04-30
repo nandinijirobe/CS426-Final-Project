@@ -7761,11 +7761,11 @@ Transform:
   m_GameObject: {fileID: 52592979}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -36.01499, y: -1.0375562, z: -38.565178}
+  m_LocalPosition: {x: 0, y: 38.462444, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2043745715}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &52592981
 MonoBehaviour:
@@ -10190,6 +10190,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67248502}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &69889395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69889396}
+  - component: {fileID: 69889398}
+  - component: {fileID: 69889397}
+  m_Layer: 5
+  m_Name: InstructionsDesc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &69889396
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69889395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 567221304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 232}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &69889397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69889395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Complete all of your auditions before the end of the day, but beware of
+    the paparazzi! \n\nUse clothing stores to disguise yourself, and take taxis to
+    evade the paparazzi.\n\nDon't go bankrupt!"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -402.82303, y: 11.399475, z: 13.322266, w: -171.4666}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &69889398
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69889395}
+  m_CullTransparentMesh: 1
 --- !u!1001 &69916406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13703,7 +13841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 246}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95855131
@@ -13726,18 +13864,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Instructions-
-
-
-    To move - WASD
-
-    To run - Hold Shift down
-
-    To
-    jump - Hit Space'
+  m_text: 'Instructions          '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13761,8 +13891,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13799,7 +13929,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -402.82303, y: -76.840576, z: -457.4026, w: -170.85399}
+  m_margin: {x: -402.82303, y: -39.119263, z: -457.4026, w: 25.558975}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -27718,18 +27848,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewProtagonist
       objectReference: {fileID: 0}
-    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265898904241540479, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28798,7 +28916,7 @@ PrefabInstance:
     - target: {fileID: 6970029038465169144, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1339527184}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: bgMusic
       value: 
@@ -28806,7 +28924,7 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: particles
       value: 
-      objectReference: {fileID: 1515120843}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: auditionCount
       value: 
@@ -28814,11 +28932,11 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: gameGeneralManager
       value: 
-      objectReference: {fileID: 97344076}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1339527184}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59710,11 +59828,11 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -36.01499, y: -1.0375562, z: -38.565178}
+  m_LocalPosition: {x: 0, y: 38.462444, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2043745715}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -60282,6 +60400,151 @@ Transform:
   - {fileID: 1526923716}
   m_Father: {fileID: 1267149054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &415609251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415609252}
+  - component: {fileID: 415609254}
+  - component: {fileID: 415609253}
+  m_Layer: 5
+  m_Name: ControlsDesc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &415609252
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415609251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 567221304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 97, y: 149}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &415609253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415609251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Move - WASD keys
+
+    Run - Hold Shift down
+
+    Jump - Hit Space
+
+    Roll
+    - Press R
+
+    Camera - Arrow keys'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 218.53821, y: -76.840576, z: -457.4026, w: -170.85399}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &415609254
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415609251}
+  m_CullTransparentMesh: 1
 --- !u!1 &415611990
 GameObject:
   m_ObjectHideFlags: 0
@@ -80893,7 +81156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.92941177}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -80931,6 +81194,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 95855130}
+  - {fileID: 69889396}
+  - {fileID: 1408784540}
+  - {fileID: 415609252}
   - {fileID: 1971445574}
   m_Father: {fileID: 1248345751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96357,7 +96623,7 @@ GameObject:
   - component: {fileID: 640814837}
   - component: {fileID: 640814836}
   - component: {fileID: 640814839}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider (3)
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -127392,7 +127658,7 @@ GameObject:
   - component: {fileID: 865446287}
   - component: {fileID: 865446286}
   - component: {fileID: 865446289}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider (2)
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -134759,7 +135025,7 @@ PrefabInstance:
     - target: {fileID: 6970029038465169144, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1772697448}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: bgMusic
       value: 
@@ -134767,7 +135033,7 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: particles
       value: 
-      objectReference: {fileID: 1515120843}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: auditionCount
       value: 
@@ -134775,11 +135041,11 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: gameGeneralManager
       value: 
-      objectReference: {fileID: 97344076}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1772697448}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618239954934308051, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.052885
@@ -180223,7 +180489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1248345751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184683,7 +184949,7 @@ PrefabInstance:
     - target: {fileID: 6970029038465169144, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 598675813}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: bgMusic
       value: 
@@ -184691,7 +184957,7 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: particles
       value: 
-      objectReference: {fileID: 598675813}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: auditionCount
       value: 
@@ -184699,11 +184965,11 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: gameGeneralManager
       value: 
-      objectReference: {fileID: 97344076}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 598675813}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187825,7 +188091,7 @@ GameObject:
   - component: {fileID: 1308271082}
   - component: {fileID: 1308271081}
   - component: {fileID: 1308271084}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider (4)
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -190619,7 +190885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1327367068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -190627,7 +190893,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327367067}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -206270,6 +206536,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408631301}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1408784539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408784540}
+  - component: {fileID: 1408784542}
+  - component: {fileID: 1408784541}
+  m_Layer: 5
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1408784540
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408784539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 567221304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 97, y: 246}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1408784541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408784539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Controls
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 218.53821, y: -44.46173, z: -457.4026, w: 27.517715}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1408784542
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408784539}
+  m_CullTransparentMesh: 1
 --- !u!1 &1409368624
 GameObject:
   m_ObjectHideFlags: 0
@@ -212267,7 +212669,7 @@ GameObject:
   - component: {fileID: 1445317881}
   - component: {fileID: 1445317880}
   - component: {fileID: 1445317883}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider (5)
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -228905,7 +229307,7 @@ PrefabInstance:
     - target: {fileID: 6970029038465169144, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 245559134}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: bgMusic
       value: 
@@ -228913,7 +229315,7 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: particles
       value: 
-      objectReference: {fileID: 1339527184}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: auditionCount
       value: 
@@ -228921,11 +229323,11 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: gameGeneralManager
       value: 
-      objectReference: {fileID: 97344076}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 245559134}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618239954934308051, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.0862467
@@ -275714,7 +276116,7 @@ GameObject:
   - component: {fileID: 1852229625}
   - component: {fileID: 1852229624}
   - component: {fileID: 1852229627}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider (1)
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -282733,12 +283135,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908339391}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36.01499, y: 39.5, z: 38.565178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2043745715}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1908339393
 MonoBehaviour:
@@ -290054,7 +290456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -381, y: -162}
+  m_AnchoredPosition: {x: -381, y: -223}
   m_SizeDelta: {x: 243.8803, y: 48.7582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971445575
@@ -290101,7 +290503,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 422278549}
         m_TargetAssemblyTypeName: SplashScreenUI, Assembly-CSharp
         m_MethodName: HideInstructions
         m_Mode: 1
@@ -290973,7 +291375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1981409522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -298909,10 +299311,7 @@ Transform:
   m_LocalPosition: {x: 36.01499, y: 39.5, z: 38.565178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 410087041}
-  - {fileID: 52592980}
-  - {fileID: 1908339392}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2045531810
@@ -307267,7 +307666,7 @@ GameObject:
   - component: {fileID: 2107305063}
   - component: {fileID: 2107305062}
   - component: {fileID: 2107305065}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Boulevard Collider
   m_TagString: Boulevard
   m_Icon: {fileID: 0}
@@ -313278,7 +313677,7 @@ PrefabInstance:
     - target: {fileID: 6970029038465169144, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1515120843}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: bgMusic
       value: 
@@ -313286,7 +313685,7 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: particles
       value: 
-      objectReference: {fileID: 245559134}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: auditionCount
       value: 
@@ -313294,11 +313693,11 @@ PrefabInstance:
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: gameGeneralManager
       value: 
-      objectReference: {fileID: 97344076}
+      objectReference: {fileID: 0}
     - target: {fileID: 7544380604967342424, guid: 03ad7916c7b4e6144b45735199784018, type: 3}
       propertyPath: starsParticleSystem
       value: 
-      objectReference: {fileID: 1515120843}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -313429,6 +313828,9 @@ SceneRoots:
   - {fileID: 1538766876}
   - {fileID: 560950681}
   - {fileID: 2043745715}
+  - {fileID: 410087041}
+  - {fileID: 52592980}
+  - {fileID: 1908339392}
   - {fileID: 1616063875}
   - {fileID: 1294120544}
   - {fileID: 97344077}
