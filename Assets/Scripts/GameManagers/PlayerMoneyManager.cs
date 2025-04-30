@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoneyManager : MonoBehaviour
 {
@@ -15,11 +16,18 @@ public class PlayerMoneyManager : MonoBehaviour
     public CanvasGroup auditionCanvasGroup; // to show +$100 when getting audition
     public float moneyDeductionDisplayTime = 1f;
 
+    [Header("Game Over UI")]
+    public GameObject gameOverScreen; // Assign this in the Inspector
+
+    [Header("Game Restart")]
+    public float restartDelay = 5f;
+
     private int currentMoney;
 
     void Start()
     {
         currentMoney = startingMoney;
+        gameOverScreen.SetActive(false);
         UpdateMoneyUI();
     }
 
@@ -33,6 +41,12 @@ public class PlayerMoneyManager : MonoBehaviour
         if (amount == 75)
         {
             ShowMoneyImage(clothingCanvasGroup);
+        }
+
+        if (currentMoney <= 0)
+        {
+            Debug.Log("You're broke! Showing Game Over screen.");
+            TriggerGameEnd();
         }
     }
 
@@ -84,5 +98,24 @@ public class PlayerMoneyManager : MonoBehaviour
 
         canvasGroup.alpha = 0f;
         canvasGroup.gameObject.SetActive(false);
+    }
+
+    private void TriggerGameEnd()
+    {
+        Debug.Log("Player has no money left! Game Over.");
+
+        if (gameOverScreen != null)
+            gameOverScreen.SetActive(true);
+
+        StartCoroutine(RestartGameAfterDelay());
+    }
+
+    System.Collections.IEnumerator RestartGameAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(restartDelay);
+
+        Time.timeScale = 1f;
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }
