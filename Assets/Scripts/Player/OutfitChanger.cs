@@ -37,7 +37,7 @@ public class OutfitChanger : MonoBehaviour
     {
         Debug.Log("disguise on");
         disguiseOn = true;
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(25f);
         disguiseOn = false;
         Debug.Log("disguise off");
     }

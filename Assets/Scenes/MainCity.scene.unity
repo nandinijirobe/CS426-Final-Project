@@ -5279,6 +5279,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -6480,6 +6484,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -10753,6 +10761,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -15020,6 +15032,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -27464,6 +27480,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7640270945041343848, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
   m_PrefabInstance: {fileID: 197873488}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &197873495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 292067746398501631, guid: e28df04d2a1c8ff43b67b98261e6245a, type: 3}
+  m_PrefabInstance: {fileID: 197873488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197873494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3591ef28c190f4d589fd005529222ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &199763819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30654,6 +30681,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -31653,6 +31684,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -38815,6 +38850,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -40118,6 +40157,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -53057,6 +53100,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -76333,6 +76380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -91730,6 +91781,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -93663,6 +93718,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -160104,6 +160163,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -170246,6 +170309,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -170401,6 +170468,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -180069,6 +180140,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -186301,6 +186376,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -188653,6 +188732,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -189193,6 +189276,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -189947,7 +190034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1327367068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -189996,7 +190083,7 @@ MonoBehaviour:
   limeMat: {fileID: 2100000, guid: 1e5cb47be8b1047f59f4f3417c508b5c, type: 2}
   priceText: {fileID: 993712135}
   transactionPoint: {fileID: 560950682}
-  disguiseOn: 0
+  changer: {fileID: 197873495}
   moneyManager: {fileID: 417238604}
 --- !u!1001 &1327375877
 PrefabInstance:
@@ -199316,6 +199403,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -213771,6 +213862,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -218172,6 +218267,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -234665,6 +234764,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -243897,6 +244000,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -244729,6 +244836,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -245859,6 +245970,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -246496,6 +246611,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -246651,6 +246770,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -253540,6 +253663,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -278519,6 +278646,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -279296,6 +279427,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -284477,6 +284612,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -285326,6 +285465,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -292412,6 +292555,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -294026,6 +294173,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -294376,6 +294527,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -294656,6 +294811,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -296537,6 +296696,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
@@ -309577,6 +309740,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -310109,6 +310276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 197873494}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
       objectReference: {fileID: 510405619}
@@ -310433,6 +310604,10 @@ PrefabInstance:
       propertyPath: goalGameObject
       value: 
       objectReference: {fileID: 197873494}
+    - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
+      propertyPath: outfit_changer
+      value: 
+      objectReference: {fileID: 197873495}
     - target: {fileID: 4811980008213774682, guid: d8e54534e81338f41b4d312cfd9f8a55, type: 3}
       propertyPath: gameTimeUiManager
       value: 
