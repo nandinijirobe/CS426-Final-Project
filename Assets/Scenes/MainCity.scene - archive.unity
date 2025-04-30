@@ -38888,78 +38888,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
   m_PrefabInstance: {fileID: 249599555}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &250168354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 250168355}
-  - component: {fileID: 250168357}
-  - component: {fileID: 250168356}
-  m_Layer: 5
-  m_Name: BackgroundImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &250168355
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.015007, y: 0}
-  m_SizeDelta: {x: 1519.5, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &250168356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e10b650818e5f4345b7901dbcbbfd637, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &250168357
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250168354}
-  m_CullTransparentMesh: 1
 --- !u!1001 &250460936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44413,7 +44341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 191.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44421,7 +44349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -219.7
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44582,7 +44510,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 295339390}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1842980191}
@@ -44593,8 +44521,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &295762865
 GameObject:
@@ -46936,97 +46863,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316335937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &316957005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 316957006}
-  - component: {fileID: 316957009}
-  - component: {fileID: 316957008}
-  - component: {fileID: 316957007}
-  m_Layer: 5
-  m_Name: Lose_EndSplashScreenPanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &316957006
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 250168355}
-  - {fileID: 1584162987}
-  - {fileID: 1442896552}
-  m_Father: {fileID: 1124023938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &316957007
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &316957008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 42b785306f269437cab8249e0e1159a8, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &316957009
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316957005}
-  m_CullTransparentMesh: 1
 --- !u!1001 &317271835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60325,8 +60161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingMoney: 500
   moneyText: {fileID: 1530097472}
-  gameOverScreen: {fileID: 1124023934}
-  restartDelay: 5
 --- !u!1001 &417314428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80438,7 +80272,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 564391001}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 428452716}
@@ -80449,8 +80283,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &564391001 stripped
 MonoBehaviour:
@@ -81143,7 +80976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -189
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -81151,7 +80984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -156
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -81312,7 +81145,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 573293212}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1632528962}
@@ -81323,8 +81156,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &573649304
 PrefabInstance:
@@ -103074,7 +102906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 141
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -103082,7 +102914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 154
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -103243,7 +103075,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 686946113}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1228943328}
@@ -103254,8 +103086,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &688234708
 PrefabInstance:
@@ -103963,7 +103794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -129
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -103971,7 +103802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 121
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -104132,7 +103963,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 692870531}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1602287058}
@@ -104143,8 +103974,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &693110831
 PrefabInstance:
@@ -110038,7 +109868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -110046,7 +109876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -110207,7 +110037,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 732562602}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 99846993}
@@ -110218,8 +110048,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &733176208
 PrefabInstance:
@@ -122963,7 +122792,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 833653089}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1311890159}
@@ -122974,8 +122803,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &833653089 stripped
 MonoBehaviour:
@@ -123691,7 +123519,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 844572013}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1492261627}
@@ -123702,8 +123530,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &844572013 stripped
 MonoBehaviour:
@@ -127612,7 +127439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -166
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -127620,7 +127447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -222
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -127781,7 +127608,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 869945692}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1617953669}
@@ -127792,8 +127619,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &870589804
 GameObject:
@@ -137502,7 +137328,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 944599947}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 2146807150}
@@ -137513,8 +137339,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &944599947 stripped
 MonoBehaviour:
@@ -138289,7 +138114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -138297,7 +138122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 171
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -138458,7 +138283,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 950697994}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 518592706}
@@ -138469,8 +138294,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &950899504
 PrefabInstance:
@@ -144816,7 +144640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -144824,7 +144648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -144985,7 +144809,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 996885942}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1879529836}
@@ -144996,8 +144820,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &997088392
 PrefabInstance:
@@ -152266,7 +152089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -109
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -152274,7 +152097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 115
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -152435,7 +152258,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1040516697}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 391309477}
@@ -152446,8 +152269,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1040828250
 GameObject:
@@ -153679,7 +153501,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1053020708}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1318792547}
@@ -153690,8 +153512,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1053020708 stripped
 MonoBehaviour:
@@ -161510,7 +161331,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1110361890}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1272716723}
@@ -161521,8 +161342,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1110361890 stripped
 MonoBehaviour:
@@ -163805,108 +163625,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123672189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1124023934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1124023938}
-  - component: {fileID: 1124023937}
-  - component: {fileID: 1124023936}
-  - component: {fileID: 1124023935}
-  m_Layer: 5
-  m_Name: End SplashScreen Canvas - Lose Bankrupt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1124023935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1124023936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1124023937
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1124023938
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124023934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 316957006}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1124027648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199871,142 +199589,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 1355312322}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1355505458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355505459}
-  - component: {fileID: 1355505461}
-  - component: {fileID: 1355505460}
-  m_Layer: 5
-  m_Name: Lose Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1355505459
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2143735800}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: -291}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1355505460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Game Over!!! You ran out of time :(((((
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1012.794, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1355505461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355505458}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1355559998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207059,7 +206641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 193
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -207067,7 +206649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -149
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -207228,7 +206810,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1416821409}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1939715024}
@@ -207239,8 +206821,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1417724419
 GameObject:
@@ -211561,142 +211142,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8991091930390453267, guid: 407cec0499750964c87373d454cba99e, type: 3}
   m_PrefabInstance: {fileID: 1442821804}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1442896551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1442896552}
-  - component: {fileID: 1442896554}
-  - component: {fileID: 1442896553}
-  m_Layer: 5
-  m_Name: Lose Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1442896552
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: -291}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1442896553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Game Over!!! You ran out of money :(((((
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1075.6282, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1442896554
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442896551}
-  m_CullTransparentMesh: 1
 --- !u!1 &1443116651
 GameObject:
   m_ObjectHideFlags: 0
@@ -216177,7 +215622,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1472033985}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1356625010}
@@ -216188,8 +215633,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!114 &1472033985 stripped
 MonoBehaviour:
@@ -227383,7 +226827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -175
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -227391,7 +226835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -146
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -227552,7 +226996,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1517187600}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 555404737}
@@ -227563,8 +227007,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1517763859
 GameObject:
@@ -236929,42 +236372,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dac1a631b172e66469fb09e9987bcf57, type: 3}
   m_PrefabInstance: {fileID: 1583595934}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1584162986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1584162987}
-  m_Layer: 5
-  m_Name: Buttons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1584162987
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584162986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1708893858}
-  m_Father: {fileID: 316957006}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 652, y: -22}
-  m_SizeDelta: {x: 160, y: 74}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1586105101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -241933,7 +241340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -241941,7 +241348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -187
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -242102,7 +241509,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1624417831}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 202681627}
@@ -242113,8 +241520,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1625455726
 PrefabInstance:
@@ -246004,7 +245410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 182
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -246012,7 +245418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 160
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -246173,7 +245579,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1657157604}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 391149723}
@@ -246184,8 +245590,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1657231680
 PrefabInstance:
@@ -246847,7 +246252,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 5906488487102248778}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 818836206}
@@ -246858,8 +246263,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1 &1662331641
 GameObject:
@@ -252589,139 +251993,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708613451}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1708893857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708893858}
-  - component: {fileID: 1708893861}
-  - component: {fileID: 1708893860}
-  - component: {fileID: 1708893859}
-  m_Layer: 5
-  m_Name: Play Again Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1708893858
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1895669144}
-  m_Father: {fileID: 1584162987}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: 30.9349}
-  m_SizeDelta: {x: 160, y: 47.8697}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1708893859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1708893860}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameRestartManager, Assembly-CSharp
-        m_MethodName: RestartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1708893860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1708893861
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708893857}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1709704797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -281010,142 +280281,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 260808cfd9b21994d8c3007a7bc9934c, type: 3}
   m_PrefabInstance: {fileID: 1895140998}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1895669143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1895669144}
-  - component: {fileID: 1895669146}
-  - component: {fileID: 1895669145}
-  m_Layer: 5
-  m_Name: Play Again?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1895669144
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1708893858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1895669145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Play Again?
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1895669146
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895669143}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1897620871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -289116,7 +288251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -289124,7 +288259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -289285,7 +288420,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 1961904460}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 1649532157}
@@ -289296,8 +288431,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &1962251807
 PrefabInstance:
@@ -303219,7 +302353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2076240251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311622,7 +310756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -144
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -311630,7 +310764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -311791,7 +310925,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 2136188367}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 510928230}
@@ -311802,8 +310936,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &2136223509
 PrefabInstance:
@@ -311827,7 +310960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -311835,7 +310968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.3
+      value: -131.4
       objectReference: {fileID: 0}
     - target: {fileID: 5199548334451470749, guid: f20140e53f9d82943a45c7fa1fe9adce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -311996,7 +311129,7 @@ MonoBehaviour:
   bayesManager: {fileID: 1108799701}
   PaparazziParticleController: {fileID: 2136223513}
   chaseThreshold: 0.6
-  viewDistance: 35
+  viewDistance: 30
   rotationSpeed: 0.1
   playerMoneyManager: {fileID: 417238604}
   animator: {fileID: 491498638}
@@ -312007,8 +311140,7 @@ MonoBehaviour:
   postCatchCooldown: 10
   chaseAudioSource: {fileID: 0}
   chaseClip: {fileID: 8300000, guid: 5b5a31fa6ddbe4475949f491a904a00b, type: 3}
-  clothingCooldownDuration: 60
-  maxDangerDistance: 20
+  maxDangerDistance: 10
   paparazziPenalty: 50
 --- !u!1001 &2136458082
 PrefabInstance:
@@ -313151,7 +312283,6 @@ RectTransform:
   m_Children:
   - {fileID: 2087182699}
   - {fileID: 1723536146}
-  - {fileID: 1355505459}
   m_Father: {fileID: 772179976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -313882,7 +313013,6 @@ SceneRoots:
   - {fileID: 358852481}
   - {fileID: 1248345751}
   - {fileID: 772179976}
-  - {fileID: 1124023938}
   - {fileID: 1568022900}
   - {fileID: 2076240254}
   - {fileID: 223146341}
