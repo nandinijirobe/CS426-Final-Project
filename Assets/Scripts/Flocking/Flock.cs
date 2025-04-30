@@ -46,7 +46,7 @@ public class Flock : MonoBehaviour
             }
             else
             {
-                if (FM.inBounds)
+                if (FM.inBounds && FM.disguiseOn == false)
                 {
                     // chase the player directly
                     Vector3 playerDirection = (FM.goalGameObject.transform.position - transform.position);

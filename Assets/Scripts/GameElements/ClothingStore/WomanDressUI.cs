@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class WomanDressUI : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class WomanDressUI : MonoBehaviour
     private Material selectedMat;
     private Material originalMat;
 
+    public bool disguiseOn = false;
+
     public PlayerMoneyManager moneyManager;
 
     void Start()
@@ -28,25 +31,46 @@ public class WomanDressUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void SelectLightBlue() => selectedMat = lightBlueMat;
-    public void SelectPurple() => selectedMat = purpleMat;
-    public void SelectDarkGreen() => selectedMat = darkGreenMat;
-    public void SelectLime() => selectedMat = limeMat;
-    public void SelectRed() => selectedMat = redMat;
+    public void SelectLightBlue() {
+        selectedMat = lightBlueMat;
+    }
+    public void SelectPurple() {
+        selectedMat = purpleMat;
+
+    } 
+    public void SelectDarkGreen() {
+        selectedMat = darkGreenMat;
+    } 
+    public void SelectLime() {
+        selectedMat = limeMat;
+    } 
+    public void SelectRed() {
+        selectedMat = redMat;
+    } 
 
     public void ApplyChanges()
     {
         Debug.Log("dress bought");
         dressRenderer.material = selectedMat;
         transactionPoint.Play();
+        StartCoroutine(StartDisguiseCountDown());
         gameObject.SetActive(false);
-
         moneyManager.DeductMoney(100);
+        
     }
 
     public void CancelChanges()
     {
         dressRenderer.material = redMat;
         gameObject.SetActive(false);
+    }
+
+    IEnumerator StartDisguiseCountDown()
+    {
+        Debug.Log("disguise on");
+        disguiseOn = true;
+        yield return new WaitForSeconds(10f);
+        disguiseOn = false;
+        Debug.Log("disguise off");
     }
 }
