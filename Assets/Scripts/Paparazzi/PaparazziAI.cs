@@ -34,6 +34,11 @@ public class PaparazziAI : MonoBehaviour
     [Header("Chase Audio")]
     public AudioSource chaseAudioSource;
     public AudioClip chaseClip;
+
+    [Header("Clothing Cooldown")]
+    public float clothingCooldownDuration = 60f;
+    private bool isClothingCooldownActive = false;
+    private float clothingCooldownTimer = 0f;
     
     public float maxDangerDistance = 10f;
 
@@ -149,6 +154,17 @@ public class PaparazziAI : MonoBehaviour
                 }
                 break;
         }
+
+        // 🔄 Clothing cooldown timer
+        if (isClothingCooldownActive)
+        {
+            clothingCooldownTimer -= Time.deltaTime;
+            if (clothingCooldownTimer <= 0f)
+            {
+                isClothingCooldownActive = false;
+                Debug.Log($"[{name}] Clothing cooldown ended.");
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -258,6 +274,22 @@ public class PaparazziAI : MonoBehaviour
         currentState = State.Patrol;
         Debug.Log($"[{name}] Danger bar triggered. Applying penalty & cooldown.");
     }
+
+    public void TriggerClothingCooldown()
+    {
+        if (!isClothingCooldownActive)
+        {
+            isClothingCooldownActive = true;
+            clothingCooldownTimer = clothingCooldownDuration;
+            Debug.Log($"[{name}] Clothing cooldown triggered for {clothingCooldownDuration} seconds.");
+        }
+    }
+
+    public bool IsClothingOnCooldown()
+    {
+        return isClothingCooldownActive;
+    }
+
 
     IEnumerator ReturnToPatrolAfterSeconds(float seconds)
     {
